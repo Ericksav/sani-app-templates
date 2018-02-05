@@ -1,0 +1,30 @@
+{
+  "name": "sani-templates-2018",
+  "version": "0.0.1",
+  "description": "Templates of Sani Dental Group",
+  "main": "gulpfile.js",
+  "scripts": {
+    "dev": "gulp",
+    "prod": "gulp build --production"
+  },
+  "author": "Julio Cesar Montenegro",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.0",
+    "gulp-util": "^3.0.8",
+    "panini": "^1.6.0",
+    "run-sequence": "^2.2.1"
+  },
+  "dependencies": {
+    "huleos.css": "^0.0.9"
+  }
+}
