@@ -1,0 +1,43 @@
+//
+// Fonts
+// --------------------------------------------------
+
+
+//Body Font
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,600,700,800');
+
+//Typography
+// --------------------------
+$base-font-size:              rem-calc(18) !default;
+$body-font-family:            'Lato', sans-serif;
+
+a{
+  text-decoration: none;
+  transition: all .3s ease-out;
+  &:hover{
+    text-decoration: none;
+  }
+}
+body{
+  font-weight: 400;
+  font-family: 'Lato', sans-serif;
+  font-size: rem(18);
+}
+p{
+  line-height: 1.4;
+  margin-bottom: rem(15);
+}
+
+b{
+  font-weight: 700;
+  font-family: 'Lato', sans-serif;
+}
+
+h1,h2,h3,h4,h5{
+  font-family: $body-font-family;
+  margin-bottom: rem(15);
+}
+
+button{
+  font-family: $body-font-family;
+}

@@ -1,0 +1,29 @@
+//Flex
+.u-flex{
+	&__full{
+		flex: 0 0 100%;
+		width: 100%;
+	}
+	&__half{
+		flex: 0 0 100%;
+		width: 100%;
+		@include breakpoint (lg){
+			flex: 0 0 50%;
+			width: 50%;
+		}
+	}
+	&__third{
+		flex: 0 0 100%;
+		width: 100%;
+		@include breakpoint (lg){
+			flex: 0 0 33%;
+			width: 33%;
+		}
+	}
+}
+
+
+//Orientation
+.u-cwc{
+  flex-flow: column wrap;
+}

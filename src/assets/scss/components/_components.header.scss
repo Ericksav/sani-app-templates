@@ -1,0 +1,20 @@
+// Header
+$header-link: 					$brand-dark-blue;
+
+.c-header{
+	&__phone{
+		color: $header-link;
+		font-weight: bold;
+		text-transform: uppercase;
+		font-size: rem(18);
+		a{
+			margin-left: rem(5);
+			font-size: rem(21);
+			color: $header-link;
+		}
+		&-icon{
+			max-width: rem(30);
+			margin-left: rem(5);
+		}
+	}
+}

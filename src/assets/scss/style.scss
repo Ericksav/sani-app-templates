@@ -3,3 +3,18 @@
 @import "./node_modules/huleos.css/scss/style";
 
 // Your components, variables, etc...
+
+
+// Utilities
+@import 'utilities/utilities.modifiers';
+
+//Tools
+@import 'tools/tools.colors';
+@import 'tools/tools.type';
+
+
+// Components
+
+@import 'components/components.navigation';
+@import 'components/components.header';
+@import 'components/components.buttons';
