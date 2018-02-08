@@ -14,8 +14,9 @@
 
 
 // Components
-
+@import 'components/components.container';
 @import 'components/components.navigation';
 @import 'components/components.header';
 @import 'components/components.buttons';
 @import 'components/components.search';
+@import 'components/components.cover';

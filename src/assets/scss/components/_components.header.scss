@@ -17,6 +17,12 @@ $header-link: 					$brand-dark-blue;
 		width: 100%;
 		margin-bottom: rem(10);
 		@include breakpoint (md){
+			flex: 0 0 60%;
+			width: 60%;
+			justify-content: flex-start;
+			margin-bottom: 0;
+		}
+		@include breakpoint (lg){
 			flex: 0 0 70%;
 			width: 70%;
 			justify-content: flex-start;
@@ -30,6 +36,11 @@ $header-link: 					$brand-dark-blue;
 		flex: 0 0 100%;
 		width: 100%;
 		@include breakpoint (md){
+			flex: 0 0 40%;
+			width: 40%;
+			justify-content: flex-end;
+		}
+		@include breakpoint (lg){
 			flex: 0 0 30%;
 			width: 30%;
 			justify-content: flex-end;
@@ -42,14 +53,15 @@ $header-link: 					$brand-dark-blue;
 		color: $header-link;
 		font-weight: bold;
 		text-transform: uppercase;
-		font-size: rem(10);
+		font-size: rem(11);
 		text-align: center;
 		@include breakpoint (md){
 			font-size: rem(18);
+			text-align: left;
 		}
 		a{
 			margin-left: rem(5);
-			font-size: rem(12);
+			font-size: rem(15);
 			color: $header-link;
 			@include breakpoint (md){
 				font-size: rem(21);
@@ -71,8 +83,8 @@ $header-link: 					$brand-dark-blue;
 	.c-button__purple,
 	.c-button__blue{
 		font-size: rem(14);
-		padding: rem(10);
-		@include breakpoint (md){
+		padding: .625rem .9375rem;
+		@include breakpoint (lg){
 			font-size: rem(20);
 			padding: rem(12) rem(16);
 		}

@@ -21,7 +21,7 @@ a{
 body{
   font-weight: 400;
   font-family: 'Lato', sans-serif;
-  font-size: rem(18);
+  // font-size: rem(18);
 }
 p{
   line-height: 1.4;
@@ -33,11 +33,62 @@ b{
   font-family: 'Lato', sans-serif;
 }
 
-h1,h2,h3,h4,h5{
+h1,h2,h3,h4,h5,h6{
   font-family: $body-font-family;
-  margin-bottom: rem(15);
+  font-weight: bold;
+  // margin-bottom: rem(15);
 }
 
 button{
   font-family: $body-font-family;
 }
+
+// Type
+/////////////////
+
+.page-title{
+  margin-bottom: rem-calc(28);
+  h1{
+    color: $brand-blue;
+    font-size: rem-calc(42);
+  }
+  h2{
+    color: $brand-aqua;
+    font-size: rem-calc(18);
+    margin-bottom: rem-calc(20);
+  }
+  p{
+    font-size: rem-calc(18);
+  }
+}
+
+.sub-header{
+  margin-bottom: rem-calc(16);
+}
+
+button, input, optgroup, select, textarea{
+  font-family: $body-font-family;
+}
+
+.pagination{
+  a:hover{
+    font-weight: bold;
+    color: $black;
+  }
+}
+
+.text-brand-blue,
+.text-blue{ color: $brand-blue; }
+.text-brand-purple,
+.text-purple{ color: $brand-purple; }
+.text-brand-pink,
+.text-pink{ color: $brand-pink; }
+.text-brand-aqua,
+.text-aqua{ color: $brand-aqua; }
+.text-gray{ color: $gray-dark; }
+
+
+
+
+
+

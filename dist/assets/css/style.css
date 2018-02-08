@@ -1300,8 +1300,7 @@ a {
 
 body {
   font-weight: 400;
-  font-family: 'Lato', sans-serif;
-  font-size: 1.125rem; }
+  font-family: 'Lato', sans-serif; }
 
 p {
   line-height: 1.4;
@@ -1311,12 +1310,77 @@ b {
   font-weight: 700;
   font-family: 'Lato', sans-serif; }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
   font-family: "Lato", sans-serif;
-  margin-bottom: 0.9375rem; }
+  font-weight: bold; }
 
 button {
   font-family: "Lato", sans-serif; }
+
+.page-title {
+  margin-bottom: rem-calc(28); }
+  .page-title h1 {
+    color: #034EA2;
+    font-size: rem-calc(42); }
+  .page-title h2 {
+    color: #1e98a7;
+    font-size: rem-calc(18);
+    margin-bottom: rem-calc(20); }
+  .page-title p {
+    font-size: rem-calc(18); }
+
+.sub-header {
+  margin-bottom: rem-calc(16); }
+
+button, input, optgroup, select, textarea {
+  font-family: "Lato", sans-serif; }
+
+.pagination a:hover {
+  font-weight: bold;
+  color: #0a0a0a; }
+
+.text-brand-blue,
+.text-blue {
+  color: #034EA2; }
+
+.text-brand-purple,
+.text-purple {
+  color: #732b74; }
+
+.text-brand-pink,
+.text-pink {
+  color: #fd226f; }
+
+.text-brand-aqua,
+.text-aqua {
+  color: #1e98a7; }
+
+.text-gray {
+  color: #8a8a8a; }
+
+.c-page__content {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  width: 100%; }
+  @media print, screen and (min-width: 1024px) {
+    .c-page__content {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 70%;
+      flex: 0 0 70%;
+      width: 70%; } }
+
+.c-page__sidebar {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  width: 100%; }
+  @media print, screen and (min-width: 1024px) {
+    .c-page__sidebar {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+      flex: 0 0 30%;
+      width: 30%; } }
 
 .c-navigation__mobile {
   color: #3e465a;
@@ -1419,7 +1483,7 @@ button {
       background-color: #3e465a; } }
 
 .c-navigation__menu-link {
-  padding: 0.75rem 0.625rem;
+  padding: 1.25rem 0.625rem;
   color: #3e465a;
   width: 100%;
   font-size: 1rem;
@@ -1476,20 +1540,24 @@ button {
         padding: 0.9375rem 2.5rem;
         color: #3e465a;
         display: inline-block;
-        -webkit-transition: all .1s ease-in-out;
-        -o-transition: all .1s ease-in-out;
-        transition: all .1s ease-in-out; }
+        -webkit-transition: none;
+        -o-transition: none;
+        transition: none; }
         .c-dropdown__menu__link a:hover {
           font-size: 1rem;
           background-color: rgba(30, 152, 167, 0.9);
           font-weight: bold; }
+        @media print, screen and (min-width: 640px) {
+          .c-dropdown__menu__link a {
+            width: 12.5rem;
+            line-height: 1; } }
 
 .c-down {
   border: solid #3e465a;
   border-width: 0 0.0625rem 0.0625rem 0;
   position: absolute;
   padding: 0.125rem;
-  top: 1.3125rem;
+  top: 1.875rem;
   right: 0.625rem;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -1543,6 +1611,16 @@ button {
     @media print, screen and (min-width: 640px) {
       .c-header__left {
         -webkit-box-flex: 0;
+        -ms-flex: 0 0 60%;
+        flex: 0 0 60%;
+        width: 60%;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        margin-bottom: 0; } }
+    @media print, screen and (min-width: 1024px) {
+      .c-header__left {
+        -webkit-box-flex: 0;
         -ms-flex: 0 0 70%;
         flex: 0 0 70%;
         width: 70%;
@@ -1566,6 +1644,15 @@ button {
     @media print, screen and (min-width: 640px) {
       .c-header__right {
         -webkit-box-flex: 0;
+        -ms-flex: 0 0 40%;
+        flex: 0 0 40%;
+        width: 40%;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end; } }
+    @media print, screen and (min-width: 1024px) {
+      .c-header__right {
+        -webkit-box-flex: 0;
         -ms-flex: 0 0 30%;
         flex: 0 0 30%;
         width: 30%;
@@ -1577,14 +1664,15 @@ button {
     color: #3e465a;
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 0.625rem;
+    font-size: 0.6875rem;
     text-align: center; }
     @media print, screen and (min-width: 640px) {
       .c-header__phone {
-        font-size: 1.125rem; } }
+        font-size: 1.125rem;
+        text-align: left; } }
     .c-header__phone a {
       margin-left: 0.3125rem;
-      font-size: 0.75rem;
+      font-size: 0.9375rem;
       color: #3e465a; }
       @media print, screen and (min-width: 640px) {
         .c-header__phone a {
@@ -1601,8 +1689,8 @@ button {
   .c-header .c-button__purple,
   .c-header .c-button__blue {
     font-size: 0.875rem;
-    padding: 0.625rem; }
-    @media print, screen and (min-width: 640px) {
+    padding: .625rem .9375rem; }
+    @media print, screen and (min-width: 1024px) {
       .c-header .c-button__purple,
       .c-header .c-button__blue {
         font-size: 1.25rem;
@@ -1648,6 +1736,7 @@ button {
     display: block;
     padding: 1rem;
     z-index: 10;
+    visibility: hidden;
     border: 1px solid #cacaca;
     border-radius: 3px;
     background-color: #fefefe;
@@ -1675,9 +1764,64 @@ button {
       display: block;
       padding: 1rem;
       z-index: 10;
+      visibility: hidden;
       border: 0.0625rem solid #cacaca;
       border-radius: 0.1875rem;
       background-color: #fefefe;
       font-size: 1rem; } }
+
+.c-cover {
+  width: 100%;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  background-image: url("https://sanidentalgroup.com/static/img/covers/cover-home.jpg");
+  background-position: center 80%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  min-height: 30vh;
+  margin-bottom: 1.25rem; }
+  @media print, screen and (min-width: 640px) {
+    .c-cover {
+      min-height: 50vh; }
+      .c-cover:before {
+        height: 5.9375rem; } }
+  .c-cover:before {
+    content: '';
+    background-color: #732b74;
+    position: absolute;
+    width: 100%;
+    height: 3.4375rem;
+    bottom: 0;
+    left: 0;
+    mix-blend-mode: multiply; }
+    @media print, screen and (min-width: 640px) {
+      .c-cover:before {
+        height: 5.9375rem; } }
+  .c-cover__caption {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 3.4375rem;
+    padding: 0.75rem 0.625rem; }
+    .c-cover__caption h1 {
+      font-size: 0.875rem;
+      color: #fefefe;
+      text-transform: uppercase;
+      text-align: center; }
+    @media print, screen and (min-width: 640px) {
+      .c-cover__caption {
+        height: 5.9375rem;
+        padding: 0.625rem 0.9375rem; }
+        .c-cover__caption h1 {
+          font-size: 1.75rem; } }
+    @media print, screen and (min-width: 1024px) {
+      .c-cover__caption {
+        height: 5.9375rem;
+        padding: 1.625rem 0.9375rem; }
+        .c-cover__caption h1 {
+          font-size: 1.75rem; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -79,7 +79,7 @@ $navigation-link-hover:     #fff !default;
 		}
 	}
 	&-link{
-		padding: rem(12) rem(10);
+		padding: rem(20) rem(10);
 		color: $nav-color;
 		width: 100%;
 		@include breakpoint (md){
@@ -140,11 +140,15 @@ $navigation-link-hover:     #fff !default;
 				padding: rem(15) rem(40);
 				color: $nav-color;
 				display: inline-block;
-        transition: all .1s ease-in-out;
+        transition: none;
 				&:hover{
 					font-size: rem(16);
 					background-color: rgba($brand-aqua, .9);
 					font-weight: bold;
+				}
+				@include breakpoint (md){
+					width: rem(200);
+					line-height: 1;
 				}
 			}
 		}
@@ -156,7 +160,7 @@ $navigation-link-hover:     #fff !default;
   border-width: 0 rem(1) rem(1) 0;
   position: absolute;
   padding: rem(2);
-  top: rem(21);
+  top: rem(30);
   right: rem(10);
   transform: rotate(45deg);
   @include breakpoint(md){

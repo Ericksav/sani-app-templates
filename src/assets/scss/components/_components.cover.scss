@@ -1,0 +1,62 @@
+$cover-bg-color: 			$brand-purple;
+$cover-caption-height: rem(55);
+$cover-caption-height-medium: rem(95);
+
+.c-cover{
+	width: 100%;
+	flex: 0 0 100%;
+	background-image: url('https://sanidentalgroup.com/static/img/covers/cover-home.jpg');
+	background-position: center 80%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	min-height: 30vh;
+	margin-bottom: rem(20);
+	@include breakpoint (md){
+		min-height: 50vh;
+		&:before{
+	  	height: $cover-caption-height-medium;
+		}
+	}
+	&:before{
+		content: '';
+		background-color: $cover-bg-color;
+		position: absolute;
+		width: 100%;
+  	height: $cover-caption-height;
+  	bottom: 0;
+  	left: 0;
+  	mix-blend-mode: multiply; 
+  	@include breakpoint(md){
+  		height: $cover-caption-height-medium;
+  	}
+	}
+	&__caption{
+		position: absolute;
+		width: 100%;
+  	bottom: 0;
+  	left: 0;
+  	height: $cover-caption-height;
+  	padding: rem(12) rem(10);
+  	h1{
+			font-size: rem(14);
+			color: $white;
+			text-transform: uppercase;
+			text-align: center; 
+		}
+  	@include breakpoint(md){
+  		height: $cover-caption-height-medium;
+	  	padding: rem(10) rem(15);
+			h1{
+				font-size: rem(28);
+			}
+  	}
+  	@include breakpoint(lg){
+  		height: $cover-caption-height-medium;
+  		padding: rem(26) rem(15);
+  		h1{
+				font-size: rem(28);
+			}
+  	}
+	}
+}

@@ -1,0 +1,16 @@
+.c-page__content{
+	flex: 0 0 100%;
+	width: 100%;
+	@include breakpoint (lg){
+		flex: 0 0 70%;
+		width: 70%;	
+	}
+}
+.c-page__sidebar{
+	flex: 0 0 100%;
+	width: 100%;
+	@include breakpoint (lg){
+		flex: 0 0 30%;
+		width: 30%;	
+	}
+}

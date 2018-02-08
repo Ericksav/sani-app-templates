@@ -25,12 +25,12 @@
     			<li><a href="" class="c-navigation__menu-link">Homepage</a></li>
     
     			<li><a href="" class="c-navigation__menu-link c-dropdown">About Us<i class="c-down" aria-hidden="true"></i></a>
-    				<ul class="c-dropdown__menu">
+    				<!-- <ul class="c-dropdown__menu">
     	    		<li class="c-dropdown__menu__link"><a href="">Sani Dental Group</a></li>
     	    		<li class="c-dropdown__menu__link"><a href="">Why us?</a></li>
     	    		<li class="c-dropdown__menu__link"><a href="">Our Facilities</a></li>
     	    		<li class="c-dropdown__menu__link"><a href="">Our Credentials</a></li>
-    	    	</ul>
+    	    	</ul> -->
     			</li>
     
     			<li><a href="" class="c-navigation__menu-link">Price List</a></li>
@@ -84,8 +84,7 @@
       <div class="c-header">
         <div class="c-header__left">
           <img class="c-header__logo" src="https://sanidentalgroup.com/static/img/sani-dental-group.png" alt="">
-          <p class="c-header__phone u-mb0">Get Immediate Assistance
-    				<img src="./assets/img/icons/phone.svg" class="c-header__phone-icon" alt="Phone ico">
+          <p class="c-header__phone u-mb0">Get Immediate Assistance<img src="./assets/img/icons/phone.svg" class="c-header__phone-icon" alt="Phone ico">
     				<a href="tel:8557264337">(855)-726-4337</a>
     			</p>
         </div>
@@ -94,8 +93,19 @@
           <a class="c-button c-button--primary c-button__blue">Appointment</a>
         </div>
       </div>
-    </header>    This is Homepage
-    
+    </header>    
+    <section class="o-flex" role="main" id="homepage">
+    	<main id="content" class="o-flex c-page__content" role="main">
+    		<div class="c-cover">
+    			<div class="c-cover__caption">
+    				<h1>Top Quality Dental Care in Los Algodones, Mexico</h1>
+    			</div>
+    		</div>
+    	</main>
+    	<aside id="sidebar" class="o-flex c-page__sidebar" role="sidebar" data-sticky-container>
+    			{% include 'includes/sidebar-contact.html' %}
+    	</aside><!-- #sidebar -->
+    </section>
     <footer>
     	<!-- <div class="o-flex o-container--full u-p2">
         <div class="o-flex u-flex__third u-cwc o-flex--top">

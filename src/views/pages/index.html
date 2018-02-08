@@ -2,4 +2,16 @@
 title: Homepage
 description: Description of homepage
 ---
-This is {{title}}
+
+<section class="o-flex" role="main" id="homepage">
+	<main id="content" class="o-flex c-page__content" role="main">
+		<div class="c-cover">
+			<div class="c-cover__caption">
+				<h1>Top Quality Dental Care in Los Algodones, Mexico</h1>
+			</div>
+		</div>
+	</main>
+	<aside id="sidebar" class="o-flex c-page__sidebar" role="sidebar" data-sticky-container>
+			{% include 'includes/sidebar-contact.html' %}
+	</aside><!-- #sidebar -->
+</section>
