@@ -117,19 +117,28 @@ $navigation-link-hover:     #fff !default;
 .c-dropdown{
 	position: relative !important;
 	&__menu{
-		display: none;
-		z-index: 1 !important;
-		position: absolute;
-		top: rem(48);
+		display: block;
 		list-style: none;
 		margin-left: 0;
+		position: relative;
+		@include breakpoint(md){
+			z-index: 1 !important;
+			position: absolute;
+			top: rem(48);
+		}
 		&__link{
-			background-color: rgba($nav-color, .9) !important;
+			background-color: $gray-light !important;
+			@include breakpoint(md){
+				background-color: rgba($nav-color, .9) !important;
+				a{
+					color: $navigation-link !important;
+				}
+			}
 			a{
 				width: 100%;
 				font-size: rem(16);
 				padding: rem(15) rem(40);
-				color: $navigation-link;
+				color: $nav-color;
 				display: inline-block;
         transition: all .1s ease-in-out;
 				&:hover{
