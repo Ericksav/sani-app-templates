@@ -1,5 +1,13 @@
 <header>
 	<nav class="c-navigation__bar">
+
+		<div class="c-navigation__mobile" data-responsive-toggle="c-navigation__menu" data-hide-for="medium">
+			<button class="c-hide" type="button" data-toggle></button>
+			<div class="c-burger">
+				<button class="c-burger__icon" type="button" data-toggle></button>
+			</div>
+		</div>
+
 		<ul class="c-navigation__menu">
 			<li><a href="" class="c-navigation__menu-link">Homepage</a></li>
 
@@ -45,50 +53,30 @@
 	    	</ul>
 	    </li>
 			<li><a href="" class="c-navigation__menu-link">FAQ</a></li>
-			<li><a href="" class="c-navigation__menu-link">Search</a></li>
+			<li>
+				<div class="c__search">
+				  <button type="button" data-toggle="search-dropdown">
+				    Search
+				  </button>
+				  <div class="dropdown-pane" id="search-dropdown" data-dropdown data-auto-focus="true" data-close-on-click="true">
+				    <form action="/search/" method="get">
+				      <input type="hidden" name="type" value="">
+				      <input type="search" name="q" placeholder="Type to search…" autocomplete="off">
+				    </form>
+				  </div>
+				</div>
+			</li>
 		</ul>
-
-
-    <!-- <a href="" class="c-navigation__link">Homepage</a>
-
-    <a href="" class="c-navigation__link c-navigation__dropdown">About Us<i class="c-down" aria-hidden="true"></i>
-    	<div class="c-dropdown__submenu">
-    		<a href="">Sani Dental Group</a>
-    		<a href="">Why Us</a>
-    		<a href="">Our Facilities</a>
-    	</div>
-    </a>
-
-    <div class="link-container" style="position: relative;">
-    	<a href="" class="link-padre">Padre</a>
-    	<div class="drop">
-    		<a href=""></a>
-    		<a href=""></a>
-    		<a href=""></a>
-    		<a href=""></a>
-    	</div>
-    </div>
-
-    <a href="" class="c-navigation__link">Price List</a>
-    <a href="" class="c-navigation__link">Doctors</a>
-    <a href="" class="c-navigation__link">Blog</a>
-    <a href="" class="c-navigation__link c-navigation__dropdown">Treatments<i class="c-down" aria-hidden="true"></i></a>
-    <a href="" class="c-navigation__link c-navigation__dropdown">Patient Resources<i class="c-down" aria-hidden="true"></i></a>
-    <a href="" class="c-navigation__link">Reviews</a>
-    <a href="" class="c-navigation__link">FAQ</a>
-    <div class="c-navigation__search">
-    	<a href="" class="c-navigation__link">Search</a>
-    </div> -->
   </nav>
-  <div class="o-container--full o-flex o-flex--justify o-flex--middle u-p2">
-    <div class="o-flex o-flex--middle">
+  <div class="c-header">
+    <div class="c-header__left">
       <img src="https://sanidentalgroup.com/static/img/sani-dental-group.png" alt="">
       <p class="c-header__phone u-mb0">Get Immediate Assistance
 				<img src="./assets/img/icons/phone.svg" class="c-header__phone-icon" alt="Phone ico">
 				<a href="tel:8557264337">(855)-726-4337</a>
 			</p>
     </div>
-     <div>
+    <div class="c-header__right">
       <a class="c-button c-button--primary button c-button__purple u-mx1">Free Quote</a>
       <a class="c-button c-button--primary c-button__blue">Appointment</a>
     </div>

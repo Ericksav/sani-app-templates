@@ -1,0 +1,59 @@
+.c__search{
+	display: inline-block;
+	button{
+		background-color: $white;
+		color: $nav-color;
+  	padding: rem(15) rem(12);
+		&:hover,
+		&:focus{
+			color: $nav-color;
+			background-color: transparent;
+		}
+	}
+	.dropdown-pane{
+		width: auto;
+		border: none !important;
+		border-radius: 0 !important;
+		box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    display: block;
+    padding: 1rem;
+    z-index: 10;
+    // visibility: hidden;
+    border: 1px solid #cacaca;
+    border-radius: 3px;
+    background-color: #fefefe;
+    font-size: 1rem;
+	}
+	@include breakpoint(md){
+		button{
+			background-color: transparent;
+			position: relative;
+			color: $navigation-link;
+	  	padding: rem(14) rem(30);
+	  	width: 100%;
+	  	text-align: left;
+	  	cursor: pointer;
+	  	&:hover,
+			&:focus{
+				color: $navigation-link-hover;
+				background-color: transparent;
+			}
+		}
+		.dropdown-pane{
+			border: none !important;
+			border-radius: 0 !important;
+			position: absolute;
+			top: rem(50);
+			box-shadow: 0 5px 10px rgba(0,0,0,.2);
+			width: auto;
+	    display: block;
+	    padding: rem(16);
+	    z-index: 10;
+	    // visibility: hidden;
+	    border: rem(1) solid #cacaca;
+	    border-radius: rem(3);
+	    background-color: #fefefe;
+	    font-size: rem(16);
+		}
+	}
+}
