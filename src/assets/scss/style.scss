@@ -13,6 +13,9 @@
 @import 'tools/tools.type';
 
 
+//Objects
+@import 'objects/objects.forms';
+
 // Components
 @import 'components/components.container';
 @import 'components/components.navigation';
@@ -20,3 +23,4 @@
 @import 'components/components.buttons';
 @import 'components/components.search';
 @import 'components/components.cover';
+@import 'components/components.sidebar';

@@ -1,4 +1,4 @@
-$cover-bg-color: 			$brand-purple;
+$cover-bg-color: 	$brand-purple;
 $cover-caption-height: rem(55);
 $cover-caption-height-medium: rem(95);
 
@@ -14,6 +14,12 @@ $cover-caption-height-medium: rem(95);
 	margin-bottom: rem(20);
 	@include breakpoint (md){
 		min-height: 50vh;
+		&:before{
+	  	height: $cover-caption-height-medium;
+		}
+	}
+	@include breakpoint (lg){
+		height: 40vh;
 		&:before{
 	  	height: $cover-caption-height-medium;
 		}

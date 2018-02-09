@@ -2,15 +2,15 @@
 	flex: 0 0 100%;
 	width: 100%;
 	@include breakpoint (lg){
-		flex: 0 0 70%;
-		width: 70%;	
+		flex: 0 0 66.66%;
+		width: 66.66%;	
 	}
 }
 .c-page__sidebar{
 	flex: 0 0 100%;
 	width: 100%;
 	@include breakpoint (lg){
-		flex: 0 0 30%;
-		width: 30%;	
+		flex: 0 0 33.33%;
+		width: 33.33%;	
 	}
 }

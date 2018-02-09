@@ -6,16 +6,42 @@ $btn-light-blue-color:       $brand-light-blue !default;
 $btn-pink-color:             $brand-pink !default;
 $btn-green-color:            $brand-green !default;
 
+
+
+
+// display: inline-block;
+// vertical-align: middle;
+// margin: 0 0 1rem;
+// padding: .85em 1em;
+// border: 1px solid transparent;
+// border-radius: 3px;
+// transition: background-color .25s ease-out,color .25s ease-out;
+// font-size: .9375rem;
+// line-height: 1;
+// text-align: center;
+// cursor: pointer;
+// background-color: #732b74;
+// color: #fefefe;
+// border: 2px solid #732b74;
+// font-weight: 700;
+
 .c-button{
+	display: inline-block;
+	vertical-align: middle;
 	color: $white;
 	font-weight: bold;
 	text-transform: uppercase;
 	font-size: rem(20);
+	border: 1px solid transparent;
 	&__purple{
+		font-weight: 700;
 		color: $white;
 		text-align: center;
 		background-color: $btn-purple-color;
 		border: 2px solid $btn-purple-color;
+		border-radius: 3px;
+		padding: .85em 1em;
+		transition: background-color .25s ease-out,color .25s ease-out;
 		&:hover,
 		&:active, 
 		&:focus{
@@ -24,10 +50,14 @@ $btn-green-color:            $brand-green !default;
 		} 
 	}
 	&__blue{
+		font-weight: 700;
 		color: $white;
 		text-align: center;
 		background-color: $btn-blue-color;
 		border: 2px solid $btn-blue-color;
+		border-radius: 3px;
+		padding: .85em 1em;
+		transition: background-color .25s ease-out,color .25s ease-out;
 		&:hover,
 		&:active, 
 		&:focus{

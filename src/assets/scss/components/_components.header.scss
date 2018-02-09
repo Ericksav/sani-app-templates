@@ -9,6 +9,10 @@ $header-link: 					$brand-dark-blue;
 	flex-flow: row wrap;
 	align-items: center;
 	padding: rem(20);
+	@include breakpoint (lg){
+		padding-left: rem(40);
+		padding-right: rem(40);
+	}
 	&__left{
 		display: flex;
 		align-items: center;
@@ -85,8 +89,10 @@ $header-link: 					$brand-dark-blue;
 		font-size: rem(14);
 		padding: .625rem .9375rem;
 		@include breakpoint (lg){
-			font-size: rem(20);
-			padding: rem(12) rem(16);
+			font-size: 1.125rem;
+			line-height: 1;
+			// padding: rem(12) rem(16);
+			padding: .625rem .9375rem;
 		}
 	}
 }
