@@ -22,7 +22,7 @@
     		</div>
     
     		<ul class="c-navigation__menu">
-    			<li><a href="" class="c-navigation__menu-link">Homepage</a></li>
+    			<li><a href="" class="c-navigation__menu-link active">Homepage</a></li>
     
     			<li><a href="" class="c-navigation__menu-link c-dropdown">About Us<i class="c-down" aria-hidden="true"></i></a>
     				<!-- <ul class="c-dropdown__menu">
@@ -71,12 +71,12 @@
     				  <button type="button" data-toggle="search-dropdown">
     				    Search
     				  </button>
-    				  <div class="dropdown-pane" id="search-dropdown" data-dropdown data-auto-focus="true" data-close-on-click="true">
+    				  <!-- <div class="dropdown-pane" id="search-dropdown" data-dropdown data-auto-focus="true" data-close-on-click="true">
     				    <form action="/search/" method="get">
     				      <input type="hidden" name="type" value="">
     				      <input type="search" name="q" placeholder="Type to search…" autocomplete="off">
     				    </form>
-    				  </div>
+    				  </div> -->
     				</div>
     			</li>
     		</ul>
@@ -144,51 +144,87 @@
     			</div>
     	</aside><!-- #sidebar -->
     </section>
-    <footer>
-    	<!-- <div class="o-flex o-container--full u-p2">
-        <div class="o-flex u-flex__third u-cwc o-flex--top">
-          <a href="">Home</a>
-          <a href="">About Us</a>
-          <a href="">Price List</a>
-          <a href="">Doctors</a>
-          <a href="">Blog</a>
-          <a href="">Treatments</a>
-          <a href="">Patient Resources</a>
-          <a href="">Reviews</a>
-          <a href="">Search</a>
+    <footer role="footer">
+      <div class="c-footer">
+        <div class="c-footer__menu">
+          <nav>
+            <a href="#">About Us</a>
+            <a href="#">Careers</a>
+            <a href="#">FAQ</a>
+            <a href="#">Zygomatic Implants</a>
+            <a href="#">Reviews</a>
+            <a href="#">Price List</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Appointments</a>
+            <a href="#">Terms and Conditions</a>
+            <a href="#">Warranty</a>
+          </nav>
         </div>
-        <div class="o-flex u-flex__third u-cwc o-flex--top">
+        <div class="c-footer__treatments">
           <h3>Our treatments</h3>
-          <a href="">Dental Implants</a>
-          <a href="">Dentures</a>
-          <a href="">Dental Crowns</a>
-          <a href="">Full Mouth Restoration</a>
-          <a href="">Bone Graft/Sinus Lift</a>
-          <a href="">Cosmetics</a>
-          <a href="">Dental Laser</a>
-          <a href="">Veneers</a>
+          <nav>
+            <a href="/treatments/dental-implants-surgery/">Dental Implants</a>
+            <a href="/treatments/dentures/">Dentures</a>
+            <a href="/treatments/crowns/">Dental Crowns</a>
+            <a href="/treatments/full-mouth-restoration/">Full Mouth Restoration</a>
+            <a href="/treatments/bone-graft-sinus-lift/">Bone Graft / Sinus Lift</a>
+            <a href="/treatments/cosmetics/">Cosmetics</a>
+            <a href="/treatments/laser/">Dental Laser</a>
+            <a href="/treatments/veneers/">Veneers</a>
+          </nav>
         </div>
-        <div class="o-flex u-flex__third o-flex--top">
-          <h3>Suscribe to our newsletter!</h3>
-          <form class="o-flex o-flex--center u-mb1">
-            <input type="text" class="c-form-input" placeholder="Full Name">
-            <input type="email" class="c-form-input" placeholder="Your email">
-            <button class="c-button c-button--primary">SUBSCRIBE!</button>
-           </form>
-           <p><small>We will never spam you or share your email address. By clicking on   "Subscribe" you are confirming that you have read, understood, and accept the Terms and Conditions and the Privacy Policy.</small></p>
+        <div class="c-footer__newsletter">
+          <div class="c-footer__newsletter__box">
+            <h3>Suscribe to our newsletter!</h3>
+            <form action="//sanidentalgroup.us6.list-manage.com/subscribe/post?u=071f2faa922de56113596b9c3&amp;id=f46c3a3dcf" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" data-abide novalidate>
+            {% csrf_token %}
+              <div class="c-footer__newsletter__form">
+                <div class="">
+                  <div data-abide-error class="alert callout" style="display: none;">
+                    <p><i class="fi-alert"></i> There are some errors in your form.</p>
+                  </div>
+                </div>
+                <div class="c-footer__newsletter__form-div">
+                  <input type="text" name="FNAME" placeholder="Full Name" required pattern="[a-zA-Z]+">
+                  <span class="c-footer__form-error">Full name required.</span>
+                </div>
+                <div class="c-footer__newsletter__form-div">
+                  <input type="email" name="EMAIL" placeholder="Email" required>
+                  <span class="c-footer__form-error">Email required.</span>
+                </div>
+                <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                  <input type="text" name="b_071f2faa922de56113596b9c3_f46c3a3dcf" tabindex="-1" value="">
+                </div>
+                <div class="c-footer__newsletter__form-div">
+                  <button class="c-button__pink" type="submit">Subscribe!</button>
+                </div>
+                <div class="c-footer__newsletter__form-div">
+                  <small>We will never spam you or share your email address. 
+                By clicking on "Subscribe" you are confirming that you have read, understood, and accept the <a href="#" target="_blank">Terms and Conditions</a> and the <a href="#" target="_blank">Privacy Policy</a>.</small>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
-      <div class="o-flex o-container--full u-p2 o-flex--justify">
-        <div>
-          <span>© 1985 - 2018 Sani Dental Group</span>
+      <div class="c-footer__cookies">
+        <p class="cookie-msg">We use cookies to create the most effective website for our visitors. Full details can be found <a href="/privacy-policy/">here</a>.</p>
+      </div>
+    </footer>
+    <div class="c-footer__bottom">
+      <div class="c-footer__bottom__box">
+        <div class="c-footer__bottom-year">
+          <p>&copy;  1985 - 2018 Sani Dental Group</p>
         </div>
-        <div>
-          <a href="" class="u-mx1">FB</a>
-          <a href="" class="u-mx1">Youtube</a>
-          <a href="" class="u-mx1">Twitter</a>
-          <a href="" class="u-mx1">G+</a>
+        <div class="c-footer__bottom-social">
+          <div class="social-icons">
+            <a href="https://facebook.com/sanidentalmexico"><img src="https://sanidentalgroup.com/static/img/facebook.svg"></a>
+            <a href="https://twitter.com/SaniDentalGroup"><img src="https://sanidentalgroup.com/static/img/twitter.svg"></a>
+            <a href="https://www.youtube.com/sanidentalgroup"><img src="https://sanidentalgroup.com/static/img/youtube.svg"></a>
+            <a href="https://plus.google.com/102206110701134622150"><img src="https://sanidentalgroup.com/static/img/google-plus.svg"></a>
+          </div>
         </div>
-      </div> -->
-    </footer>    <script src="assets/js/main.js"></script>
+      </div>
+    </div>    <script src="assets/js/main.js"></script>
   </body>
 </html>
