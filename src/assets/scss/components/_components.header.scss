@@ -1,5 +1,6 @@
-// Header
+// Component Header
 $header-link: 					$brand-dark-blue;
+
 
 .c-header{
 	display: flex;
@@ -13,7 +14,7 @@ $header-link: 					$brand-dark-blue;
 		padding-left: rem(40);
 		padding-right: rem(40);
 	}
-	&__left{
+	&-left{
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
@@ -33,7 +34,7 @@ $header-link: 					$brand-dark-blue;
 			margin-bottom: 0;
 		}
 	}
-	&__right{
+	&-right{
 		display: flex;
 		align-items: center;
 		justify-content: space-around;
@@ -48,35 +49,6 @@ $header-link: 					$brand-dark-blue;
 			flex: 0 0 30%;
 			width: 30%;
 			justify-content: flex-end;
-		}
-	}
-	&__logo{
-	}
-	&__phone{
-		margin: 0 rem(10);
-		color: $header-link;
-		font-weight: bold;
-		text-transform: uppercase;
-		font-size: rem(11);
-		text-align: center;
-		@include breakpoint (md){
-			font-size: rem(18);
-			text-align: left;
-		}
-		a{
-			margin-left: rem(5);
-			font-size: rem(15);
-			color: $header-link;
-			@include breakpoint (md){
-				font-size: rem(21);
-			}
-		}
-		&-icon{
-			@include breakpoint(md){
-				max-width: rem(30);
-			}
-			max-width: rem(20);
-			margin-left: rem(5);
 		}
 	}
 	.c-button__purple{
@@ -95,4 +67,38 @@ $header-link: 					$brand-dark-blue;
 			padding: .625rem .9375rem;
 		}
 	}
+}
+
+//Phone Header Left
+.c-header-phone{
+	margin: 0 rem(10);
+	color: $header-link;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: rem(11);
+	text-align: center;
+	@include breakpoint (md){
+		font-size: rem(18);
+		text-align: left;
+	}
+	a{
+		margin-left: rem(5);
+		font-size: rem(15);
+		color: $header-link;
+		@include breakpoint (md){
+			font-size: rem(21);
+		}
+	}
+	&-icon{
+		@include breakpoint(md){
+			max-width: rem(30);
+		}
+		max-width: rem(20);
+		margin-left: rem(5);
+	}
+}
+
+//Orientation
+.u-cwc{
+  flex-flow: column wrap;
 }

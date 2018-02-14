@@ -1,81 +1,13 @@
 <header>
-	<nav class="c-navigation__bar">
-
-		<div class="c-navigation__mobile" data-responsive-toggle="c-navigation__menu" data-hide-for="medium">
-			<button class="c-hide" type="button" data-toggle></button>
-			<div class="c-burger">
-				<button class="c-burger__icon" type="button" data-toggle></button>
-			</div>
-		</div>
-
-		<ul class="c-navigation__menu">
-			<li><a href="" class="c-navigation__menu-link active">Homepage</a></li>
-
-			<li><a href="" class="c-navigation__menu-link c-dropdown">About Us<i class="c-down" aria-hidden="true"></i></a>
-				<!-- <ul class="c-dropdown__menu">
-	    		<li class="c-dropdown__menu__link"><a href="">Sani Dental Group</a></li>
-	    		<li class="c-dropdown__menu__link"><a href="">Why us?</a></li>
-	    		<li class="c-dropdown__menu__link"><a href="">Our Facilities</a></li>
-	    		<li class="c-dropdown__menu__link"><a href="">Our Credentials</a></li>
-	    	</ul> -->
-			</li>
-
-			<li><a href="" class="c-navigation__menu-link">Price List</a></li>
-			<li><a href="" class="c-navigation__menu-link">Doctors</a></li>
-			<li><a href="" class="c-navigation__menu-link">Blog</a></li>
-			<li><a href="" class="c-navigation__menu-link c-dropdown">Treatments<i class="c-down" aria-hidden="true"></i></a>
-			<!-- <ul class="c-dropdown__menu">
-    		<li class="c-dropdown__menu__link"><a href="">Dental Implants</a></li>
-    		<li class="c-dropdown__menu__link"><a href="">Dentures</a></li>
-    		<li class="c-dropdown__menu__link"><a href="">Crowns</a></li>
-    		<li class="c-dropdown__menu__link"><a href="">Full Mouth Restoration</a></li>
-    		<li class="c-dropdown__menu__link"><a href="">Bone Graft / Sinus Lift</a></li>
-    		<li class="c-dropdown__menu__link"><a href="">Cosmetics</a></li>
-    		<li class="c-dropdown__menu__link"><a href="">Dental Laser</a></li>
-    		<li class="c-dropdown__menu__link"><a href="">Veneers</a></li>
-    	</ul> -->
-	    </li>
-			<li><a href="" class="c-navigation__menu-link c-dropdown">Patient Resources<i class="c-down" aria-hidden="true"></i></a>
-				<!-- <ul class="c-dropdown__menu">
-	    		<li class="c-dropdown__menu__link"><a href="">Promotions</a></li>
-	    		<li class="c-dropdown__menu__link"><a href="">Payment Methods</a></li>
-	    		<li class="c-dropdown__menu__link"><a href="">Location/Los Algodones</a></li>
-	    		<li class="c-dropdown__menu__link"><a href="">Where to Stay?</a></li>
-	    		<li class="c-dropdown__menu__link"><a href="">Transportation</a></li>
-	    		<li class="c-dropdown__menu__link"><a href="">Post Treatment Care</a></li>
-	    		<li class="c-dropdown__menu__link"><a href="">Dental Financing Options</a></li>
-	    	</ul> -->
-    	</li>
-			<li><a href="" class="c-navigation__menu-link c-dropdown">Reviews<i class="c-down" aria-hidden="true"></i></a>
-				<!-- <ul class="c-dropdown__menu">
-	    		<li class="c-dropdown__menu__link"><a href="">Reviews</a></li>
-	    		<li class="c-dropdown__menu__link"><a href="">Video Reviews</a></li>
-	    	</ul> -->
-	    </li>
-			<li><a href="" class="c-navigation__menu-link">FAQ</a></li>
-			<li>
-				<div class="c__search">
-				  <button type="button" data-toggle="search-dropdown">
-				    Search
-				  </button>
-				  <!-- <div class="dropdown-pane" id="search-dropdown" data-dropdown data-auto-focus="true" data-close-on-click="true">
-				    <form action="/search/" method="get">
-				      <input type="hidden" name="type" value="">
-				      <input type="search" name="q" placeholder="Type to search…" autocomplete="off">
-				    </form>
-				  </div> -->
-				</div>
-			</li>
-		</ul>
-  </nav>
+	{{> navigation-menu}}
   <div class="c-header">
-    <div class="c-header__left">
-      <img class="c-header__logo" src="https://sanidentalgroup.com/static/img/sani-dental-group.png" alt="">
-      <p class="c-header__phone u-mb0">Get Immediate Assistance<img src="./assets/img/icons/phone.svg" class="c-header__phone-icon" alt="Phone ico">
+    <div class="c-header-left">
+      <img src="https://sanidentalgroup.com/static/img/sani-dental-group.png" alt="">
+      <p class="c-header-phone u-mb0">Get Immediate Assistance<img src="./assets/img/icons/phone.svg" class="c-header-phone-icon" alt="Phone ico">
 				<a href="tel:8557264337">(855)-726-4337</a>
 			</p>
     </div>
-    <div class="c-header__right">
+    <div class="c-header-right">
       <a class="c-button c-button--primary button c-button__purple">Free Quote</a>
       <a class="c-button c-button--primary c-button__blue">Appointment</a>
     </div>

@@ -3,7 +3,13 @@ $navigation-link:           #ddd !default;
 $navigation-link-hover:     #fff !default;
 
 
-.c-navigation__mobile{
+//Navigation General
+.c-navigation{
+	background-color: $nav-color;
+}
+
+//Mobile Menu
+.c-navigation-mobile{
 	color: $nav-color;
   display: flex;
   justify-content: space-between;
@@ -24,7 +30,7 @@ $navigation-link-hover:     #fff !default;
 		display: inline-block;
     font-weight: 700;
     vertical-align: middle;
-		&__icon{
+		&-icon{
 			position: relative;
 	    display: inline-block;
 	    vertical-align: middle;
@@ -47,25 +53,19 @@ $navigation-link-hover:     #fff !default;
 	}
 }
 
-.c-navigation{
-	&__bar{
-		background-color: $nav-color;
+//Desktop Menu
+.c-navigation-menu{
+	display: flex;
+	flex: 0 0 100%; 
+	width: 100%;
+	justify-content: center;
+	align-items: middle;
+	margin-bottom: 0;
+	list-style: none;
+	flex-flow: column wrap;
+	@include breakpoint (md){
+		flex-flow: row wrap;
 	}
-	&__menu{
-		display: flex;
-		flex: 0 0 100%; 
-		width: 100%;
-		justify-content: center;
-		align-items: middle;
-		margin-bottom: 0;
-		list-style: none;
-		flex-flow: column wrap;
-		@include breakpoint (md){
-			flex-flow: row wrap;
-		}
-	}
-}
-.c-navigation__menu{
 	li{
 		flex-flow: column wrap;
 		flex: 0 0 100%;
@@ -114,9 +114,11 @@ $navigation-link-hover:     #fff !default;
 		}
 	}
 }
+
+//Submenus
 .c-dropdown{
 	position: relative !important;
-	&__menu{
+	&-menu{
 		display: block;
 		list-style: none;
 		margin-left: 0;
@@ -126,7 +128,7 @@ $navigation-link-hover:     #fff !default;
 			position: absolute;
 			top: rem(48);
 		}
-		&__link{
+		&-link{
 			background-color: $gray-light !important;
 			@include breakpoint(md){
 				background-color: rgba($nav-color, .9) !important;
@@ -155,6 +157,7 @@ $navigation-link-hover:     #fff !default;
 	}
 }
 
+//Character Down Menu
 .c-down{
 	border: solid $nav-color;
   border-width: 0 rem(1) rem(1) 0;

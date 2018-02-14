@@ -5,16 +5,13 @@
 // Your components, variables, etc...
 
 
-// Utilities
-@import 'utilities/utilities.modifiers';
-
 //Tools
-@import 'tools/tools.colors';
-@import 'tools/tools.type';
+// @import 'tools/tools.colors';
+@import 'tools/tools.variables';
 
+//Elements
+@import 'elements/elements.type';
 
-//Objects
-@import 'objects/objects.forms';
 
 // Components
 @import 'components/components.container';
@@ -25,3 +22,8 @@
 @import 'components/components.cover';
 @import 'components/components.sidebar';
 @import 'components/components.footer';
+@import 'components/components.footer-menu';
+@import 'components/components.footer-newsletter';
+@import 'components/components.footer-bottom';
+@import 'components/components.forms';
+@import 'components/components.callout';

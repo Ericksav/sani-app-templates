@@ -1,0 +1,16 @@
+//Callout
+.c-callout{
+  position: relative;
+  margin: 0 0 rem(16);
+  padding: rem(16);
+  border: 1px solid hsla(0,0%,4%,.25);
+  border-radius: 3px;
+  p{
+  	margin-bottom: 0;
+  	color: #cc4b37
+  }
+  &__alert{
+  	background-color: #f7e4e1;
+  	color: #3e465a;
+  }
+}

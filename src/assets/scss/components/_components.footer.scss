@@ -8,99 +8,33 @@ footer{
     margin-left: auto;
     display: flex;
     flex-flow: row wrap;
-		&__menu{
-			flex: 0 0 100%;
-			max-width: 100%;
-			justify-content: flex-start;
-			@include breakpoint (md){
-				flex: 0 0 33.33%;
-				max-width: 33.33%;
-			}	
-		}
-		&__treatments{
-			flex: 0 0 100%;
-			max-width: 100%;
-			justify-content: flex-start;
-			@include breakpoint (md){
-				flex: 0 0 33.33%;
-				max-width: 33.33%;
-			}	
-		}
-		&__newsletter{
-			flex: 0 0 100%;
-			max-width: 100%;
-			justify-content: flex-start;
-			@include breakpoint (md){
-				flex: 0 0 33.33%;
-				max-width: 33.33%;
-			}	
-		}
-		&__cookies{
+		&-cookies{
 			flex: 0 0 100%;
 			width: 100%;
 			justify-content: flex-start;
 			padding-bottom: rem(20);
 			@include breakpoint (md){
-				flex: 0 0 60%;
-				max-width: 60%;
-				padding: rem(20) rem(100);
+				flex: 0 0 100%;
+				max-width: 100%;
+				padding: rem(20) 0;
+			}
+			&-message{
+				color: $white;
+				font-size: rem(11);
+				margin-bottom: 0;
+				a{
+					color: $white;
+					border-bottom: 1px dotted $white;
+					&:hover{
+						border-bottom-style: solid;
+					}
+				}
 			}	
-		}
-		&__bottom{
-			flex: 0 0 100%;
-			width: 100%;
-			justify-content: flex-start;
-		}
-	}
-
-	h3{
-		color: $white;
-		font-size: rem(25);
-	}
-	nav{
-		a{
-			color: $gray-medium;
-			font-weight: 700;
-			font-size: rem(22);
-			display: block;
-			line-height: 1.2;
-			white-space: nowrap;
-			&:hover{
-				color: $brand-pink;
-			}
-		}
-		&:nth-of-type(1){
-			margin-bottom: rem(24);
-		}
-	}
-	.c-footer__newsletter__box{
-		margin-top: rem(32);
-		margin-bottom: rem(32);
-		color: $white;
-		.c-footer__newsletter__form-div{
-			margin-bottom: rem(10);
-			width: 100%;
-			input{
-				margin-bottom: rem(5);
-			}
-			button{
-				width:100%;
-			}
-			a{
-				color: $brand-pink;
-			}
-		}
-		h4{
-			font-size: rem(22);
-			margin-bottom: rem(20);
-		}
-		.c-button__pink{
-			text-transform: uppercase;
 		}
 	}
 }
 
-.cookie-msg{
+.c-cookie-msg{
 	color: $white;
 	font-size: rem(11);
 	margin-bottom: 0;
@@ -113,68 +47,9 @@ footer{
 	}
 }
 
-.c-footer__form-error{
-	margin-top: -.5rem;
-  margin-bottom: 1rem;
-  font-size: .75rem;
-  font-weight: 700;
-  color: #cc4b37;
-}
-.callout.alert {
-  background-color: #f7e4e1;
-  color: #3e465a;
-}
-.callout {
-  position: relative;
-  margin: 0 0 1rem;
-  padding: 1rem;
-  border: 1px solid hsla(0,0%,4%,.25);
-  border-radius: 3px;
-}
-
-.c-footer__bottom{
-	background-color: scale-color($brand-dark-blue, $lightness: 6%);
-	padding: rem(16);
-	margin: 0;
-	&__box{
-		display: flex;
-		flex: 0 0 100%;
-		width: 100%;
-		align-items: center;
-		
-		flex-flow: row wrap;
-		@include breakpoint (md){
-			padding: 0 rem(100);
-		}
-	}
-	&-year{
-		color: $white;
-		flex: 0 0 100%;
-		width: 100%;
-		text-align: center;
-		@include breakpoint (md){
-			flex: 0 0 50%;
-			width: 50%;
-			justify-content: flex-start;
-		}
-	}
-	&-social{
-		flex: 0 0 100%;
-		width: 100%;
-		text-align: center;
-		@include breakpoint (md){
-			flex: 0 0 50%;
-			width: 50%;
-			justify-content: flex-end;
-		}
-	}
-	.social-icons{
-		text-align: center;
-		img{
-			width: rem(40);
-			margin-left: rem(4);
-		}
-	}
+//Orientation
+.u-cwc{
+  flex-flow: column wrap;
 }
 
 //Medium
@@ -183,23 +58,6 @@ footer{
 		background: linear-gradient( 90deg, $brand-dark-blue 64%, scale-color($brand-dark-blue, $lightness: -14%) 37%);
 		padding-top: rem(64);
 		// padding-bottom: rem-calc(64);
-		h3{
-			font-size: rem(30);
-		}
-		nav{
-			a{
-				font-size: rem(20);
-			}
-		}
-	}
-	.c-footer__bottom{
-		p{
-			text-align: left;
-			margin-bottom: 0;
-		}
-		.social-icons{
-			text-align: right;
-		}
 	}
 }
 
