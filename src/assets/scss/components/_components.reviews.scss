@@ -1,0 +1,46 @@
+//Reviews
+
+.c-reviews{
+	margin-bottom: rem(20);
+}
+
+.c-review-group{
+	border-left-width: .375rem;
+  border-left-style: solid;
+  border-color: #1e98a7;
+  padding-left: .75rem;
+  margin-bottom: 2.25rem;
+}
+.c-review{
+	&-name{
+		color: $brand-purple;
+		font-weight: 700;
+	}
+	&-place{
+		color: $gray-dark;
+	}
+	&-treatment{
+		color: $brand-aqua;
+		font-style: italic;
+		margin-right: rem(10);
+	}
+}
+.c-review-rating{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: flex-start;
+	margin-bottom: rem(15);
+	.c-star-holder{
+		width: 100px;
+		background: url('https://sanidentalgroup.com/static/img/icons/gray-star.png') repeat-x;
+		.c-star-rating{
+			background: url('https://sanidentalgroup.com/static/img/icons/star.png') repeat-x;
+	    height: 20px;
+	    text-indent: 100%;
+	    display: inherit;
+	    overflow: hidden;
+	    white-space: nowrap;
+		}
+	}
+}

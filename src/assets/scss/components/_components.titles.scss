@@ -1,0 +1,22 @@
+//Titles
+
+$title-color-blue:         $brand-blue;
+$title-color-dark-blue:    $brand-dark-blue;
+$title-color-purple:       $brand-purple;
+$title-color-aqua:       	 $brand-aqua;
+
+
+.c-title{
+	&-blue{
+		color: $title-color-blue !important;
+	}
+	&-dark-blue{
+		color: $title-color-dark-blue !important;
+	}
+	&-purple{
+		color: $title-color-purple !important;
+	}
+	&-aqua{
+		color: $title-color-aqua !important;
+	}
+}

@@ -2,9 +2,6 @@
 
 .c-treatments{
 	margin-bottom: rem(20);
-	h4{
-		color: $brand-blue;
-	}
 }
 
 .c-treatment-group{
@@ -21,11 +18,17 @@
 		width: 100%;
 		text-align: center;
 		padding: rem(20);
+		img{
+			width: rem(100);
+		}
 		@include breakpoint(md){
 			flex: 0 0 20%;
 			width: 20%;
 			padding: rem(30);
 			padding-left: 0;
+			img{
+				width: 100%;
+			}
 		}
 	}
 	.c-treatment-text{
@@ -39,7 +42,6 @@
 			text-align: left;
 		}
 		h4{
-			color: $brand-purple;
 			text-transform: uppercase;
 			margin-bottom: 0;
 			line-height: 1.4;
