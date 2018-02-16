@@ -10,6 +10,7 @@
 // --------------------------
 $base-font-size:              rem-calc(18) !default;
 $body-font-family:            'Lato', sans-serif;
+$body-font-color:             $brand-dark-blue;
 
 a{
   text-decoration: none;
@@ -22,6 +23,7 @@ body{
   font-weight: 400;
   font-family: $body-font-family;
   // font-size: rem(18);
+  color: $body-font-color;
 }
 p{
   line-height: 1.4;

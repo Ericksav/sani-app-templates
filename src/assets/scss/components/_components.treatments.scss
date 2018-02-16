@@ -1,7 +1,59 @@
 //Treatments List
 
 .c-treatments{
+	margin-bottom: rem(20);
 	h4{
 		color: $brand-blue;
+	}
+}
+
+.c-treatment-group{
+	display: flex;
+	flex-flow: row wrap;
+	flex: 0 0 100%;
+	width: 100%;
+	align-items: center;
+	@include breakpoint(md){
+		justify-content: flex-start;
+	}
+	.c-treatment-img{
+		flex: 0 0 100%;
+		width: 100%;
+		text-align: center;
+		padding: rem(20);
+		@include breakpoint(md){
+			flex: 0 0 20%;
+			width: 20%;
+			padding: rem(30);
+			padding-left: 0;
+		}
+	}
+	.c-treatment-text{
+		flex: 0 0 100%;
+		width: 100%;
+		text-align: center;
+		@include breakpoint(md){
+			flex: 0 0 60%;
+			width: 60%;
+			padding: rem(20);
+			text-align: left;
+		}
+		h4{
+			color: $brand-purple;
+			text-transform: uppercase;
+			margin-bottom: 0;
+			line-height: 1.4;
+		}
+	}
+	.c-treatment-button{
+		flex: 0 0 100%;
+		width: 100%;
+		text-align: center;
+		padding: rem(20);
+		@include breakpoint(md){
+			flex: 0 0 20%;
+			width: 20%;
+			padding: rem(20);
+		}
 	}
 }

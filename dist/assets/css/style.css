@@ -1264,7 +1264,8 @@ a {
 
 body {
   font-weight: 400;
-  font-family: "Lato", sans-serif; }
+  font-family: "Lato", sans-serif;
+  color: #3e465a; }
 
 p {
   line-height: 1.4;
@@ -1660,6 +1661,20 @@ button, input, optgroup, select, textarea {
     transition: background-color .25s ease-out,color .25s ease-out; }
     .c-button__pink:hover, .c-button__pink:active, .c-button__pink:focus {
       color: #fd226f;
+      background-color: transparent; }
+  .c-button__dark-blue {
+    font-weight: 700;
+    color: #fefefe;
+    text-align: center;
+    background-color: #3e465a;
+    border: 2px solid #3e465a;
+    border-radius: 3px;
+    padding: .85em 1em;
+    -webkit-transition: background-color .25s ease-out,color .25s ease-out;
+    -o-transition: background-color .25s ease-out,color .25s ease-out;
+    transition: background-color .25s ease-out,color .25s ease-out; }
+    .c-button__dark-blue:hover, .c-button__dark-blue:active, .c-button__dark-blue:focus {
+      color: #3e465a;
       background-color: transparent; }
 
 .c__search {
@@ -2093,6 +2108,9 @@ footer {
     background-color: #f7e4e1;
     color: #3e465a; }
 
+.c-intro {
+  margin-bottom: 1.25rem; }
+
 .c-intro-text {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 100%;
@@ -2149,7 +2167,78 @@ footer {
       flex: 0 0 33.33%;
       width: 33.33%; } }
 
-.c-treatments h4 {
-  color: #034EA2; }
+.c-treatments {
+  margin-bottom: 1.25rem; }
+  .c-treatments h4 {
+    color: #034EA2; }
+
+.c-treatment-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  width: 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  @media print, screen and (min-width: 640px) {
+    .c-treatment-group {
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start; } }
+  .c-treatment-group .c-treatment-img {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    width: 100%;
+    text-align: center;
+    padding: 1.25rem; }
+    @media print, screen and (min-width: 640px) {
+      .c-treatment-group .c-treatment-img {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        width: 20%;
+        padding: 1.875rem;
+        padding-left: 0; } }
+  .c-treatment-group .c-treatment-text {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    width: 100%;
+    text-align: center; }
+    @media print, screen and (min-width: 640px) {
+      .c-treatment-group .c-treatment-text {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 60%;
+        flex: 0 0 60%;
+        width: 60%;
+        padding: 1.25rem;
+        text-align: left; } }
+    .c-treatment-group .c-treatment-text h4 {
+      color: #732b74;
+      text-transform: uppercase;
+      margin-bottom: 0;
+      line-height: 1.4; }
+  .c-treatment-group .c-treatment-button {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    width: 100%;
+    text-align: center;
+    padding: 1.25rem; }
+    @media print, screen and (min-width: 640px) {
+      .c-treatment-group .c-treatment-button {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        width: 20%;
+        padding: 1.25rem; } }
 
 /*# sourceMappingURL=style.css.map */
