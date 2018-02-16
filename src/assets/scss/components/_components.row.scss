@@ -1,0 +1,9 @@
+.c-row{
+ //  margin-right: -.9375rem;
+	// margin-left: -.9375rem;
+  @include breakpoint (md){
+  	padding-right: rem(16);
+  	padding-left: rem(16);
+  	max-width: 75rem;
+  }
+}

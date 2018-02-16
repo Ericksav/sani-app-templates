@@ -29,13 +29,13 @@ $sidebar-info-bg: smart-scale($white, 5%) !default;
 		width: 100%;
 	}
 	&-area{
-		flex: 0 0 20%;
-		width: 20%;
+		flex: 0 0 25%;
+		width: 25%;
 		padding-right: rem(10);
 	}
 	&-number{
-		flex: 0 0 80%;
-		width: 80%;
+		flex: 0 0 75%;
+		width: 75%;
 		padding-left: rem(10);
 	}
 	&-button{

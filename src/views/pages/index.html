@@ -4,34 +4,41 @@ description: Description of homepage
 ---
 
 <section class="o-flex" role="main" id="homepage">
-	<main id="content" class="o-flex c-page__content" role="main">
+	<main id="content" class="o-flex c-page-content" role="main">
 		<div class="c-cover">
-			<div class="c-cover__caption">
+			<div class="c-cover-caption">
 				<h1>Top Quality Dental Care in Los Algodones, Mexico</h1>
 			</div>
 		</div>
 		<div class="c-container">
-			<h4>With more than 30 dentists in 3 different locations and 30 years of experience, Sani Dental Group is the most complete dental facility in Northern Mexico.</h4>
-			<div class="o-flex">
-				<div class="u-flex__full">
-					<p class="text-aqua"><b>As seen on:</b></p>
+			<div class="o-flex c-intro-text c-row">
+				<h4>With more than 30 dentists in 3 different locations and 30 years of experience, Sani Dental Group is the most complete dental facility in Northern Mexico.</h4>
+			</div>
+			<div class="o-flex c-row">
+				<div class="c-intro-text">
+					<p><b>As seen on:</b></p>
 				</div>
-				<div class="c-intro__">
-					<img src="https://sanidentalgroup.com/static/img/npr-logo.png">
+				<div class="o-flex">
+					<div class="c-intro-img">
+						<img src="https://sanidentalgroup.com/static/img/npr-logo.png">
+					</div>
+					<div class="c-intro-img">
+						<img src="https://sanidentalgroup.com/static/img/delta-sky.png">
+					</div>
+					<div class="c-intro-img">
+						<img src="https://sanidentalgroup.com/static/img/yuma-sun.png">
+					</div>
+					<div class="c-intro-img">
+						<img src="https://sanidentalgroup.com/static/img/medical-tourism-magazine.png">
+					</div>
 				</div>
-				<div class="c-intro__">
-					<img src="https://sanidentalgroup.com/static/img/delta-sky.png">
-				</div>
-				<div class="c-intro__">
-					<img src="https://sanidentalgroup.com/static/img/yuma-sun.png">
-				</div>
-				<div class="c-intro__">
-					<img src="https://sanidentalgroup.com/static/img/medical-tourism-magazine.png">
-				</div>
+			</div>
+			<div class="c-treatments c-row">
+				<h4>Which Treatment Are You Looking For?</h4>
 			</div>
 		</div>
 	</main>
-	<aside id="sidebar" class="o-flex c-page__sidebar" role="sidebar" data-sticky-container>
+	<aside id="sidebar" class="o-flex c-page-sidebar" role="sidebar" data-sticky-container>
 			{{> sidebar-contact}}
 	</aside><!-- #sidebar -->
 </section>

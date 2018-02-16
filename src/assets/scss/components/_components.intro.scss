@@ -1,0 +1,23 @@
+//Intro Homepage
+.c-intro-text{
+	flex: 0 0 100%;
+	width: 100%;
+	h4{
+		color: $brand-dark-blue;
+		font-weight: 400;
+		font-size: 1.25rem;
+	}
+	p{
+		color: $brand-aqua;
+	}
+}
+.c-intro-img{
+	flex: 0 0 25%;
+	width: 25%;
+	padding: 0 rem(5) 0 0;
+	@include breakpoint (md){
+		flex: 0 0 25%;
+		width: 25%;
+		padding: rem(10) rem(20) rem(10) 0;
+	}
+}
