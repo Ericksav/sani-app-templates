@@ -1,0 +1,21 @@
+//Blog
+
+.c-blog-post{
+	margin-bottom: rem(20);
+	.c-blog-img{
+		margin-bottom: rem(20);
+	}
+	.c-blog-author{
+		color: $gray-dark;
+		font-size: rem(12);
+	}
+	.c-blog-read-more{
+		display: flex;
+		justify-content: flex-end;
+		width: 100%;
+		flex: 0 0 100%;
+		.c-button__light-blue{
+			font-size: rem(14);
+		}
+	}
+}
