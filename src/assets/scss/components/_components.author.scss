@@ -1,0 +1,41 @@
+//---------Author----------//
+
+$thumbnail-border-color:       #fefefe;
+
+.c-author{
+	color: $gray-dark;
+  margin-bottom: rem(20);
+  align-items: center;
+	&-img{
+		flex: 0 0 100%;
+		width: 100%;
+		@include breakpoint(md){
+			flex: 0 0 20%;
+			width: 20%;
+		}
+		img{
+			border-radius: 50%;
+		}
+		&-thumbnail{
+			display: inline-block;
+	    max-width: 100%;
+	    margin-bottom: 1rem;
+	    border: 4px solid $thumbnail-border-color;
+	    border-radius: 3px;
+	    box-shadow: 0 0 0 1px hsla(0,0%,4%,.2);
+	    line-height: 0;
+		}
+	}
+	&-info{
+		flex: 0 0 100%;
+		width: 100%;
+		@include breakpoint(md){
+			flex: 0 0 80%;
+			width: 80%;
+		}
+		h5{
+			margin-bottom: rem(10);
+			color: $gray-dark;
+		}
+	}
+}

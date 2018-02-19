@@ -1,0 +1,54 @@
+//---------Social Media Share Buttons----------//
+
+$share-border-color:      $gray-medium;
+
+.c-share{
+	border-top: 1px solid $share-border-color;
+  border-bottom: 1px solid $share-border-color;
+  padding: rem(12) 0;
+  margin: rem(32) 0;
+  ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    list-style-type: none;
+    align-items: center;
+    width: 100%;
+    @include breakpoint (md){
+  		li:first-child{
+	    	margin-left: .625rem;
+	    }
+  	}
+    li{
+    	flex: 0 0 100%;
+    	width: 100%;
+    	@include breakpoint (md){
+    		flex: 0 0 auto;
+    		width: auto;
+    	}
+    	a{
+    		border: 1px solid $share-border-color;
+		    color: $share-border-color;
+		    border-radius: 3px;
+		    padding: .3125rem .625rem;
+		    margin-left: 0;
+		    margin-bottom: rem(10);
+		    display: flex;
+		    flex-flow: row nowrap;
+		    justify-content: flex-start;
+		    align-items: flex-start;
+		    line-height: 1;
+		    @include breakpoint (md){
+		    	margin: 0 .3125rem;
+		    }
+    	}
+    }
+  }
+  ul::before{
+  	content: "Share: ";
+  	margin-bottom: rem(10);
+  	@include breakpoint (md){
+    	margin: 0;
+    }
+  }
+}

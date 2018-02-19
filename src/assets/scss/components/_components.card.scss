@@ -1,5 +1,7 @@
-//Callout
+//---------Card----------//
 $bgc-callout-blog:      #d7ecfa;
+$bgc-callout-alert:     #f7e4e1;
+$color-alert:           #cc4b37;
 $link-color:            $brand-pink;
 
 .c-card{
@@ -14,13 +16,13 @@ $link-color:            $brand-pink;
   }
   &__alert{
   	background-color: #f7e4e1;
-  	color: #3e465a;
+  	color: $brand-dark-blue;
   }
   &__blog{
     padding: rem(5);
     background-color: $bgc-callout-blog;
     p{
-       color: #3e465a;
+       color: $brand-dark-blue;
     }
     a{
       color: $brand-pink;
