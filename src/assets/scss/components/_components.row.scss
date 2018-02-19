@@ -8,4 +8,9 @@
   	padding-left: rem(16);
   	max-width: 75rem;
   }
+  @include breakpoint (xl){
+  	padding-right: rem(16);
+  	padding-left: rem(16);
+  	max-width: 65rem;
+  }
 }

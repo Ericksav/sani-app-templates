@@ -2135,6 +2135,12 @@ footer {
     padding-left: 1rem;
     max-width: 75rem; } }
 
+@media print, screen and (min-width: 1200px) {
+  .c-row {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    max-width: 65rem; } }
+
 .c-page-content {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 100%;
