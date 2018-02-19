@@ -2109,18 +2109,25 @@ footer {
 .c-form-group textarea[rows] {
   height: auto; }
 
-.c-callout {
+.c-card {
   position: relative;
   margin: 0 0 1rem;
   padding: 1rem;
   border: 1px solid rgba(10, 10, 10, 0.25);
   border-radius: 3px; }
-  .c-callout p {
+  .c-card p {
     margin-bottom: 0;
     color: #cc4b37; }
-  .c-callout__alert {
+  .c-card__alert {
     background-color: #f7e4e1;
     color: #3e465a; }
+  .c-card__blog {
+    padding: 0.3125rem;
+    background-color: #d7ecfa; }
+    .c-card__blog p {
+      color: #3e465a; }
+    .c-card__blog a {
+      color: #fd226f; }
 
 .c-intro {
   margin-bottom: 1.25rem; }
@@ -2323,7 +2330,7 @@ footer {
   margin-bottom: 1.25rem; }
   .c-blog-list-post .c-blog-img {
     margin-bottom: 1.25rem; }
-  .c-blog-list-post .c-blog-author {
+  .c-blog-list-post .c-blog-date {
     color: #8a8a8a;
     font-size: 0.75rem; }
   .c-blog-list-post .c-blog-read-more {
