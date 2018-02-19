@@ -1,3 +1,7 @@
+//---------Footer Newsletter----------//
+
+$input-error-color:         #cc4b37;
+
 .c-footer-newsletter{
 	flex: 0 0 100%;
 	max-width: 100%;
@@ -39,5 +43,5 @@
   margin-bottom: 1rem;
   font-size: .75rem;
   font-weight: 700;
-  color: #cc4b37;
+  color: $input-error-color;
 }

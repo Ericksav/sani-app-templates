@@ -1,4 +1,4 @@
-//Reviews
+//---------Reviews----------//
 
 .c-reviews{
 	margin-bottom: rem(20);
@@ -11,6 +11,7 @@
   padding-left: .75rem;
   margin-bottom: 2.25rem;
 }
+
 .c-review{
 	&-name{
 		color: $brand-purple;
@@ -26,8 +27,6 @@
 	}
 }
 .c-review-rating{
-	display: flex;
-	flex-flow: row wrap;
 	align-items: center;
 	justify-content: flex-start;
 	margin-bottom: rem(15);

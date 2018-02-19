@@ -7,13 +7,13 @@
     <title>{{#if title}}{{title}}{{else}}Huleos.css Starter Template{{/if}}</title>
 		<meta
       name="description" content="{{#if description}}{{description}}{{else}}Description goes here!{{/if}}">
-		<link href="assets/img/favicon.png" type="image/png" rel="icon">
-    <link href="assets/css/style.css" rel="stylesheet">
+		<link href="{{root}}assets/img/favicon.png" type="image/png" rel="icon">
+    <link href="{{root}}assets/css/style.css" rel="stylesheet">
   </head>
   <body>
     {{> header}}
     {{> body}}
     {{> footer}} 
-    <script src="assets/js/main.js"></script>
+    <script src="{{root}}assets/js/main.js"></script>
   </body>
 </html>

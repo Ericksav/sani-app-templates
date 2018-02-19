@@ -1,3 +1,5 @@
+//---------Footer Bottom----------//
+
 .c-footer-bottom{
 	flex: 0 0 100%;
 	width: 100%;
@@ -12,11 +14,9 @@
 		}
 	}
 	&-box{
-		display: flex;
 		flex: 0 0 100%;
 		width: 100%;
-		align-items: center;	
-		flex-flow: row wrap;
+		align-items: center;
 		@include breakpoint (md){
 			padding: 0 rem(100);
 		}

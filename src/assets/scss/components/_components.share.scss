@@ -1,6 +1,7 @@
 //---------Social Media Share Buttons----------//
 
 $share-border-color:      $gray-medium;
+$share-border-color-hover: $gray-dark;
 
 .c-share{
 	border-top: 1px solid $share-border-color;
@@ -41,6 +42,10 @@ $share-border-color:      $gray-medium;
 		    @include breakpoint (md){
 		    	margin: 0 .3125rem;
 		    }
+        &:hover{
+          color: $share-border-color-hover;
+          border-color: $share-border-color-hover;
+        }
     	}
     }
   }
