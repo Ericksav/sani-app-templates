@@ -1,13 +1,11 @@
+//---------Footer----------//
+
 footer{
 	background-color: $brand-dark-blue;
 	background: linear-gradient( 180deg, $brand-dark-blue 61%, scale-color($brand-dark-blue, $lightness: -14%) 39%);
 	padding: rem(32) rem(24) rem(0);
 	.c-footer{
 		max-width: 75rem;
-    margin-right: auto;
-    margin-left: auto;
-    display: flex;
-    flex-flow: row wrap;
 		&-cookies{
 			flex: 0 0 100%;
 			width: 100%;
