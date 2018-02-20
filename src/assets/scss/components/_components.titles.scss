@@ -4,8 +4,10 @@ $title-color-blue:         $brand-blue;
 $title-color-dark-blue:    $brand-dark-blue;
 $title-color-purple:       $brand-purple;
 $title-color-aqua:       	 $brand-aqua;
+$title-color-pink:       	 $brand-pink;
 
 
+//Colors
 .c-title{
 	&-blue{
 		color: $title-color-blue !important;
@@ -18,5 +20,16 @@ $title-color-aqua:       	 $brand-aqua;
 	}
 	&-aqua{
 		color: $title-color-aqua !important;
+	}
+	&-pink{
+		color: $title-color-pink !important;
+	}
+}
+
+
+//Text Style
+.c-title{
+	&-italic{
+		font-style: italic;
 	}
 }

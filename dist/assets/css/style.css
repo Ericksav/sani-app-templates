@@ -2255,6 +2255,12 @@ footer {
 .c-title-aqua {
   color: #1e98a7 !important; }
 
+.c-title-pink {
+  color: #fd226f !important; }
+
+.c-title-italic {
+  font-style: italic; }
+
 .c-reviews {
   margin-bottom: 1.25rem; }
 
@@ -2421,5 +2427,89 @@ footer {
     .c-author-info h5 {
       margin-bottom: 0.625rem;
       color: #8a8a8a; }
+
+.c-free-quote-box {
+  padding: 1rem;
+  margin-bottom: 2.5rem;
+  border: 1px solid #cacaca; }
+
+.c-free-quote-treatment {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  width: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 1.25rem; }
+  @media print, screen and (min-width: 640px) {
+    .c-free-quote-treatment {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+      width: 50%; } }
+
+.c-free-quote-quantity {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 10%;
+  flex: 0 0 10%;
+  width: 10%; }
+  .c-free-quote-quantity input {
+    width: 2.0625rem;
+    text-align: center;
+    border: 1px solid #cacaca; }
+
+.c-free-quote-info {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 90%;
+  flex: 0 0 90%;
+  width: 90%;
+  padding: 0.625rem 1.25rem; }
+  .c-free-quote-info-procedure {
+    border-bottom: 0.0625rem solid #ccc;
+    margin-bottom: 0.25rem;
+    padding-bottom: 0.25rem; }
+  .c-free-quote-info-prices {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    width: 100%; }
+    .c-free-quote-info-prices p {
+      margin-bottom: 0rem; }
+
+.c-free-quote-button {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 1rem;
+  padding: .85em 1em;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  -webkit-transition: background-color .25s ease-out,color .25s ease-out;
+  -o-transition: background-color .25s ease-out,color .25s ease-out;
+  transition: background-color .25s ease-out,color .25s ease-out;
+  font-size: .9375rem;
+  line-height: 1;
+  cursor: pointer;
+  background-color: #fefefe;
+  color: #8a8a8a;
+  border: 1px solid #cacaca;
+  width: 2.0625rem;
+  height: 1.75rem;
+  padding: 0;
+  font-weight: 700;
+  text-align: center; }
+  .c-free-quote-button__plus {
+    border-radius: 100% 100% 0 0;
+    border-bottom: 0;
+    margin: 0;
+    color: #732b74; }
+  .c-free-quote-button__minus {
+    border-radius: 0 0 100% 100%;
+    border-top: 0;
+    margin: 0;
+    color: #1e98a7; }
 
 /*# sourceMappingURL=style.css.map */

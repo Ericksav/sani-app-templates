@@ -1,0 +1,80 @@
+//---------Free-Quote----------//
+.c-free-quote{
+	&-box{
+		padding: rem(16);
+		margin-bottom: rem(40);
+    border: 1px solid #cacaca;
+	}
+	&-treatment{
+		flex: 0 0 100%;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: rem(20);
+		@include breakpoint (md){
+			flex: 0 0 50%;
+			width: 50%;
+		}
+	}
+}
+
+.c-free-quote-quantity{
+	flex: 0 0 10%;
+	width: 10%;
+	input{
+		width: 2.0625rem;
+		text-align: center;
+		border: 1px solid #cacaca;
+	}
+}
+
+.c-free-quote-info{
+	flex: 0 0 90%;
+	width: 90%;
+	padding: rem(10) rem(20);
+	&-procedure{
+		border-bottom: rem(1) solid #ccc;
+    margin-bottom: rem(4);
+    padding-bottom: rem(4);
+	}
+	&-prices{
+		flex: 0 0 100%;
+		width: 100%;
+		p{
+			margin-bottom: rem(0);
+		}
+	}
+}
+
+.c-free-quote-button{
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 1rem;
+  padding: .85em 1em;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  transition: background-color .25s ease-out,color .25s ease-out;
+  font-size: .9375rem;
+  line-height: 1;
+  cursor: pointer;
+  background-color: #fefefe;
+  color: #8a8a8a;
+  border: 1px solid #cacaca;
+  width: 2.0625rem;
+  height: 1.75rem;
+  padding: 0;
+  font-weight: 700;
+  text-align: center;
+  &__plus{
+  	border-radius: 100% 100% 0 0;
+    border-bottom: 0;
+    margin: 0;
+    color: $brand-purple;
+  }
+  &__minus{
+  	border-radius: 0 0 100% 100%;
+    border-top: 0;
+    margin: 0;
+    color: $brand-aqua;
+  }
+}
