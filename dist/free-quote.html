@@ -101,7 +101,7 @@
     			<div class="o-flex">
     				<div class="o-flex">
     					<h1 class="c-text-color-blue">Get your treatment estimate</h1>
-    					<p>This estimate should not be considered as an official price for your treatment as it's only after diagnosis when we can determine the right treatment for you.</p>
+    					<p class="u-mb2">This estimate should not be considered as an official price for your treatment as it's only after diagnosis when we can determine the right treatment for you.</p>
     					<div class="o-flex o-container--full o-flex--right u-p0">
     						<div>
     							<a href="#" class="button c-button__pink">Financing Options</a>
@@ -146,34 +146,53 @@
     		</div>
     	</main>
     	<aside id="sidebar" class="o-flex o-page-sidebar" role="sidebar">
-    			<div class="c-sidebar-contact">
-    				<h3>Get a Free Estimate by Filling the Form Below</h3>
-    				<p>Our team of patient coordinators will help you set your appointment and solve all your doubts.</p>
+    			<div class="c-sidebar-free-quote">
+    				<p>Add all procedures you're interested in, and send this quote to your e-mail by filling this form below:</p>
     				<form class="c-form" action="/api/contact-APIView/" method="post">
     					<input type="hidden" id="field_utm_need_help" name="field_utm_need_help" value="">
-    			
+    					<div class="o-flex u-mb2">
+    						<div class="o-flex o-flex--center c-free-quote-comparisson">
+    							<div class="c-free-quote-comparisson-img">
+    								<img src="https://sanidentalgroup.com/static/img/usa-flag.png" alt="">
+    							</div>
+    							<p class="c-free-quote-comparisson-price">US price<br>
+    							<span>$0</span></p>
+    						</div>
+    						<div class="o-flex o-flex--center c-free-quote-comparisson">
+    							<div class="c-free-quote-comparisson-img">
+    								<img src="https://sanidentalgroup.com/static/img/logo-quote.png" alt="">
+    							</div>
+    							<p class="c-free-quote-comparisson-price c-text-color-purple">Our price<br>
+    							<span>$0</span></p>
+    						</div>
+    					</div>
+    					<div class="o-flex o-flex--center u-mb2">
+    						<div class="c-free-quote-savings-text o-flex o-flex--center o-flex--middle">
+    							<p>Savings</p>
+    						</div>
+    						<div class="c-free-quote-savings-prices o-flex o-flex--center o-flex--middle">
+    							<div class="c-free-quote-savings-prices-total">
+    								<p>$-,---</p>
+    							</div>
+    							<div>
+    								<p>%0</p>
+    							</div>
+    						</div>
+    					</div>
     					<div class="alert callout" style="display: none;">
     						<p><i class="fi-alert"></i> There are some errors in your form.</p>
     					</div>
     					<div class="c-form-group">
     						<input class="c-form-input" type="text" name="name" placeholder="Full Name" required>
+    						<input class="c-form-input" type="tel" name="area" maxlength=10 placeholder="Contact Number" required>
     						<input class="c-form-input" type="email" name="email" placeholder="Email" required>
     					</div>
-    					<div class="c-sidebar-contact-phone c-form-group">
-    						<div class="c-sidebar-contact-area">
-    							<input class="c-form-input" type="tel" name="area" maxlength=3 placeholder="(760)" required>
-    						</div>
-    						<div class="c-sidebar-contact-number">
-    							<input class="c-form-input" type="tel" name="number" id="phone-number-field" maxlength=7 placeholder="123-4567" required>
-    						</div>
+    					<div>
+    						<p>By clicking on "Submit" you are confirming that you have read, understood, and accept the <a class="c-text-color-pink" href="#">Terms and Conditions</a> and the <a class="c-text-color-pink" href="#">Privacy Policy.</a></p>
     					</div>
-    					<div class="c-form-group">
-    						<input class="c-form-input" type="text" name="location" placeholder="Where do you come from? (City)" required>
-    						<textarea  name="message" cols="30" rows="4" placeholder="Your message" required></textarea>
-    					</div>
-    			
-    					<div class="c-sidebar-contact-button">
-    						<button class="button c-button__purple" type="submit">I Want My Estimate</button>
+    					<div class="o-flex o-flex--justify c-sidebar-free-quote-button">
+    						<button class="button c-free-quote-button__purple" type="submit">Reset</button>
+    						<button class="button c-free-quote-button__blue" type="submit">Submit</button>
     					</div>
     				</form>
     			</div>

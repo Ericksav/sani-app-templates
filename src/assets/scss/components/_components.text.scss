@@ -36,3 +36,10 @@ $text-color-gray:       	 $gray-dark;
 		font-style: italic;
 	}
 }
+
+//Align
+.c-text-align{
+	&-center{
+		text-align: center;
+	}
+}
