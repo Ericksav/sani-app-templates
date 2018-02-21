@@ -13,6 +13,9 @@
 @import 'elements/elements.type';
 
 
+//Objects
+@import 'objects/objects.page';
+
 // Components
 @import 'components/components.container';
 @import 'components/components.navigation';
@@ -28,11 +31,8 @@
 @import 'components/components.forms';
 @import 'components/components.card';
 @import 'components/components.intro';
-@import 'components/components.row';
-@import 'components/components.page';
 @import 'components/components.treatments';
-@import 'components/components.content';
-@import 'components/components.titles';
+@import 'components/components.text';
 @import 'components/components.reviews';
 @import 'components/components.blog';
 @import 'components/components.share';

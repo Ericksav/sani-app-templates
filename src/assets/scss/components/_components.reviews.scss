@@ -1,31 +1,13 @@
 //---------Reviews----------//
 
-.c-reviews{
-	margin-bottom: rem(20);
-}
-
 .c-review-group{
 	border-left-width: .375rem;
   border-left-style: solid;
-  border-color: #1e98a7;
+  border-color: $brand-aqua;
   padding-left: .75rem;
   margin-bottom: 2.25rem;
 }
 
-.c-review{
-	&-name{
-		color: $brand-purple;
-		font-weight: 700;
-	}
-	&-place{
-		color: $gray-dark;
-	}
-	&-treatment{
-		color: $brand-aqua;
-		font-style: italic;
-		margin-right: rem(10);
-	}
-}
 .c-review-rating{
 	align-items: center;
 	justify-content: flex-start;

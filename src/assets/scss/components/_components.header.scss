@@ -54,14 +54,12 @@ $header-link: 					$brand-dark-blue;
 			margin-right: rem(20);
 		}
 	}
-	.c-button__purple,
-	.c-button__blue{
+	.c-button-header{
 		font-size: rem(14);
 		padding: .625rem .9375rem;
 		@include breakpoint (lg){
 			font-size: 1.125rem;
 			line-height: 1;
-			// padding: rem(12) rem(16);
 			padding: .625rem .9375rem;
 		}
 	}
@@ -94,9 +92,4 @@ $header-link: 					$brand-dark-blue;
 		max-width: rem(20);
 		margin-left: rem(5);
 	}
-}
-
-//Orientation
-.u-cwc{
-  flex-flow: column wrap;
 }

@@ -38,3 +38,20 @@ $placeholder: '::-webkit-input-placeholder, ::-moz-placeholder, :-ms-input-place
     }
   }
 }
+
+input[type='search']{
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 2.4375rem;
+  padding: .5rem;
+  border: 1px solid #cacaca;
+  border-radius: 3px;
+  background-color: #fefefe;
+  box-shadow: inset 0 1px 2px hsla(0,0%,4%,.1);
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #0a0a0a;
+  transition: box-shadow .5s,border-color .25s ease-in-out;
+}

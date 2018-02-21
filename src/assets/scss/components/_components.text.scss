@@ -1,0 +1,38 @@
+//---------Titles----------//
+
+$text-color-blue:         $brand-blue;
+$text-color-dark-blue:    $brand-dark-blue;
+$text-color-purple:       $brand-purple;
+$text-color-aqua:       	 $brand-aqua;
+$text-color-pink:       	 $brand-pink;
+$text-color-gray:       	 $gray-dark;
+
+
+//Colors
+.c-text-color{
+	&-blue{
+		color: $text-color-blue !important;
+	}
+	&-dark-blue{
+		color: $text-color-dark-blue !important;
+	}
+	&-purple{
+		color: $text-color-purple !important;
+	}
+	&-aqua{
+		color: $text-color-aqua !important;
+	}
+	&-pink{
+		color: $text-color-pink !important;
+	}
+	&-gray{
+		color: $text-color-gray !important;
+	}
+}
+
+//Text Style
+.c-text-style{
+	&-italic{
+		font-style: italic;
+	}
+}

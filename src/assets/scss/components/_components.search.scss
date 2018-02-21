@@ -1,6 +1,6 @@
 //---------Search----------//
 
-.c__search{
+.c-search{
 	display: inline-block;
 	button{
 		background-color: $white;
@@ -13,14 +13,13 @@
 		}
 	}
 	.dropdown-pane{
-		width: auto;
+		width: 100% !important;
 		border: none !important;
 		border-radius: 0 !important;
 		box-shadow: 0 5px 10px rgba(0,0,0,.2);
-    display: block;
+    display: none;
     padding: 1rem;
     z-index: 10;
-    visibility: hidden;
     border: 1px solid #cacaca;
     border-radius: 3px;
     background-color: #fefefe;
@@ -31,7 +30,6 @@
 			background-color: transparent;
 			position: relative;
 			color: $navigation-link;
-	  	padding: rem(14) rem(30);
 	  	width: 100%;
 	  	text-align: left;
 	  	cursor: pointer;
@@ -42,20 +40,27 @@
 			}
 		}
 		.dropdown-pane{
+			width: 100% !important;
 			border: none !important;
 			border-radius: 0 !important;
 			position: absolute;
 			top: rem(50);
+			left: 0;
 			box-shadow: 0 5px 10px rgba(0,0,0,.2);
-			width: auto;
-	    display: block;
+	    display: none;
 	    padding: rem(16);
 	    z-index: 10;
-	    visibility: hidden;
+	    // visibility: hidden;
 	    border: rem(1) solid #cacaca;
 	    border-radius: rem(3);
 	    background-color: #fefefe;
 	    font-size: rem(16);
 		}
+	}
+}
+
+.c-search:hover{
+	.dropdown-pane{
+		display: block;
 	}
 }

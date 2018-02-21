@@ -3,6 +3,8 @@
 $nav-color: $brand-dark-blue;
 $navigation-link:           #ddd !default;
 $navigation-link-hover:     #fff !default;
+$btn-purple-color:           $brand-purple !default;
+$btn-blue-color:             $brand-blue !default;
 
 
 //Navigation General
@@ -13,45 +15,44 @@ $navigation-link-hover:     #fff !default;
 //Mobile Menu
 .c-navigation-mobile{
 	color: $nav-color;
-  justify-content: space-between;
   align-items: center;
-  padding: rem(8);
-  .c-hide{
-  	padding: 0;
-    appearance: none;
-    border: 0;
-    border-radius: 3px;
-    background: transparent;
-    line-height: 1;
-  }
+  padding: rem(12) rem(8);
+  flex: 0 0 100%;
+  width: 100%;
+ 	&-link{
+ 		color: $navigation-link;
+ 		font-size: rem(12);
+ 		padding-left: rem(3);
+ 		padding-right: rem(3);
+ 		text-transform: capitalize;
+ 	}
 	@include breakpoint (md){
 		display: none;
 	}
-	.c-burger{
-		display: inline-block;
-    font-weight: 700;
-    vertical-align: middle;
-		&-icon{
-			position: relative;
-	    display: inline-block;
-	    vertical-align: middle;
-	    width: rem(20);
-	    height: rem(16);
-	    cursor: pointer;
-	    background-color: $nav-color;
-			&::after{
-				position: absolute;
-		    top: 0;
-		    left: 0;
-		    display: block;
-		    width: 100%;
-		    height: rem(2);
-		    background: #fefefe;
-		    box-shadow: 0 rem(7) 0 #fefefe, 0 rem(14) 0 #fefefe;
-		    content: "";
-			}
-		}
+	.c-modal__close{
+		position: inherit;
+		color: $navigation-link;
 	}
+}
+
+.c-navigation-mobile-button{
+	display: inline-block;
+	vertical-align: middle;
+	color: $white;
+	font-size: rem(12);
+	text-transform: capitalize;
+	border: 1px solid transparent;
+	text-align: center;
+	background-color: $brand-pink;
+	border: 2px solid $brand-pink;
+	border-radius: 3px;
+	transition: background-color .25s ease-out,color .25s ease-out;
+	&:hover,
+	&:active, 
+	&:focus{
+		color: $brand-pink;
+		background-color: transparent;
+	} 
 }
 
 //Desktop Menu
@@ -115,11 +116,19 @@ $navigation-link-hover:     #fff !default;
 	}
 }
 
+
+//Hover Dorpdown Submenu
+.c-navigation-menu > li:hover{
+	.c-dropdown-menu{
+		display: block;
+	}
+}
+
 //Submenus
 .c-dropdown{
 	position: relative !important;
 	&-menu{
-		display: block;
+		display: none;
 		list-style: none;
 		margin-left: 0;
 		position: relative;
