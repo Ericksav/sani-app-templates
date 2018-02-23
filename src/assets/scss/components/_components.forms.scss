@@ -8,6 +8,8 @@ $placeholder: '::-webkit-input-placeholder, ::-moz-placeholder, :-ms-input-place
 	margin-bottom: rem-calc(20);
 }
 
+$color-alert-form:     #cc4b37;
+
 .c-form{
   &-group{
     label{
@@ -36,6 +38,9 @@ $placeholder: '::-webkit-input-placeholder, ::-moz-placeholder, :-ms-input-place
     textarea[rows] {
       height: auto;
     }
+  }
+  &-mandatory{
+    color: $color-alert-form;
   }
 }
 

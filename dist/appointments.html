@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Post</title>
+    <title>Appointments</title>
 		<meta
-      name="description" content="Description of Post">
+      name="description" content="Description of Appointments">
 		<link href="assets/img/favicon.png" type="image/png" rel="icon">
     <link href="assets/css/style.css" rel="stylesheet">
   </head>
@@ -95,96 +95,95 @@
         </div>
       </div>
     </header>    
-    <section class="o-flex" role="main" id="post">
+    <section class="o-flex" role="main" id="free-quote">
     	<main id="content" class="o-flex o-page-content" role="main">
     		<div class="c-container">
     			<div class="o-flex">
-    				<article class="c-blog-list-post">
-    					<header>
-    						<figure class="c-blog-img">
-    							<a href="#">
-    								<img src="https://sanidental.s3.amazonaws.com/media_root/uploads/blog/.thumbnails/blogbanners_sdgfeb2018.jpg/blogbanners_sdgfeb2018-1000x429.jpg" alt="">
-    							</a>
-    						</figure>
-    						<h2><a href="#" class="c-text-color-dark-blue">Advantages of Getting Dental Work in Mexico</a></h2>
-    						<p class="c-blog-date">
-    							Published on:
-    							<time id="date" datetime="datetime">Feb. 13, 2018 - </time>
-    								By: <span class="c-blog-author-name">Shanti Mariana Tapia Ortega</span>
-    						</p>
-    					</header>
-    					<section class="c-post-content">
-    						<p>The term medical tourism has gained popularity through the years since more and more people started saving money when traveling to receive high-quality medical or dental services outside their country of residence. There are a lot of reasons why these people rather take a flight than go to a local doctor or dentist, and these reasons are mainly the advantages we will talk about in this post.</p>
-    						<div class="c-share">
-    							<ul>
-    								<li>
-    									<a href="#" target="_blank">Facebook</a>
-    								</li>
-    								<li>
-    									<a href="#" target="_blank">Twitter</a>
-    								</li>
-    								<li>
-    									<a href="#" target="_blank">Google +</a>
-    								</li>
-    								<li>
-    									<a href="#" target="_blank">Linkedin</a>
-    								</li>
-    							</ul>
-    						</div>
-    					</section>
+    				<div class="o-flex">
+    					<h1 class="c-text-color-blue">Set Up Your Appointment</h1>
+    					<p class="c-text-color-aqua u-mb2"><b>Ready to change your life? We have a whole team working to serve you. Fill out the form below and make an appointment with the best Dentists in Los Algodones.</b></p>
+    					<p>Every online appointment needs to be confirmed by our patient support team, please fill out the information below and we will contact you shortly.</p>
+    					<p>Please consider that by filling this information you are only asking for a specific time and date. Once you receive the confirmation e-mail, you will have your official appointment.</p>
+    				</div>
+    				<div class="o-flex c-appointment-form c-row u-my2">
+    					<div class="c-appointment-form">
+    						<!-- STEP 1 -->
+    						<div>
+    							<h3 class="c-text-color-aqua">Step 1</h3>
+    							<form class="c-form" action="/api/contact-APIView/" method="post">
+    								<input type="hidden" id="field_utm_need_help" name="field_utm_need_help" value="">
     					
-    					<div class="o-flex c-row c-author">
-    						<div class="c-author-img">
-    							<img class="c-author-img-thumbnail" src="https://sanidental.s3.amazonaws.com/media_root/accounts/photos/.thumbnails/Hola.jpg/Hola-122x122.jpg" alt="" class="thumbnail">
+    								<div class="c-card c-card__alert" style="display: none;">
+    									<p><i class="fi-alert"></i> There are some errors in your form.</p>
+    								</div>
+    								<div class="o-flex">
+    									<div class="c-appointment-form-group c-form-group">
+    										<label>First Name <span class="c-form-mandatory">*</span></label>
+    										<input class="c-form-input" type="text" name="name" required>
+    									</div>
+    									<div class="c-appointment-form-group  c-form-group">
+    										<label>Last Name <span class="c-form-mandatory">*</span></label>
+    										<input class="c-form-input" type="text" name="name" required>
+    									</div>
+    								</div>
+    								<div class="o-flex">
+    									<div class="c-appointment-form-group c-form-group">
+    										<label>Email address <span class="c-form-mandatory">*</span></label>
+    										<input class="c-form-input" type="email" name="email" required>
+    									</div>
+    									<div class="c-appointment-form-group c-form-group">
+    										<label>Where do you come from? <span class="c-form-mandatory">*</span></label>
+    										<input class="c-form-input" type="text" name="location" required>
+    									</div>
+    								</div>
+    								<div class="o-flex">
+    									<div class="c-appointment-form-group c-form-group">
+    										<label>Contact Number <span class="c-form-mandatory">*</span></label>
+    										<input class="c-form-input" type="text" name="name" required>
+    									</div>
+    									<div class="c-appointment-form-group c-form-group">
+    										<label>Promo Code</label>
+    										<input class="c-form-input" type="text" name="name">
+    									</div>
+    								</div>
+    								<div class="o-flex o-flex--right c-appointment-form-button u-my1">
+    									<button class="button c-appointment-form-button__next" type="submit">Next ▶︎</button>
+    								</div>
+    							</form>
     						</div>
-    						<div class="c-author-info">
-    							<h5>Shanti Mariana Tapia Ortega</h5>
-    							<p>
-    								I'm a content generator at Sani Dental Group and I have a major in Media and Communication Studies. I love to discover new worlds and realities through the wonders of traveling and books.
-    							</p>
+    						<!-- STEP 1 -->
+    					
+    						<!-- STEP 2 -->
+    						<div>
+    							<h3 class="c-text-color-aqua">Step 2</h3>
+    							<form class="c-form" action="/api/contact-APIView/" method="post">
+    								<input type="hidden" id="field_utm_need_help" name="field_utm_need_help" value="">
+    					
+    								<div class="c-card c-card__alert">
+    									<p><i class="fi-alert"></i> There are some errors in your form.</p>
+    								</div>
+    								<div class="o-flex">
+    									<div class="c-appointment-form-group c-form-group">
+    										<label>Desired date <span class="c-form-mandatory">*</span></label>
+    										<input class="c-form-input" type="text" name="name" required>
+    									</div>
+    									<div class="c-appointment-form-group  c-form-group">
+    										<label>Desired time <span class="c-form-mandatory">*</span></label>
+    										<select class="c-form-input" type="text" name="name" required></select>
+    									</div>
+    								</div>
+    								<div class="o-flex o-flex--justify c-appointment-form-button u-my1">
+    									<button class="button c-appointment-form-button__next" type="submit">◀︎ Back</button>
+    									<button class="button c-appointment-form-button__next" type="submit">Next ▶︎</button>
+    								</div>
+    							</form>
     						</div>
     					</div>
-    					<div class="c-card c-card__blog">
-    					  <div class="c-card__content">
-    					    <p><b>Disclaimer:</b> All content shown in this blog and in any linked materials are not intended and should not be construed as medical advice. Any recommendations are based on personal, not professional, opinion only. If the reader or any other person has a medical concern about their dental care and treatments, please contact us directly. For more information please read our <a href="/disclaimer">Disclaimers</a> and <a href="/faq">FAQ</a> pages.</p>
-    					  </div>
-    					</div>
-    				</article>
+    				</div>
     			</div>
     		</div>
     	</main>
     	<aside id="sidebar" class="o-flex o-page-sidebar" role="sidebar">
-    			<div class="c-sidebar-contact">
-    				<h3>Get a Free Estimate by Filling the Form Below</h3>
-    				<p>Our team of patient coordinators will help you set your appointment and solve all your doubts.</p>
-    				<form class="c-form" action="/api/contact-APIView/" method="post">
-    					<input type="hidden" id="field_utm_need_help" name="field_utm_need_help" value="">
-    			
-    					<div class="alert callout" style="display: none;">
-    						<p><i class="fi-alert"></i> There are some errors in your form.</p>
-    					</div>
-    					<div class="c-form-group">
-    						<input class="c-form-input" type="text" name="name" placeholder="Full Name" required>
-    						<input class="c-form-input" type="email" name="email" placeholder="Email" required>
-    					</div>
-    					<div class="c-sidebar-contact-phone c-form-group">
-    						<div class="c-sidebar-contact-area">
-    							<input class="c-form-input" type="tel" name="area" maxlength=3 placeholder="(760)" required>
-    						</div>
-    						<div class="c-sidebar-contact-number">
-    							<input class="c-form-input" type="tel" name="number" id="phone-number-field" maxlength=7 placeholder="123-4567" required>
-    						</div>
-    					</div>
-    					<div class="c-form-group">
-    						<input class="c-form-input" type="text" name="location" placeholder="Where do you come from? (City)" required>
-    						<textarea  name="message" cols="30" rows="4" placeholder="Your message" required></textarea>
-    					</div>
-    			
-    					<div class="c-sidebar-contact-button">
-    						<button class="button c-button__purple" type="submit">I Want My Estimate</button>
-    					</div>
-    				</form>
-    			</div>
     	</aside><!-- #sidebar -->
     </section>
     <footer role="footer">
