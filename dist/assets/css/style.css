@@ -2647,4 +2647,43 @@ input[type='search'] {
         color: #24B7DA;
         background-color: transparent; }
 
+.c-appointment-form-treatment-button {
+  color: #fefefe;
+  font-size: 0.875rem;
+  text-align: center;
+  background-color: #8a8a8a;
+  border: 2px solid #8a8a8a;
+  border-radius: 3px;
+  padding: 0.625rem;
+  -webkit-transition: background-color .25s ease-out,color .25s ease-out;
+  -o-transition: background-color .25s ease-out,color .25s ease-out;
+  transition: background-color .25s ease-out,color .25s ease-out; }
+  .c-appointment-form-treatment-button:hover, .c-appointment-form-treatment-button:active, .c-appointment-form-treatment-button:focus {
+    color: #8a8a8a;
+    background-color: transparent; }
+
+.c-appointment-form-treatment-dropdown {
+  background-color: #FFF;
+  border: 2px solid #e6e6e6;
+  border-radius: 3px;
+  padding: 0.625rem;
+  max-height: 14rem;
+  overflow-y: scroll; }
+
+.c-appointment-form-treatment-group input {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 8%;
+  flex: 0 0 8%;
+  width: 8%;
+  margin-bottom: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+.c-appointment-form-treatment-group label {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 92%;
+  flex: 0 0 92%;
+  width: 92%;
+  margin-bottom: 0; }
+
 /*# sourceMappingURL=style.css.map */
