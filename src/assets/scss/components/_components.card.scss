@@ -5,11 +5,8 @@ $color-alert:           #cc4b37;
 $link-color:            $brand-pink;
 
 .c-card{
-  position: relative;
   margin: 0 0 rem(16);
   padding: rem(16);
-  border: 1px solid hsla(0,0%,4%,.25);
-  border-radius: 3px;
   p{
   	margin-bottom: 0;
   	color: #cc4b37;
@@ -19,7 +16,7 @@ $link-color:            $brand-pink;
   	color: $brand-dark-blue;
   }
   &__blog{
-    padding: rem(5);
+    padding: 0;
     background-color: $bgc-callout-blog;
     p{
        color: $brand-dark-blue;

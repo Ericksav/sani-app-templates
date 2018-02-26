@@ -7,9 +7,13 @@ $btn-appointment-treatments:       $gray-dark !default;
 	flex: 0 0 100%;
 	width: 100%;
 	&-group{
-		flex: 0 0 50%;
-		width: 50%;
-		padding-right: rem(20);
+		flex: 0 0 100%;
+		width: 100%;
+		@include breakpoint (md){
+			flex: 0 0 50%;
+			width: 50%;
+			padding-right: rem(20);
+		}
 	}
 	&-button{
 		flex: 0 0 100%;
@@ -62,16 +66,7 @@ $btn-appointment-treatments:       $gray-dark !default;
     overflow-y: scroll;
 	}
 	&-group{
-		input{
-			flex: 0 0 8%;
-			width: 8%;
-			margin-bottom: 0;
-			box-shadow: none;
-		}
-		label{
-			flex: 0 0 92%;
-			width: 92%;
-			margin-bottom: 0;
-		}
+		display: inline-block;
+		width: 100%;
 	}
 }

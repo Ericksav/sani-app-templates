@@ -1,22 +1,41 @@
 //---------Blog----------//
 
 
+$btn-read-more:      $btn-light-blue-color;
+
 //Blog List
 .c-blog-list-post{
 	margin-bottom: rem(20);
-	.c-blog-img{
+}
+
+.c-blog{
+	&-img{
 		margin-bottom: rem(20);
 	}
-	.c-blog-date{
+	&-date{
 		color: $gray-dark;
 		font-size: rem(12);
 	}
-	.c-blog-read-more{
+	&-read-more{
 		justify-content: flex-end;
 		width: 100%;
 		flex: 0 0 100%;
-		.c-button__light-blue{
+		&-button{
 			font-size: rem(14);
+			font-weight: 700;
+			color: $white;
+			text-align: center;
+			background-color: $btn-read-more;
+			border: 2px solid $btn-read-more;
+			border-radius: 3px;
+			padding: .85em 1em;
+			transition: background-color .25s ease-out,color .25s ease-out;
+			&:hover,
+			&:active, 
+			&:focus{
+				color: $btn-read-more;
+				background-color: transparent;
+			} 
 		}
 	}
 }

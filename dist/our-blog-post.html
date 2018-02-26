@@ -74,8 +74,8 @@
     			  </button>
     			  <div class="dropdown-pane" id="search-dropdown">
     			    <form action="/search/" method="get">
-    			      <input class="c-input" type="hidden" name="type" value="">
-    			      <input class="c-input" type="search" name="q" placeholder="Type to search…" autocomplete="off">
+    			      <input class="c-form-input u-mb0" type="hidden" name="type" value="">
+    			      <input class="c-form-input u-mb0" type="search" name="q" placeholder="Type to search…" autocomplete="off">
     			    </form>
     			  </div>
     			</div>
@@ -177,7 +177,7 @@
     					</div>
     					<div class="c-form-group">
     						<input class="c-form-input" type="text" name="location" placeholder="Where do you come from? (City)" required>
-    						<textarea  name="message" cols="30" rows="4" placeholder="Your message" required></textarea>
+    						<textarea  class="c-form-input" name="message" cols="30" rows="4" placeholder="Your message" required></textarea>
     					</div>
     			
     					<div class="c-sidebar-contact-button">
@@ -218,21 +218,19 @@
           <div class="c-footer-newsletter-box u-y2">
             <h3>Suscribe to our newsletter!</h3>
             <form class="c-form" action="//sanidentalgroup.us6.list-manage.com/subscribe/post?u=071f2faa922de56113596b9c3&amp;id=f46c3a3dcf" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
-              <div>
-                <div  class="c-card c-card__alert">
-                  <p><i class="fi-alert"></i> There are some errors in your form.</p>
-                </div>
+              <div  class="c-card c-card__alert">
+                <p><i class="fi-alert"></i> There are some errors in your form.</p>
               </div>
               <div class="c-form-group c-footer-newsletter-form-group">
-                <input type="text" name="FNAME" placeholder="Full Name" required pattern="[a-zA-Z]+">
+                <input class="c-form-input" type="text" name="FNAME" placeholder="Full Name" required pattern="[a-zA-Z]+">
                 <span class="c-footer-newsletter-form-error">Full name required.</span>
               </div>
               <div class="c-form-group c-footer-newsletter-form-group">
-                <input type="email" name="EMAIL" placeholder="Email" required>
+                <input class="c-form-input" type="email" name="EMAIL" placeholder="Email" required>
                 <span class="c-footer-newsletter-form-error">Email required.</span>
               </div>
               <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                <input type="text" name="b_071f2faa922de56113596b9c3_f46c3a3dcf" tabindex="-1" value="">
+                <input class="c-form-input" type="text" name="b_071f2faa922de56113596b9c3_f46c3a3dcf" tabindex="-1" value="">
               </div>
               <div class="c-footer-newsletter-group">
                 <button class="c-button__pink" type="submit">Subscribe!</button>
