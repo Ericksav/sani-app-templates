@@ -1,6 +1,6 @@
 <div class="c-appointment-form">
 	<!-- STEP 1 -->
-	<div>
+	<div class="u-my1">
 		<h3 class="c-text-color-aqua">Step 1</h3>
 		<form class="c-form" action="/api/contact-APIView/" method="post">
 			<input type="hidden" id="field_utm_need_help" name="field_utm_need_help" value="">
@@ -8,7 +8,7 @@
 			<div class="c-card c-card__alert" style="display: none;">
 				<p><i class="fi-alert"></i> There are some errors in your form.</p>
 			</div>
-			<div class="o-flex">
+			<div class="o-flex o-flex--justify">
 				<div class="c-appointment-form-group c-form-group">
 					<label>First Name <span class="c-form-mandatory">*</span></label>
 					<input class="c-form-input" type="text" name="name" required>
@@ -18,7 +18,7 @@
 					<input class="c-form-input" type="text" name="name" required>
 				</div>
 			</div>
-			<div class="o-flex">
+			<div class="o-flex o-flex--justify">
 				<div class="c-appointment-form-group c-form-group">
 					<label>Email address <span class="c-form-mandatory">*</span></label>
 					<input class="c-form-input" type="email" name="email" required>
@@ -28,7 +28,7 @@
 					<input class="c-form-input" type="text" name="location" required>
 				</div>
 			</div>
-			<div class="o-flex">
+			<div class="o-flex o-flex--justify">
 				<div class="c-appointment-form-group c-form-group">
 					<label>Contact Number <span class="c-form-mandatory">*</span></label>
 					<input class="c-form-input" type="text" name="name" required>
@@ -46,7 +46,7 @@
 	<!-- STEP 1 -->
 
 	<!-- STEP 2 -->
-	<div>
+	<div class="u-my1">
 		<h3 class="c-text-color-aqua">Step 2</h3>
 		<form class="c-form" action="/api/contact-APIView/" method="post">
 			<input type="hidden" id="field_utm_need_help" name="field_utm_need_help" value="">
@@ -54,18 +54,19 @@
 			<div class="c-card c-card__alert">
 				<p><i class="fi-alert"></i> There are some errors in your form.</p>
 			</div>
-			<div class="o-flex">
+			<div class="o-flex o-flex--justify">
 				<div class="c-appointment-form-group c-form-group">
 					<label>Desired date <span class="c-form-mandatory">*</span></label>
 					<input class="c-form-input" type="text" name="name" required>
 				</div>
-				<div class="c-appointment-form-group  c-form-group">
+				<div class="c-appointment-form-group c-form-group">
 					<label>Desired time <span class="c-form-mandatory">*</span></label>
 					<select class="c-form-input" type="text" name="name" required></select>
 				</div>
 			</div>
-			<div class="c-appointment-form-group c-form-group u-mb1">
-				<button class="c-appointment-form-treatment-button">Desired Treatment <span class="c-form-mandatory">*</span></button>
+			<div class="c-appointment-form-group u-mb1">
+				<label for="">Desired Treatment <span class="c-form-mandatory">*</span></label>
+				<button class="c-appointment-form-treatment-button"> Select Prodecures</button>
 				<ul class="c-appointment-form-treatment-dropdown">
 					<li class="o-flex o-flex--left o-flex--middle c-appointment-form-treatment-group">
 						<input class="u-mb1" type="checkbox" id="diagnosis" value="Diagnosis">
@@ -73,35 +74,51 @@
 					</li>
 					<li class="o-flex o-flex--left o-flex--middle c-appointment-form-treatment-group">
 						<input class="u-mb1" type="checkbox" id="diagnosis" value="Diagnosis">
-						<label class="u-mb1" for="diagnosis">Diagnosis</label>
+						<label class="u-mb1" for="diagnosis">All on 4</label>
 					</li>
 					<li class="o-flex o-flex--left o-flex--middle c-appointment-form-treatment-group">
 						<input class="u-mb1" type="checkbox" id="diagnosis" value="Diagnosis">
-						<label class="u-mb1" for="diagnosis">Diagnosis</label>
+						<label class="u-mb1" for="diagnosis">Bone Graft</label>
 					</li>
 					<li class="o-flex o-flex--left o-flex--middle c-appointment-form-treatment-group">
 						<input class="u-mb1" type="checkbox" id="diagnosis" value="Diagnosis">
-						<label class="u-mb1" for="diagnosis">Diagnosis</label>
+						<label class="u-mb1" for="diagnosis">Crown</label>
 					</li>
 					<li class="o-flex o-flex--left o-flex--middle c-appointment-form-treatment-group">
 						<input class="u-mb1" type="checkbox" id="diagnosis" value="Diagnosis">
-						<label class="u-mb1" for="diagnosis">Diagnosis</label>
+						<label class="u-mb1" for="diagnosis">Denture</label>
 					</li>
 					<li class="o-flex o-flex--left o-flex--middle c-appointment-form-treatment-group">
 						<input class="u-mb1" type="checkbox" id="diagnosis" value="Diagnosis">
-						<label class="u-mb1" for="diagnosis">Diagnosis</label>
+						<label class="u-mb1" for="diagnosis">Extraction</label>
 					</li>
 					<li class="o-flex o-flex--left o-flex--middle c-appointment-form-treatment-group">
 						<input class="u-mb1" type="checkbox" id="diagnosis" value="Diagnosis">
-						<label class="u-mb1" for="diagnosis">Diagnosis</label>
+						<label class="u-mb1" for="diagnosis">Filling</label>
 					</li>
 					<li class="o-flex o-flex--left o-flex--middle c-appointment-form-treatment-group">
 						<input class="u-mb1" type="checkbox" id="diagnosis" value="Diagnosis">
-						<label class="u-mb1" for="diagnosis">Diagnosis</label>
+						<label class="u-mb1" for="diagnosis">Implant</label>
 					</li>
 					<li class="o-flex o-flex--left o-flex--middle c-appointment-form-treatment-group">
 						<input class="u-mb1" type="checkbox" id="diagnosis" value="Diagnosis">
-						<label class="u-mb1" for="diagnosis">Diagnosis</label>
+						<label class="u-mb1" for="diagnosis">Oral Surgery</label>
+					</li>
+					<li class="o-flex o-flex--left o-flex--middle c-appointment-form-treatment-group">
+						<input class="u-mb1" type="checkbox" id="diagnosis" value="Diagnosis">
+						<label class="u-mb1" for="diagnosis">Root Canal</label>
+					</li>
+					<li class="o-flex o-flex--left o-flex--middle c-appointment-form-treatment-group">
+						<input class="u-mb1" type="checkbox" id="diagnosis" value="Diagnosis">
+						<label class="u-mb1" for="diagnosis">Sinus Lift</label>
+					</li>
+					<li class="o-flex o-flex--left o-flex--middle c-appointment-form-treatment-group">
+						<input class="u-mb1" type="checkbox" id="diagnosis" value="Diagnosis">
+						<label class="u-mb1" for="diagnosis">Teeth Whitening</label>
+					</li>
+					<li class="o-flex o-flex--left o-flex--middle c-appointment-form-treatment-group">
+						<input class="u-mb1" type="checkbox" id="diagnosis" value="Diagnosis">
+						<label class="u-mb1" for="diagnosis">Teeth Cleaning</label>
 					</li>
 				</ul>
 			</div>
@@ -115,4 +132,45 @@
 			</div>
 		</form>
 	</div>
+	<!-- STEP 2 -->
+
+	<!-- STEP 3 -->
+	<div class="u-my1">
+		<h3 class="c-text-color-aqua">Step 3</h3>
+		<p>Please confirm the following information</p>
+		<table class="c-appointment-table u-mb1">
+			<tbody>
+				<tr>
+					<td class="c-text-style-bold">Date</td>
+					<td>2018-02-26</td>
+				</tr>
+				<tr>
+					<td class="c-text-style-bold">Time</td>
+					<td>Afternoon</td>
+				</tr>
+				<tr>
+					<td class="c-text-style-bold">Treatments</td>
+					<td>Diagnosis, Bone Graft, All on 4, Implant Procedure, Teeth Whitening</td>
+				</tr>
+				<tr>
+					<td class="c-text-style-bold">Name</td>
+					<td>Erick Alva</td>
+				</tr>
+				<tr>
+					<td class="c-text-style-bold">Email</td>
+					<td>erick.vlasco@gmail.com</td>
+				</tr>
+				<tr>
+					<td class="c-text-style-bold">Contact Number</td>
+					<td>686-161-23-71</td>
+				</tr>
+			</tbody>
+		</table>
+		<p>By clicking on "Confirm" you are confirming that you have read, understood, and accept the <a class="c-text-color-pink" href="">Terms and Conditions</a> and the <a class="c-text-color-pink" href="">Privacy Policy.</a></p>
+		<div class="o-flex o-flex--justify c-appointment-form-button u-my1">
+			<button class="button c-appointment-form-button__next" type="submit">◀︎ Back</button>
+			<button class="button c-appointment-form-button__submit" type="submit">SUBMIT</button>
+		</div>
+	</div>
+	<!-- STEP 3 -->
 </div>

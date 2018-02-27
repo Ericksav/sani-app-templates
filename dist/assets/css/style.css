@@ -2315,6 +2315,9 @@ footer {
 .c-text-style-italic {
   font-style: italic; }
 
+.c-text-style-bold {
+  font-weight: bold; }
+
 .c-text-align-center {
   text-align: center; }
 
@@ -2587,16 +2590,16 @@ footer {
     @media print, screen and (min-width: 640px) {
       .c-appointment-form-group {
         -webkit-box-flex: 0;
-        -ms-flex: 0 0 50%;
-        flex: 0 0 50%;
-        width: 50%;
-        padding-right: 1.25rem; } }
+        -ms-flex: 0 0 48%;
+        flex: 0 0 48%;
+        width: 48%; }
+        .c-appointment-form-group label {
+          display: block; } }
   .c-appointment-form-button {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
-    width: 100%;
-    padding-right: 1.25rem; }
+    width: 100%; }
     .c-appointment-form-button__next {
       font-weight: 700;
       color: #fefefe;
@@ -2612,14 +2615,29 @@ footer {
       .c-appointment-form-button__next:hover, .c-appointment-form-button__next:active, .c-appointment-form-button__next:focus {
         color: #24B7DA;
         background-color: transparent; }
+    .c-appointment-form-button__submit {
+      font-weight: 700;
+      color: #fefefe;
+      font-size: 1.125rem;
+      text-align: center;
+      background-color: #F98A26;
+      border: 2px solid #F98A26;
+      border-radius: 3px;
+      padding: 0.9375rem 2.1875rem;
+      -webkit-transition: background-color .25s ease-out,color .25s ease-out;
+      -o-transition: background-color .25s ease-out,color .25s ease-out;
+      transition: background-color .25s ease-out,color .25s ease-out; }
+      .c-appointment-form-button__submit:hover, .c-appointment-form-button__submit:active, .c-appointment-form-button__submit:focus {
+        color: #F98A26;
+        background-color: transparent; }
 
 .c-appointment-form-treatment-button {
   color: #fefefe;
   font-size: 0.875rem;
   text-align: center;
   background-color: #8a8a8a;
-  border: 2px solid #8a8a8a;
-  border-radius: 3px;
+  border: 0.125rem solid #8a8a8a;
+  border-radius: 0.1875rem;
   padding: 0.625rem;
   -webkit-transition: background-color .25s ease-out,color .25s ease-out;
   -o-transition: background-color .25s ease-out,color .25s ease-out;
@@ -2630,14 +2648,34 @@ footer {
 
 .c-appointment-form-treatment-dropdown {
   background-color: #FFF;
-  border: 2px solid #e6e6e6;
-  border-radius: 3px;
+  border: 0.125rem solid #e6e6e6;
+  border-radius: 0.1875rem;
   padding: 0.625rem;
-  max-height: 14rem;
+  max-height: 13.75rem;
   overflow-y: scroll; }
+  @media print, screen and (min-width: 640px) {
+    .c-appointment-form-treatment-dropdown {
+      width: 50%; } }
 
 .c-appointment-form-treatment-group {
-  display: inline-block;
   width: 100%; }
+  .c-appointment-form-treatment-group label {
+    display: inline-block !important;
+    margin-left: 0.5rem; }
+
+.c-appointment-form-treatment-button:hover .c-appointment-form-treatment-dropdown {
+  display: block !important;
+  z-index: 10; }
+
+.c-appointment-table {
+  font-size: 1.125rem; }
+  .c-appointment-table tr {
+    background-color: #fefefe; }
+  .c-appointment-table tr:nth-child(even) {
+    background-color: #e6e6e6; }
+  .c-appointment-table td {
+    border-right: 0.125rem solid #fefefe;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem; }
 
 /*# sourceMappingURL=style.css.map */
