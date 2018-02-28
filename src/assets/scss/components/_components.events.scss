@@ -1,0 +1,61 @@
+//---------Events----------//
+
+
+//Contenedores Page General
+.c-events{
+	&-menu{
+		flex: 0 0 100%;
+		width: 100%;
+		@include breakpoint (md){
+			flex: 0 0 20%;
+			width: 20%;
+		}
+	}
+	&-content{
+		flex: 0 0 100%;
+		width: 100%;
+		@include breakpoint (md){
+			flex: 0 0 80%;
+			width: 80%;
+		}
+	}
+}
+
+
+//Components Evento Individual
+.c-event-group{
+	flex: 0 0 100%;
+	width: 100%;
+	&-logo{
+		flex: 0 0 50%;
+		width: 50%;
+		@include breakpoint (md){
+			flex: 0 0 20%;
+			width: 20%;
+		}
+	}
+	&-title{
+		flex: 0 0 50%;
+		width: 50%;
+		@include breakpoint (md){
+			flex: 0 0 80%;
+			width: 80%;
+		}
+	}
+	&-info{
+		flex: 0 0 100%;
+		width: 100%;
+	}
+	&-gallery{
+		flex: 0 0 100%;
+		width: 100%;
+		&-img{
+			flex: 0 0 50%;
+			width: 50%;
+			@include breakpoint (md){
+				flex: 0 0 25%;
+				width: 25%;
+			}
+		}
+	}
+}
