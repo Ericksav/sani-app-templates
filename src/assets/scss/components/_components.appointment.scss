@@ -13,7 +13,6 @@ $btn-submit-color:       $brand-gold !default;
 		@include breakpoint (md){
 			flex: 0 0 48%;
 			width: 48%;
-			// padding-right: rem(20);
 			label{
 				display: block;
 			}
@@ -22,15 +21,12 @@ $btn-submit-color:       $brand-gold !default;
 	&-button{
 		flex: 0 0 100%;
 		width: 100%;
-		// padding-right: rem(20);
-		&__next{
-			font-weight: 700;
+		&__step{
 			color: $white;
+			font-weight: 700;
 			font-size: rem(18);
-			text-align: center;
 			background-color: $btn-next-step;
 			border: 2px solid $btn-next-step;
-			border-radius: 3px;
 			padding: rem(15);
 			transition: background-color .25s ease-out,color .25s ease-out;
 			&:hover,
@@ -41,13 +37,11 @@ $btn-submit-color:       $brand-gold !default;
 			} 
 		}
 		&__submit{
-			font-weight: 700;
 			color: $white;
+			font-weight: 700;
 			font-size: rem(18);
-			text-align: center;
 			background-color: $btn-submit-color;
 			border: 2px solid $btn-submit-color;
-			border-radius: 3px;
 			padding: rem(15) rem(35);
 			transition: background-color .25s ease-out,color .25s ease-out;
 			&:hover,

@@ -39,7 +39,7 @@
 				</div>
 			</div>
 			<div class="o-flex o-flex--right c-appointment-form-button u-my1">
-				<button class="button c-appointment-form-button__next" type="submit">Next ▶︎</button>
+				<button class="c-button c-appointment-form-button__step" type="submit">Next ▶︎</button>
 			</div>
 		</form>
 	</div>
@@ -61,12 +61,18 @@
 				</div>
 				<div class="c-appointment-form-group c-form-group">
 					<label>Desired time <span class="c-form-mandatory">*</span></label>
-					<select class="c-form-input" type="text" name="name" required></select>
+					<select class="c-form-input" type="text" name="name" required>
+						<option>--</option>
+				    <option>Anytime</option>
+				    <option>Morning</option>
+				    <option>Afternoon</option>
+				    <option>Evening</option>
+					</select>
 				</div>
 			</div>
 			<div class="c-appointment-form-group u-mb1">
 				<label for="">Desired Treatment <span class="c-form-mandatory">*</span></label>
-				<button class="c-appointment-form-treatment-button"> Select Prodecures</button>
+				<button class="c-button c-appointment-form-treatment-button"> Select Prodecures</button>
 				<ul class="c-appointment-form-treatment-dropdown">
 					<li class="o-flex o-flex--left o-flex--middle c-appointment-form-treatment-group">
 						<input class="u-mb1" type="checkbox" id="diagnosis" value="Diagnosis">
@@ -127,8 +133,8 @@
 				<textarea  class="c-form-input" name="message" cols="30" rows="4" required></textarea>
 			</div>
 			<div class="o-flex o-flex--justify c-appointment-form-button u-my1">
-				<button class="button c-appointment-form-button__next" type="submit">◀︎ Back</button>
-				<button class="button c-appointment-form-button__next" type="submit">Next ▶︎</button>
+				<button class="c-button c-appointment-form-button__step" type="submit">◀︎ Back</button>
+				<button class="c-button c-appointment-form-button__step" type="submit">Next ▶︎</button>
 			</div>
 		</form>
 	</div>
@@ -168,8 +174,8 @@
 		</table>
 		<p>By clicking on "Confirm" you are confirming that you have read, understood, and accept the <a class="u-text-color-pink" href="">Terms and Conditions</a> and the <a class="u-text-color-pink" href="">Privacy Policy.</a></p>
 		<div class="o-flex o-flex--justify c-appointment-form-button u-my1">
-			<button class="button c-appointment-form-button__next" type="submit">◀︎ Back</button>
-			<button class="button c-appointment-form-button__submit" type="submit">SUBMIT</button>
+			<button class="c-button c-appointment-form-button__step" type="submit">◀︎ Back</button>
+			<button class="c-button c-appointment-form-button__submit" type="submit">SUBMIT</button>
 		</div>
 	</div>
 	<!-- STEP 3 -->

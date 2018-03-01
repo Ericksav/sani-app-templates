@@ -2633,29 +2633,25 @@ footer {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     width: 100%; }
-    .c-appointment-form-button__next {
-      font-weight: 700;
+    .c-appointment-form-button__step {
       color: #fefefe;
+      font-weight: 700;
       font-size: 1.125rem;
-      text-align: center;
       background-color: #24B7DA;
       border: 2px solid #24B7DA;
-      border-radius: 3px;
       padding: 0.9375rem;
       -webkit-transition: background-color .25s ease-out,color .25s ease-out;
       -o-transition: background-color .25s ease-out,color .25s ease-out;
       transition: background-color .25s ease-out,color .25s ease-out; }
-      .c-appointment-form-button__next:hover, .c-appointment-form-button__next:active, .c-appointment-form-button__next:focus {
+      .c-appointment-form-button__step:hover, .c-appointment-form-button__step:active, .c-appointment-form-button__step:focus {
         color: #24B7DA;
         background-color: transparent; }
     .c-appointment-form-button__submit {
-      font-weight: 700;
       color: #fefefe;
+      font-weight: 700;
       font-size: 1.125rem;
-      text-align: center;
       background-color: #F98A26;
       border: 2px solid #F98A26;
-      border-radius: 3px;
       padding: 0.9375rem 2.1875rem;
       -webkit-transition: background-color .25s ease-out,color .25s ease-out;
       -o-transition: background-color .25s ease-out,color .25s ease-out;
