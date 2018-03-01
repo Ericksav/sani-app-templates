@@ -9,7 +9,7 @@ $text-color-gray:       	 $gray-dark;
 
 
 //Colors
-.c-text-color{
+.u-text-color{
 	&-blue{
 		color: $text-color-blue !important;
 	}
@@ -31,7 +31,7 @@ $text-color-gray:       	 $gray-dark;
 }
 
 //Text Style
-.c-text-style{
+.u-text-style{
 	&-italic{
 		font-style: italic;
 	}
@@ -41,7 +41,7 @@ $text-color-gray:       	 $gray-dark;
 }
 
 //Align
-.c-text-align{
+.u-text-align{
 	&-center{
 		text-align: center;
 	}

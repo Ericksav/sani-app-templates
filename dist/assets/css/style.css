@@ -1254,6 +1254,33 @@ select.c-form-input:not([size]):not([multiple]) {
 .u-text--capitalize {
   text-transform: capitalize !important; }
 
+.u-text-color-blue {
+  color: #034EA2 !important; }
+
+.u-text-color-dark-blue {
+  color: #3e465a !important; }
+
+.u-text-color-purple {
+  color: #732b74 !important; }
+
+.u-text-color-aqua {
+  color: #1e98a7 !important; }
+
+.u-text-color-pink {
+  color: #fd226f !important; }
+
+.u-text-color-gray {
+  color: #8a8a8a !important; }
+
+.u-text-style-italic {
+  font-style: italic; }
+
+.u-text-style-bold {
+  font-weight: bold; }
+
+.u-text-align-center {
+  text-align: center; }
+
 a {
   text-decoration: none;
   -webkit-transition: all .3s ease-out;
@@ -2336,33 +2363,6 @@ footer {
         flex: 0 0 25%;
         width: 25%;
         padding: 1.25rem; } }
-
-.c-text-color-blue {
-  color: #034EA2 !important; }
-
-.c-text-color-dark-blue {
-  color: #3e465a !important; }
-
-.c-text-color-purple {
-  color: #732b74 !important; }
-
-.c-text-color-aqua {
-  color: #1e98a7 !important; }
-
-.c-text-color-pink {
-  color: #fd226f !important; }
-
-.c-text-color-gray {
-  color: #8a8a8a !important; }
-
-.c-text-style-italic {
-  font-style: italic; }
-
-.c-text-style-bold {
-  font-weight: bold; }
-
-.c-text-align-center {
-  text-align: center; }
 
 .c-review-group {
   border-left-width: .375rem;
