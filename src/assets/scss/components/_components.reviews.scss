@@ -1,16 +1,25 @@
 //---------Reviews----------//
 
-.c-review-group{
+
+//Review Single List
+.c-review-single{
 	border-left-width: .375rem;
   border-left-style: solid;
   border-color: $brand-aqua;
-  padding-left: .75rem;
-  margin-bottom: 2.25rem;
+  padding-left: rem(12);
+  margin-bottom: rem(36);
+  &-more{
+  	color: $brand-blue;
+  	&:hover{
+  		color: $brand-dark-blue;
+  	}
+  }
 }
 
+
+//Review Rating
 .c-review-rating{
 	align-items: center;
-	justify-content: flex-start;
 	margin-bottom: rem(15);
 	.c-star-holder{
 		width: 100px;
@@ -22,6 +31,29 @@
 	    display: inherit;
 	    overflow: hidden;
 	    white-space: nowrap;
+		}
+	}
+}
+
+//Review Full
+.c-review-full{
+	&-name{
+		border-left-width: rem(5);
+	  border-left-style: solid;
+	  border-color: $brand-purple;
+	  padding-left: rem(12);
+	  height: rem(40);
+	  font-size: rem(20);
+	  p{
+	  	margin-left: rem(10);
+	  }
+	}
+	&-rating{
+		flex: 0 0 100%;
+		width: 100%;
+		@include breakpoint (md){
+			flex: 0 0 45%;
+			width: 45%;
 		}
 	}
 }

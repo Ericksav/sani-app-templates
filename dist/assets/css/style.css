@@ -2354,20 +2354,21 @@ footer {
         width: 25%;
         padding: 1.25rem; } }
 
-.c-review-group {
+.c-review-single {
   border-left-width: .375rem;
   border-left-style: solid;
   border-color: #1e98a7;
-  padding-left: .75rem;
+  padding-left: 0.75rem;
   margin-bottom: 2.25rem; }
+  .c-review-single-more {
+    color: #034EA2; }
+    .c-review-single-more:hover {
+      color: #3e465a; }
 
 .c-review-rating {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
   margin-bottom: 0.9375rem; }
   .c-review-rating .c-star-holder {
     width: 100px;
@@ -2379,6 +2380,28 @@ footer {
       display: inherit;
       overflow: hidden;
       white-space: nowrap; }
+
+.c-review-full-name {
+  border-left-width: 0.3125rem;
+  border-left-style: solid;
+  border-color: #732b74;
+  padding-left: 0.75rem;
+  height: 2.5rem;
+  font-size: 1.25rem; }
+  .c-review-full-name p {
+    margin-left: 0.625rem; }
+
+.c-review-full-rating {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  width: 100%; }
+  @media print, screen and (min-width: 640px) {
+    .c-review-full-rating {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 45%;
+      flex: 0 0 45%;
+      width: 45%; } }
 
 .c-blog-list-post {
   margin-bottom: 1.25rem; }
