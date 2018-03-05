@@ -1254,31 +1254,31 @@ select.c-form-input:not([size]):not([multiple]) {
 .u-text--capitalize {
   text-transform: capitalize !important; }
 
-.u-text-color-blue {
+.u-text-blue {
   color: #034EA2 !important; }
 
-.u-text-color-dark-blue {
+.u-text-dark-blue {
   color: #3e465a !important; }
 
-.u-text-color-purple {
+.u-text-purple {
   color: #732b74 !important; }
 
-.u-text-color-aqua {
+.u-text-aqua {
   color: #1e98a7 !important; }
 
-.u-text-color-pink {
+.u-text-pink {
   color: #fd226f !important; }
 
-.u-text-color-gray {
+.u-text-gray {
   color: #8a8a8a !important; }
 
-.u-text-style-italic {
+.u-text-italic {
   font-style: italic; }
 
-.u-text-style-bold {
+.u-text-bold {
   font-weight: bold; }
 
-.u-text-align-center {
+.u-text-center {
   text-align: center; }
 
 a {
@@ -1824,7 +1824,7 @@ button, input, optgroup, select, textarea {
   background-color: #1e98a7; }
   @media print, screen and (min-width: 640px) {
     .c-sidebar-contact {
-      padding: 1.875rem 5rem 2.5rem; } }
+      padding: 1.875rem 3.75rem 2.5rem; } }
   @media print, screen and (min-width: 1024px) {
     .c-sidebar-contact {
       height: 38.4375rem; } }
