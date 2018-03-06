@@ -1275,6 +1275,9 @@ select.c-form-input:not([size]):not([multiple]) {
 .u-text-white {
   color: #fefefe; }
 
+.u-radius {
+  border-radius: 3px; }
+
 .u-text-blue {
   color: #034EA2 !important; }
 
