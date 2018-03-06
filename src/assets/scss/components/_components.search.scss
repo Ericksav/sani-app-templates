@@ -1,6 +1,6 @@
 //---------Search----------//
 
-.c__search{
+.c-search{
 	display: inline-block;
 	button{
 		background-color: $white;
@@ -13,25 +13,22 @@
 		}
 	}
 	.dropdown-pane{
-		width: auto;
+		width: 100% !important;
 		border: none !important;
 		border-radius: 0 !important;
-		box-shadow: 0 5px 10px rgba(0,0,0,.2);
-    display: block;
-    padding: 1rem;
+    display: none;
+    padding: rem(16);
     z-index: 10;
-    visibility: hidden;
-    border: 1px solid #cacaca;
-    border-radius: 3px;
-    background-color: #fefefe;
-    font-size: 1rem;
+    border: rem(1) solid #cacaca;
+    border-radius: rem(3);
+    background-color: $white;
+    font-size: rem(16);
 	}
 	@include breakpoint(md){
 		button{
 			background-color: transparent;
 			position: relative;
 			color: $navigation-link;
-	  	padding: rem(14) rem(30);
 	  	width: 100%;
 	  	text-align: left;
 	  	cursor: pointer;
@@ -42,20 +39,17 @@
 			}
 		}
 		.dropdown-pane{
-			border: none !important;
-			border-radius: 0 !important;
 			position: absolute;
 			top: rem(50);
-			box-shadow: 0 5px 10px rgba(0,0,0,.2);
-			width: auto;
-	    display: block;
-	    padding: rem(16);
+			left: 0;
+	    display: none; 
 	    z-index: 10;
-	    visibility: hidden;
-	    border: rem(1) solid #cacaca;
-	    border-radius: rem(3);
-	    background-color: #fefefe;
-	    font-size: rem(16);
 		}
+	}
+}
+
+.c-search:hover{
+	.dropdown-pane{
+		display: block;
 	}
 }

@@ -9,9 +9,15 @@
 // @import 'tools/tools.colors';
 @import 'tools/tools.variables';
 
+//Utilities
+@import 'utilities/utilities.text';
+
 //Elements
 @import 'elements/elements.type';
 
+
+//Objects
+@import 'objects/objects.page';
 
 // Components
 @import 'components/components.container';
@@ -20,7 +26,9 @@
 @import 'components/components.buttons';
 @import 'components/components.search';
 @import 'components/components.cover';
-@import 'components/components.sidebar';
+@import 'components/components.sidebar-contact';
+@import 'components/components.sidebar-free-quote';
+@import 'components/components.sidebar-info';
 @import 'components/components.footer';
 @import 'components/components.footer-menu';
 @import 'components/components.footer-newsletter';
@@ -28,13 +36,14 @@
 @import 'components/components.forms';
 @import 'components/components.card';
 @import 'components/components.intro';
-@import 'components/components.row';
-@import 'components/components.page';
 @import 'components/components.treatments';
-@import 'components/components.content';
-@import 'components/components.titles';
 @import 'components/components.reviews';
 @import 'components/components.blog';
 @import 'components/components.share';
 @import 'components/components.author';
 @import 'components/components.free-quote';
+@import 'components/components.appointment';
+@import 'components/components.events';
+@import 'components/components.sticky-menu';
+@import 'components/components.doctors';
+@import 'components/components.credentials';

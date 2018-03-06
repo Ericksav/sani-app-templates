@@ -9,20 +9,12 @@ $btn-green-color:            $brand-green !default;
 
 
 .c-button{
-	display: inline-block;
-	vertical-align: middle;
-	color: $white;
-	font-weight: bold;
-	text-transform: uppercase;
-	font-size: rem(20);
-	border: 1px solid transparent;
 	&__purple{
 		font-weight: 700;
 		color: $white;
 		text-align: center;
 		background-color: $btn-purple-color;
 		border: 2px solid $btn-purple-color;
-		border-radius: 3px;
 		padding: .85em 1em;
 		transition: background-color .25s ease-out,color .25s ease-out;
 		&:hover,
@@ -35,10 +27,8 @@ $btn-green-color:            $brand-green !default;
 	&__blue{
 		font-weight: 700;
 		color: $white;
-		text-align: center;
 		background-color: $btn-blue-color;
 		border: 2px solid $btn-blue-color;
-		border-radius: 3px;
 		padding: .85em 1em;
 		transition: background-color .25s ease-out,color .25s ease-out;
 		&:hover,
@@ -51,10 +41,8 @@ $btn-green-color:            $brand-green !default;
 	&__pink{
 		font-weight: 700;
 		color: $white;
-		text-align: center;
 		background-color: $btn-pink-color;
 		border: 2px solid $btn-pink-color;
-		border-radius: 3px;
 		padding: .85em 1em;
 		transition: background-color .25s ease-out,color .25s ease-out;
 		&:hover,
@@ -67,10 +55,8 @@ $btn-green-color:            $brand-green !default;
 	&__dark-blue{
 		font-weight: 700;
 		color: $white;
-		text-align: center;
 		background-color: $btn-dark-blue-color;
 		border: 2px solid $btn-dark-blue-color;
-		border-radius: 3px;
 		padding: .85em 1em;
 		transition: background-color .25s ease-out,color .25s ease-out;
 		&:hover,
@@ -83,10 +69,8 @@ $btn-green-color:            $brand-green !default;
 	&__light-blue{
 		font-weight: 700;
 		color: $white;
-		text-align: center;
 		background-color: $btn-light-blue-color;
 		border: 2px solid $btn-light-blue-color;
-		border-radius: 3px;
 		padding: .85em 1em;
 		transition: background-color .25s ease-out,color .25s ease-out;
 		&:hover,

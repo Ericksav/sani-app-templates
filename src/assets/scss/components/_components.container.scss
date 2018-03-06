@@ -1,7 +1,15 @@
 //---------Container----------//
 .c-container{
-	padding: 0 rem(16) rem(20);
+	padding-left: rem(16);
+	padding-right: rem(16);
   @include breakpoint(md){
-  	padding: 0 rem(60);
+  	padding-left: rem(76);
+  	padding-right: rem(76);
+  	max-width: 75rem;
+  }
+  @include breakpoint (xl){
+  	padding-left: rem(76);
+  	padding-right: rem(76);
+  	max-width: 65rem;
   }
 }

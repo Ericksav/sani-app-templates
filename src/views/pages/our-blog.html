@@ -4,17 +4,15 @@ description: Description of Blog
 ---
 
 <section class="o-flex" role="main" id="blog">
-	<main id="content" class="o-flex c-page-content" role="main">
-		<div class="c-container">
-			<div class="o-flex c-row">
-				<h1 class="c-title-blue">Our Blog</h1>
-			</div>
-			<div class="o-flex c-row">
+	<main id="content" class="o-flex o-page-content" role="main">
+		<div class="o-container">
+			<h1 class="u-text-blue">Our Blog</h1>
+			<div class="o-flex">
 				{{> blog-post-list}}
 			</div>
 		</div>
 	</main>
-	<aside id="sidebar" class="o-flex c-page-sidebar" role="sidebar" data-sticky-container>
+	<aside id="sidebar" class="o-flex o-page-sidebar" role="sidebar">
 			{{> sidebar-contact}}
 	</aside><!-- #sidebar -->
 </section>

@@ -11,103 +11,108 @@
     <link href="assets/css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header>
-    	<nav class="c-navigation">
-    	
-    		<div class="c-navigation-mobile o-flex" data-responsive-toggle="c-navigation-menu" data-hide-for="medium">
-    			<button class="c-hide" type="button" data-toggle></button>
-    			<div class="c-burger">
-    				<button class="c-burger-icon" type="button" data-toggle></button>
+    <nav class="c-navigation">
+    
+    	<div class="c-navigation-mobile o-flex o-flex--justify">
+    		<a class="c-navigation-mobile-link" href="">Price List</a>
+    		<a class="c-navigation-mobile-link" href="">Reviews</a>
+    		<a class="c-navigation-mobile-link" href="">Treatments</a>
+    		<a class="c-navigation-mobile-link" href="">Doctors</a>
+    		<button class="c-navigation-mobile-button" type="button">See More</button>
+    		<!-- <button type="button" class="c-modal__close" aria-label="close">
+          <span aria-hidden="true">&times;</span>
+        </button> -->
+    	</div>
+    
+    	<ul class="c-navigation-menu o-flex">
+    		<li><a href="index.html" class="c-navigation-menu-link active">Homepage</a></li>
+    		<li><a href="" class="c-navigation-menu-link c-dropdown">About Us<i class="c-down" aria-hidden="true"></i></a>
+    			<ul class="c-dropdown-menu">
+        		<li class="c-dropdown-menu-link"><a href="">Sani Dental Group</a></li>
+        		<li class="c-dropdown-menu-link"><a href="">Why us?</a></li>
+        		<li class="c-dropdown-menu-link"><a href="">Our Facilities</a></li>
+        		<li class="c-dropdown-menu-link"><a href="events.html">Events</a></li>
+        		<li class="c-dropdown-menu-link"><a href="">Our Credentials</a></li>
+        	</ul>
+    		</li>
+    		<li><a href="" class="c-navigation-menu-link">Price List</a></li>
+    		<li><a href="doctors.html" class="c-navigation-menu-link">Doctors</a></li>
+    		<li><a href="our-blog.html" class="c-navigation-menu-link">Blog</a></li>
+    		<li><a href="" class="c-navigation-menu-link c-dropdown">Treatments<i class="c-down" aria-hidden="true"></i></a>
+    		<ul class="c-dropdown-menu">
+      		<li class="c-dropdown-menu-link"><a href="">Dental Implants</a></li>
+      		<li class="c-dropdown-menu-link"><a href="">Dentures</a></li>
+      		<li class="c-dropdown-menu-link"><a href="">Crowns</a></li>
+      		<li class="c-dropdown-menu-link"><a href="">Full Mouth Restoration</a></li>
+      		<li class="c-dropdown-menu-link"><a href="">Bone Graft / Sinus Lift</a></li>
+      		<li class="c-dropdown-menu-link"><a href="">Cosmetics</a></li>
+      		<li class="c-dropdown-menu-link"><a href="">Dental Laser</a></li>
+      		<li class="c-dropdown-menu-link"><a href="">Veneers</a></li>
+      	</ul>
+        </li>
+    		<li><a href="" class="c-navigation-menu-link c-dropdown">Patient Resources<i class="c-down" aria-hidden="true"></i></a>
+    			<ul class="c-dropdown-menu">
+        		<li class="c-dropdown-menu-link"><a href="">Promotions</a></li>
+        		<li class="c-dropdown-menu-link"><a href="">Payment Methods</a></li>
+        		<li class="c-dropdown-menu-link"><a href="">Location/Los Algodones</a></li>
+        		<li class="c-dropdown-menu-link"><a href="">Where to Stay?</a></li>
+        		<li class="c-dropdown-menu-link"><a href="">Transportation</a></li>
+        		<li class="c-dropdown-menu-link"><a href="">Post Treatment Care</a></li>
+        		<li class="c-dropdown-menu-link"><a href="">Dental Financing Options</a></li>
+        	</ul>
+      	</li>
+    		<li><a href="" class="c-navigation-menu-link c-dropdown">Reviews<i class="c-down" aria-hidden="true"></i></a>
+    			<ul class="c-dropdown-menu">
+        		<li class="c-dropdown-menu-link"><a href="reviews.html">Reviews</a></li>
+        		<li class="c-dropdown-menu-link"><a href="">Video Reviews</a></li>
+        	</ul>
+        </li>
+    		<li><a href="" class="c-navigation-menu-link">FAQ</a></li>
+    		<li>
+    			<div class="c-search">
+    			  <button type="button">
+    			    Search
+    			  </button>
+    			  <div class="dropdown-pane" id="search-dropdown">
+    			    <form action="/search/" method="get">
+    			      <input class="c-form-input u-mb0" type="hidden" name="type" value="">
+    			      <input class="c-form-input u-mb0" type="search" name="q" placeholder="Type to search…" autocomplete="off">
+    			    </form>
+    			  </div>
     			</div>
-    		</div>
-    	
-    		<ul class="c-navigation-menu o-flex">
-    			<li><a href="index.html" class="c-navigation-menu-link active">Homepage</a></li>
-    			<li><a href="" class="c-navigation-menu-link c-dropdown">About Us<i class="c-down" aria-hidden="true"></i></a>
-    				<ul class="c-dropdown-menu">
-    	    		<li class="c-dropdown-menu-link"><a href="">Sani Dental Group</a></li>
-    	    		<li class="c-dropdown-menu-link"><a href="">Why us?</a></li>
-    	    		<li class="c-dropdown-menu-link"><a href="">Our Facilities</a></li>
-    	    		<li class="c-dropdown-menu-link"><a href="">Our Credentials</a></li>
-    	    	</ul>
-    			</li>
-    			<li><a href="" class="c-navigation-menu-link">Price List</a></li>
-    			<li><a href="" class="c-navigation-menu-link">Doctors</a></li>
-    			<li><a href="our-blog.html" class="c-navigation-menu-link">Blog</a></li>
-    			<li><a href="" class="c-navigation-menu-link c-dropdown">Treatments<i class="c-down" aria-hidden="true"></i></a>
-    			<!-- <ul class="c-dropdown__menu">
-    	  		<li class="c-dropdown__menu__link"><a href="">Dental Implants</a></li>
-    	  		<li class="c-dropdown__menu__link"><a href="">Dentures</a></li>
-    	  		<li class="c-dropdown__menu__link"><a href="">Crowns</a></li>
-    	  		<li class="c-dropdown__menu__link"><a href="">Full Mouth Restoration</a></li>
-    	  		<li class="c-dropdown__menu__link"><a href="">Bone Graft / Sinus Lift</a></li>
-    	  		<li class="c-dropdown__menu__link"><a href="">Cosmetics</a></li>
-    	  		<li class="c-dropdown__menu__link"><a href="">Dental Laser</a></li>
-    	  		<li class="c-dropdown__menu__link"><a href="">Veneers</a></li>
-    	  	</ul> -->
-    	    </li>
-    			<li><a href="" class="c-navigation-menu-link c-dropdown">Patient Resources<i class="c-down" aria-hidden="true"></i></a>
-    				<!-- <ul class="c-dropdown__menu">
-    	    		<li class="c-dropdown__menu__link"><a href="">Promotions</a></li>
-    	    		<li class="c-dropdown__menu__link"><a href="">Payment Methods</a></li>
-    	    		<li class="c-dropdown__menu__link"><a href="">Location/Los Algodones</a></li>
-    	    		<li class="c-dropdown__menu__link"><a href="">Where to Stay?</a></li>
-    	    		<li class="c-dropdown__menu__link"><a href="">Transportation</a></li>
-    	    		<li class="c-dropdown__menu__link"><a href="">Post Treatment Care</a></li>
-    	    		<li class="c-dropdown__menu__link"><a href="">Dental Financing Options</a></li>
-    	    	</ul> -->
-    	  	</li>
-    			<li><a href="" class="c-navigation-menu-link c-dropdown">Reviews<i class="c-down" aria-hidden="true"></i></a>
-    				<!-- <ul class="c-dropdown__menu">
-    	    		<li class="c-dropdown__menu__link"><a href="">Reviews</a></li>
-    	    		<li class="c-dropdown__menu__link"><a href="">Video Reviews</a></li>
-    	    	</ul> -->
-    	    </li>
-    			<li><a href="" class="c-navigation-menu-link">FAQ</a></li>
-    			<li>
-    				<div class="c__search">
-    				  <button type="button" data-toggle="search-dropdown">
-    				    Search
-    				  </button>
-    				  <!-- <div class="dropdown-pane" id="search-dropdown" data-dropdown data-auto-focus="true" data-close-on-click="true">
-    				    <form action="/search/" method="get">
-    				      <input type="hidden" name="type" value="">
-    				      <input type="search" name="q" placeholder="Type to search…" autocomplete="off">
-    				    </form>
-    				  </div> -->
-    				</div>
-    			</li>
-    		</ul>
-    	</nav>  <div class="c-header o-flex">
+    		</li>
+    	</ul>
+    </nav>    <header>
+      <div class="c-header o-flex">
         <div class="c-header-left">
-          <img src="https://sanidentalgroup.com/static/img/sani-dental-group.png" alt="">
+          <a href="index.html"><img src="https://sanidentalgroup.com/static/img/sani-dental-group.png" alt=""></a>
           <p class="c-header-phone u-mb0">Get Immediate Assistance<img src="./assets/img/icons/phone.svg" class="c-header-phone-icon" alt="Phone ico">
     				<a href="tel:8557264337">(855)-726-4337</a>
     			</p>
         </div>
         <div class="c-header-right">
-          <a href="free-quote.html" class="c-button c-button--primary button c-button__purple">Free Quote</a>
-          <a class="c-button c-button--primary c-button__blue">Appointment</a>
+          <a href="free-quote.html" class="c-button c-button--primary button c-button__purple c-button-header">Free Quote</a>
+          <a href="appointments.html" class="c-button c-button--primary c-button__blue c-button-header">Appointment</a>
         </div>
       </div>
     </header>    
     <section class="o-flex" role="main" id="homepage">
-    	<main id="content" class="o-flex c-page-content" role="main">
+    	<main id="content" class="o-flex o-page-content" role="main">
     		<div class="c-cover">
     			<div class="c-cover-caption">
     				<h1>Top Quality Dental Care in Los Algodones, Mexico</h1>
     			</div>
     		</div>
-    		<div class="c-container">
-    			<div class="o-flex c-intro-text c-row">
-    				<h4>With more than 30 dentists in 3 different locations and 30 years of experience, Sani Dental Group is the most complete dental facility in Northern Mexico.</h4>
+    		<div class="o-container">
+    			<div class="o-flex c-intro-text">
+    				<h4 class="u-text-dark-blue">With more than 30 dentists in 3 different locations and 30 years of experience, Sani Dental Group is the most complete dental facility in Northern Mexico.</h4>
     			</div>
-    			<div class="o-flex c-row">
-    				<div class="c-intro">
+    			<div class="o-flex">
+    				<div class="u-mb2">
     					<div class="c-intro-text">
-    						<p><b>As seen on:</b></p>
+    						<p class="u-text-aqua"><b>As seen on:</b></p>
     					</div>
-    					<div class="o-flex">
+    					<div class="o-flex o-flex--center">
     						<div class="c-intro-img">
     							<img src="https://sanidentalgroup.com/static/img/npr-logo.png">
     						</div>
@@ -122,15 +127,15 @@
     						</div>
     					</div>
     				</div>			</div>
-    			<div class="o-flex c-row">
-    				<div class="c-treatments">
-    					<h4 class="c-title-blue">Which Treatment Are You Looking For?</h4>
+    			<div class="o-flex">
+    				<div class="u-mb2">
+    					<h4 class="u-text-blue">Which Treatment Are You Looking For?</h4>
     					<div class="c-treatment-group">
     						<div class="c-treatment-img">
     							<img src="https://sanidentalgroup.com/static/img/icon-implants.svg" alt="">
     						</div>
     						<div class="c-treatment-text">
-    							<h4 class="c-title-purple">Dental Implants</h4>
+    							<h4 class="u-text-purple">Dental Implants</h4>
     							<p>Long-term solution for teeth replacement that look and feel like your own teeth.</p>
     						</div>
     						<div class="c-treatment-button">
@@ -142,7 +147,7 @@
     							<img src="https://sanidentalgroup.com/static/img/icon-dentures.svg" alt="">
     						</div>
     						<div class="c-treatment-text">
-    							<h4 class="c-title-purple">Dentures</h4>
+    							<h4 class="u-text-purple">Dentures</h4>
     							<p>Comfortable, removable, and natural-looking option for missing teeth.</p>
     						</div>
     						<div class="c-treatment-button">
@@ -150,82 +155,76 @@
     						</div>
     					</div>
     				</div>			</div>
-    			<div class="o-flex c-row">
-    				<div class="c-content">
-    					<h4 class="c-title-blue">About Sani Dental Group</h4>
+    			<div class="o-flex">
+    				<div class="u-mb2">
+    					<h4 class="u-text-blue">About Sani Dental Group</h4>
     					<p>Sani Dental Group is the largest dental group in Los Algodones, Mexico. Established in 1985, it has grown from a 2-chair office to a group with more than 30 dentists with 3 different offices. Our specialists are graduates from the best universities in Mexico, and they have taken courses in several prestigious institutions, including Harvard School of Dental Medicine, International Center of Laser Education and Mega’Gen Implants Factory in Seoul, Korea.</p>
     				</div>
-    				<div class="c-content">
-    					<h4 class="c-title-blue">Dental Tourism</h4>
+    				<div class="u-mb2">
+    					<h4 class="u-text-blue">Dental Tourism</h4>
     					<p>Dental Tourism has become the new way for North American and Canadian citizens to take care of their dental needs. One of the biggest advantages and main reasons why people are resorting to dental tourism in Mexico is because of its very affordable prices.</p>
     					<p>Sani Dental Group’s team will help you during your complete dental vacation experience. Offering the best dental work in Mexico is just part of our job. You are not only saving thousands of dollars, you’re also traveling, relaxing and creating a brighter future with a new smile.</p>
     				</div>
-    				<div class="c-content">
-    					<h4 class="c-title-blue">Los Algodones Dentists</h4>
+    				<div class="u-mb2">
+    					<h4 class="u-text-blue">Los Algodones Dentists</h4>
     					<p>Named for some as the dental capital of the world, Los Algodones, Mexico is known worldwide as the place to travel to get excellent dental work at a very reasonable cost. A calm and colorful town as Los Algodones has a lot to offer to our dental tourists, accommodation, clinics, restaurants, bars, traditional Mexican “curious” and more. Everything within a walking distance in a town made for you.</p>
     				</div>
-    				<div class="c-content">
-    					<h4 class="c-title-blue">What to Expect from Dental Work in Mexico?</h4>
+    				<div class="u-mb2">
+    					<h4 class="u-text-blue">What to Expect from Dental Work in Mexico?</h4>
     					<p>You'll be amazed by the Sani Dental Group's quality, which is not compromised by the affordable prices. Our dentist received training in the best schools of Mexico and the US, such as Harvard and Loma Linda. You'll be in the best hands. During your visit, you'll have the opportunity to know people from around the world that are also looking for a unique dental experience in Los Algodones, Mexico. So get ready to come back home with not only a new smile but with new friends.</p>
     				</div>			</div>
-    			<div class="o-flex c-row">
-    				<div class="c-reviews">
-    					<h4 class="c-title-blue">Reviews</h4>
-    					<div class="c-review-group">
-    						<div class="c-review-single" itemscope itemtype="http://schema.org/Review">
-    							<div itemprop="author" itemscope itemtype="http://schema.org/Person">
-    								<span class="c-review-name" itemprop="name">Eugene Hagburg</span> 
-    								<span class="c-review-place"> - Durango CO, USA</span>
-    							</div>
-    							<div class="c-review-rating o-flex">
-    								<div itemprop="itemReviewed" itemscope itemtype="http://schema.org/Thing">
-    									<span class="c-review-treatment" itemprop="name">Crowns</span>
-    								</div>
-    								<div itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
-    									<div class="c-star-holder">
-    										<span class="c-star-rating" itemprop="ratingValue" style="width: 100px;">5</span>
-    										<!-- <span itemprop="bestRating">5</span> -->
-    									</div>
-    								</div>
-    							</div>
-    							<p>Amazing Dentistry (…) This was the best dental experience I had in a lifetime…they strive for perfection…and finish the work on a fast schedule. They did 14 crowns (porcelain fused metal crowns) at $180 each….such would cost a minimum of $1500 each in US (…) Sani has its own Lab in town and they work around the clock… so no long term temporaries and multiple visits… get it done with perfection… now!</p>
+    			<div class="o-flex">
+    				<div class="u-mb2">
+    					<h4 class="u-text-blue">Reviews</h4>
+    					<div class="c-review-single" itemscope itemtype="http://schema.org/Review">
+    						<div itemprop="author" itemscope itemtype="http://schema.org/Person">
+    							<span class="u-text-purple" itemprop="name">Eugene Hagburg</span> 
+    							<span class="u-text-gray"> - Durango CO, USA</span>
     						</div>
+    						<div class="c-review-rating o-flex o-flex--left">
+    							<div itemprop="itemReviewed" itemscope itemtype="http://schema.org/Thing">
+    								<span class="u-mr1 u-text-aqua u-text-italic" itemprop="name">Crowns</span>
+    							</div>
+    							<div itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+    								<div class="c-star-holder">
+    									<span class="c-star-rating" itemprop="ratingValue" style="width: 100px;">5</span>
+    									<!-- <span itemprop="bestRating">5</span> -->
+    								</div>
+    							</div>
+    						</div>
+    						<p>Amazing Dentistry (…) This was the best dental experience I had in a lifetime…they strive for perfection…and finish the work on a fast schedule. They did 14 crowns (porcelain fused metal crowns) at $180 each….such would cost a minimum of $1500 each in US (…) Sani has its own Lab in town and they work around the clock… so no long term temporaries and multiple visits… get it done with perfection… now!</p>
     					</div>
     				</div>			</div>
     		</div>
     	</main>
-    	<aside id="sidebar" class="o-flex c-page-sidebar" role="sidebar" data-sticky-container>
-    			<div class="c-sidebar-contact sticky" data-sticky data-options="marginTop:0; anchor:content; stickyOn:large; ">
-    				<div class="">
-    					<div class="">
-    						<h3>Get a Free Estimate by Filling the Form Below</h3>
-    						<p>Our team of patient coordinators will help you set your appointment and solve all your doubts.</p>
-    					</div>
-    				</div>
-    				<form class="c-form" action="/api/contact-APIView/" method="post" data-abide novalidate>
+    	<aside id="sidebar" class="o-flex o-page-sidebar" role="sidebar">
+    			<div class="c-sidebar-contact">
+    				<h3>Get a Free Estimate by Filling the Form Below</h3>
+    				<p>Our team of patient coordinators will help you set your appointment and solve all your doubts.</p>
+    				<form class="c-form" action="/api/contact-APIView/" method="post">
     					<input type="hidden" id="field_utm_need_help" name="field_utm_need_help" value="">
     			
-    					<div data-abide-error class="alert callout" style="display: none;">
+    					<div class="alert callout" style="display: none;">
     						<p><i class="fi-alert"></i> There are some errors in your form.</p>
     					</div>
     					<div class="c-form-group">
     						<input class="c-form-input" type="text" name="name" placeholder="Full Name" required>
     						<input class="c-form-input" type="email" name="email" placeholder="Email" required>
     					</div>
-    					<div class="c-sidebar-phone c-form-group">
-    						<div class="c-sidebar-area">
+    					<div class="c-sidebar-contact-phone c-form-group">
+    						<div class="c-sidebar-contact-area">
     							<input class="c-form-input" type="tel" name="area" maxlength=3 placeholder="(760)" required>
     						</div>
-    						<div class="c-sidebar-number">
+    						<div class="c-sidebar-contact-number">
     							<input class="c-form-input" type="tel" name="number" id="phone-number-field" maxlength=7 placeholder="123-4567" required>
     						</div>
     					</div>
     					<div class="c-form-group">
     						<input class="c-form-input" type="text" name="location" placeholder="Where do you come from? (City)" required>
-    						<textarea  name="message" cols="30" rows="4" placeholder="Your message" required></textarea>
+    						<textarea  class="c-form-input" name="message" cols="30" rows="4" placeholder="Your message" required></textarea>
     					</div>
     			
-    					<div class="c-sidebar-button">
+    					<div class="c-sidebar-contact-button">
     						<button class="button c-button__purple" type="submit">I Want My Estimate</button>
     					</div>
     				</form>
@@ -262,25 +261,23 @@
         </div>    <div class="c-footer-newsletter">
           <div class="c-footer-newsletter-box u-y2">
             <h3>Suscribe to our newsletter!</h3>
-            <form class="c-form" action="//sanidentalgroup.us6.list-manage.com/subscribe/post?u=071f2faa922de56113596b9c3&amp;id=f46c3a3dcf" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" data-abide novalidate>
-              <div class="">
-                <div data-abide-error class="c-card c-card__alert">
-                  <p><i class="fi-alert"></i> There are some errors in your form.</p>
-                </div>
+            <form class="c-form" action="//sanidentalgroup.us6.list-manage.com/subscribe/post?u=071f2faa922de56113596b9c3&amp;id=f46c3a3dcf" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
+              <div  class="c-card c-card__alert">
+                <p><i class="fi-alert"></i> There are some errors in your form.</p>
               </div>
               <div class="c-form-group c-footer-newsletter-form-group">
-                <input type="text" name="FNAME" placeholder="Full Name" required pattern="[a-zA-Z]+">
+                <input class="c-form-input" type="text" name="FNAME" placeholder="Full Name" required pattern="[a-zA-Z]+">
                 <span class="c-footer-newsletter-form-error">Full name required.</span>
               </div>
               <div class="c-form-group c-footer-newsletter-form-group">
-                <input type="email" name="EMAIL" placeholder="Email" required>
+                <input class="c-form-input" type="email" name="EMAIL" placeholder="Email" required>
                 <span class="c-footer-newsletter-form-error">Email required.</span>
               </div>
               <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                <input type="text" name="b_071f2faa922de56113596b9c3_f46c3a3dcf" tabindex="-1" value="">
+                <input class="c-form-input" type="text" name="b_071f2faa922de56113596b9c3_f46c3a3dcf" tabindex="-1" value="">
               </div>
               <div class="c-footer-newsletter-group">
-                <button class="c-button__pink" type="submit">Subscribe!</button>
+                <button class="c-button c-button__pink c-button__pink-newsletter" type="submit">Subscribe!</button>
               </div>
               <div class="c-footer-newsletter-form-group">
                 <small>We will never spam you or share your email address. 
