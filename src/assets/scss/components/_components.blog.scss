@@ -25,15 +25,15 @@ $btn-read-more:      $btn-light-blue-color;
 			font-weight: 700;
 			color: $white;
 			text-align: center;
-			background-color: $btn-read-more;
-			border: 2px solid $btn-read-more;
+			// background-color: $btn-read-more;
+			// border: 2px solid $btn-read-more;
 			border-radius: 3px;
 			padding: .85em 1em;
 			transition: background-color .25s ease-out,color .25s ease-out;
 			&:hover,
 			&:active, 
 			&:focus{
-				color: $btn-read-more;
+				// color: $btn-read-more;
 				background-color: transparent;
 			} 
 		}

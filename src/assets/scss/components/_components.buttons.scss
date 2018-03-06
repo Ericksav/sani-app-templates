@@ -1,83 +1,13 @@
-//---------Buttons----------//
-$btn-purple-color:           $brand-purple !default;
-$btn-blue-color:             $brand-blue !default;
-$btn-dark-blue-color:        $brand-dark-blue !default;
-$btn-light-blue-color:       $brand-light-blue !default;
-$btn-pink-color:             $brand-pink !default;
-$btn-green-color:            $brand-green !default;
+///* ========================================================================
+//   #BUTTONS
+//   ======================================================================== */
 
+$btn-purple-color:           $brand-purple !default;
+$btn-light-blue-color:           $brand-purple !default;
 
 
 .c-button{
-	&__purple{
-		font-weight: 700;
-		color: $white;
-		text-align: center;
-		background-color: $btn-purple-color;
-		border: 2px solid $btn-purple-color;
-		padding: .85em 1em;
-		transition: background-color .25s ease-out,color .25s ease-out;
-		&:hover,
-		&:active, 
-		&:focus{
-			color: $btn-purple-color;
-			background-color: transparent;
-		} 
-	}
-	&__blue{
-		font-weight: 700;
-		color: $white;
-		background-color: $btn-blue-color;
-		border: 2px solid $btn-blue-color;
-		padding: .85em 1em;
-		transition: background-color .25s ease-out,color .25s ease-out;
-		&:hover,
-		&:active, 
-		&:focus{
-			color: $btn-blue-color;
-			background-color: transparent;
-		} 
-	}
-	&__pink{
-		font-weight: 700;
-		color: $white;
-		background-color: $btn-pink-color;
-		border: 2px solid $btn-pink-color;
-		padding: .85em 1em;
-		transition: background-color .25s ease-out,color .25s ease-out;
-		&:hover,
-		&:active, 
-		&:focus{
-			color: $btn-pink-color;
-			background-color: transparent;
-		} 
-	}
-	&__dark-blue{
-		font-weight: 700;
-		color: $white;
-		background-color: $btn-dark-blue-color;
-		border: 2px solid $btn-dark-blue-color;
-		padding: .85em 1em;
-		transition: background-color .25s ease-out,color .25s ease-out;
-		&:hover,
-		&:active, 
-		&:focus{
-			color: $btn-dark-blue-color;
-			background-color: transparent;
-		} 
-	}
-	&__light-blue{
-		font-weight: 700;
-		color: $white;
-		background-color: $btn-light-blue-color;
-		border: 2px solid $btn-light-blue-color;
-		padding: .85em 1em;
-		transition: background-color .25s ease-out,color .25s ease-out;
-		&:hover,
-		&:active, 
-		&:focus{
-			color: $btn-light-blue-color;
-			background-color: transparent;
-		} 
-	}
+	&__purple {
+    @include button-style($white, $btn-purple-color);
+  }
 }
