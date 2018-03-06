@@ -4,43 +4,18 @@ $sidebar-info-bg: smart-scale($white, 5%) !default;
 
 
 .c-sidebar-contact{
-	padding: rem(20);
-	color: $white;
 	background-color: $brand-aqua;
-	@include breakpoint (md){
-		padding: rem(30) rem(60) rem(40);
-	}
-	@include breakpoint (lg){
-		height: rem(615);
-	}
-	h3{
-		text-transform: uppercase;
-		font-size: rem(22);
+	* {
 		color: $white;
 	}
 }
 
-.c-sidebar-contact{
-	&-phone{
-		display: flex;
-		flex: 0 0 100%;
-		width: 100%;
+.c-form-phone {
+	&--area {
+		  flex-basis: 33.333%;
 	}
-	&-area{
-		flex: 0 0 25%;
-		width: 25%;
-		padding-right: rem(10);
-	}
-	&-number{
-		flex: 0 0 75%;
-		width: 75%;
-		padding-left: rem(10);
-	}
-	&-button{
-		display: flex;
-		flex: 0 0 100%;
-		width: 100%;
-		justify-content: center;
+	&--number {
+		  flex-basis: 66.667%;
 	}
 }
 
