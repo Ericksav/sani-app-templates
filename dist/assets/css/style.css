@@ -2378,9 +2378,9 @@ footer {
     @media print, screen and (min-width: 640px) {
       .c-review-rating-category {
         -webkit-box-flex: 0;
-        -ms-flex: 0 0 47%;
-        flex: 0 0 47%;
-        width: 47%; } }
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        width: 50%; } }
   .c-review-rating .c-star-holder {
     width: 100px;
     background: url("https://sanidentalgroup.com/static/img/icons/gray-star.png") repeat-x; }
@@ -2406,13 +2406,16 @@ footer {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
-  width: 0 0 100%; }
+  width: 0 0 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
   @media print, screen and (min-width: 640px) {
     .c-review-form-container {
       -webkit-box-flex: 0;
-      -ms-flex: 0 0 47%;
-      flex: 0 0 47%;
-      width: 0 0 47%; } }
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+      width: 0 0 50%; } }
 
 .c-blog-list-post {
   margin-bottom: 1.25rem; }
