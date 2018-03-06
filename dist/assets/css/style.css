@@ -1272,6 +1272,27 @@ select.c-form-input:not([size]):not([multiple]) {
 .u-text-gray {
   color: #8a8a8a !important; }
 
+.u-text-white {
+  color: #fefefe; }
+
+.u-text-blue {
+  color: #034EA2 !important; }
+
+.u-text-dark-blue {
+  color: #3e465a !important; }
+
+.u-text-purple {
+  color: #732b74 !important; }
+
+.u-text-aqua {
+  color: #1e98a7 !important; }
+
+.u-text-pink {
+  color: #fd226f !important; }
+
+.u-text-gray {
+  color: #8a8a8a !important; }
+
 .u-text-italic {
   font-style: italic; }
 
@@ -1816,9 +1837,8 @@ button, input, optgroup, select, textarea {
           font-size: 1.75rem; } }
 
 .c-sidebar-contact {
-  background-color: #1e98a7; }
-  .c-sidebar-contact * {
-    color: #fefefe; }
+  background-color: #1e98a7;
+  color: #fefefe; }
 
 .c-form-phone--area {
   -ms-flex-preferred-size: 33.333%;

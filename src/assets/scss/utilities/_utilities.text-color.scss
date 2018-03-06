@@ -1,0 +1,36 @@
+///* ========================================================================
+//   #TEXT COLOR
+//   ======================================================================== */
+
+$text-blue:         $brand-blue;
+$text-dark-blue:    $brand-dark-blue;
+$text-purple:       $brand-purple;
+$text-aqua:      	  $brand-aqua;
+$text-pink:      	  $brand-pink;
+$text-gray:      	  $gray-dark;
+$text-white:      	$white;
+
+
+.u-text {
+	&-blue {
+		color: $text-blue !important;
+	}
+	&-dark-blue {
+		color: $text-dark-blue !important;
+	}
+	&-purple {
+		color: $text-purple !important;
+	}
+	&-aqua {
+		color: $text-aqua !important;
+	}
+	&-pink {
+		color: $text-pink !important;
+	}
+	&-gray {
+		color: $text-gray !important;
+	}
+	&-white {
+		color: $text-white;
+	}
+}
