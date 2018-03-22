@@ -3,11 +3,26 @@
 //   ======================================================================== */
 
 $btn-purple-color:           $brand-purple !default;
-$btn-light-blue-color:           $brand-purple !default;
+$btn-light-blue-color:           $brand-light-blue !default;
+$btn-blue-color:           $brand-blue !default;
 
 
 .c-button{
 	&__purple {
     @include button-style($white, $btn-purple-color);
   }
+  &__blue {
+    @include button-style($white, $btn-blue-color);
+  }
+}
+
+//Button Header
+.c-button-header {
+	text-transform: uppercase;
+	@include breakpoint(md) {
+		font-size: rem(20);
+		&-first {
+			margin-right: rem(10);
+		}
+	}
 }

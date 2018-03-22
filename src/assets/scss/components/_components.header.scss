@@ -1,98 +1,57 @@
-//---------Header----------//
+///* ========================================================================
+//   #HEADER
+//   ======================================================================== */
 $header-link: 					$brand-dark-blue;
 
 
 .c-header{
-	flex: 0 0 100%;
-	width: 100%;
-	justify-content: space-between;
-	align-items: center;
-	padding: rem(20);
-	@include breakpoint (lg){
-		padding-left: rem(40);
-		padding-right: rem(40);
+	&-left {
+		align-items: center;
+		justify-content: space-between;
+		flex-flow: row;
+		@include breakpoint(md) {
+			flex: 0 0 50%;
+			width: 50%;
+			justify-content: flex-start;
+		}
+		@include breakpoint(xl) {
+			flex: 0 0 70%;
+			width: 70%;
+		}
 	}
-	&-left{
-		display: flex;
+	&-right {
 		align-items: center;
 		justify-content: space-between;
 		flex: 0 0 100%;
 		width: 100%;
-		margin-bottom: rem(10);
-		@include breakpoint (md){
-			flex: 0 0 60%;
-			width: 60%;
-			justify-content: flex-start;
-			margin-bottom: 0;
-		}
-		@include breakpoint (lg){
-			flex: 0 0 70%;
-			width: 70%;
-			justify-content: flex-start;
-			margin-bottom: 0;
-		}
-	}
-	&-right{
-		display: flex;
-		align-items: center;
-		justify-content: space-around;
-		flex: 0 0 100%;
-		width: 100%;
-		@include breakpoint (md){
-			flex: 0 0 40%;
-			width: 40%;
+		@include breakpoint(md) {
+			flex: 0 0 50%;
+			width: 50%;
 			justify-content: flex-end;
 		}
-		@include breakpoint (lg){
+		@include breakpoint(xl) {
 			flex: 0 0 30%;
 			width: 30%;
-			justify-content: flex-end;
-		}
-	}
-	.c-button__purple{
-		@include breakpoint (md){
-			margin-right: rem(20);
-			text-transform: uppercase;
-			font-size: rem(20);
-		}
-	}
-	.c-button-header{
-		font-size: rem(14);
-		padding: .625rem .9375rem;
-		@include breakpoint (lg){
-			font-size: 1.125rem;
-			line-height: 1;
-			padding: .625rem .9375rem;
-			text-transform: uppercase;
 		}
 	}
 }
 
 //Phone Header Left
-.c-header-phone{
-	margin: 0 rem(10);
+.c-header-phone {
 	color: $header-link;
-	font-weight: bold;
 	text-transform: uppercase;
-	font-size: rem(11);
-	text-align: center;
-	@include breakpoint (md){
-		font-size: rem(18);
-		text-align: left;
-	}
-	a{
-		margin-left: rem(5);
-		font-size: rem(15);
+	a {
 		color: $header-link;
-		@include breakpoint (md){
-			font-size: rem(21);
+		@include breakpoint(md) {
+			font-size: rem(20);
 		}
 	}
-	&-icon{
-		@include breakpoint(md){
-			max-width: rem(30);
-		}
+	&-icon {
 		max-width: rem(20);
-		margin-left: rem(5);
+		@include breakpoint(md) {
+			max-width: rem(30);
+			margin-left: rem(10);
+			margin-right: rem(5);
+		}
 	}
 }
