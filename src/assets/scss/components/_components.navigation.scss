@@ -1,4 +1,6 @@
-//---------Navigation----------//
+///* ========================================================================
+//   #NAVIGATION
+//   ======================================================================== */
 
 $nav-color: $brand-dark-blue;
 $navigation-link:           #ddd !default;
@@ -8,34 +10,34 @@ $btn-blue-color:             $brand-blue !default;
 
 
 //Navigation General
-.c-navigation{
+.c-navigation {
 	background-color: $nav-color;
 }
 
 //Mobile Menu
-.c-navigation-mobile{
+.c-navigation-mobile {
 	color: $nav-color;
   align-items: center;
   padding: rem(12) rem(8);
   flex: 0 0 100%;
   width: 100%;
- 	&-link{
+ 	&-link {
  		color: $navigation-link;
  		font-size: rem(12);
  		padding-left: rem(3);
  		padding-right: rem(3);
  		text-transform: capitalize;
  	}
-	@include breakpoint (md){
+	@include breakpoint(md) {
 		display: none;
 	}
-	.c-modal__close{
+	.c-modal__close {
 		position: inherit;
 		color: $navigation-link;
 	}
 }
 
-.c-navigation-mobile-button{
+.c-navigation-mobile-button {
 	display: inline-block;
 	vertical-align: middle;
 	color: $white;
@@ -56,7 +58,7 @@ $btn-blue-color:             $brand-blue !default;
 }
 
 //Desktop Menu
-.c-navigation-menu{
+.c-navigation-menu {
 	flex: 0 0 100%; 
 	width: 100%;
 	justify-content: center;
@@ -64,7 +66,7 @@ $btn-blue-color:             $brand-blue !default;
 	margin-bottom: 0;
 	list-style: none;
 	flex-flow: column wrap;
-	@include breakpoint (md){
+	@include breakpoint(md) {
 		flex-flow: row wrap;
 	}
 	li{
@@ -72,33 +74,36 @@ $btn-blue-color:             $brand-blue !default;
 		flex: 0 0 100%;
 		width: 100%;
 		background-color: $white;
-		@include breakpoint (md){
+		@include breakpoint(md) {
 			flex-flow: row wrap;
 			flex: 0 0 auto;
 			width: auto;
 			background-color: $nav-color;
 		}
 	}
-	&-link{
+	&-link {
 		padding: rem(20) rem(10);
 		color: $nav-color;
 		width: 100%;
+		font-size: rem(16);
+		display: inline-block;
+		&-hide{
+			display: none;
+		}
 		@include breakpoint (md){
 			padding: rem(12) rem(30);
 			color: $navigation-link;
 			width: auto;
+			&-hide{ 
+				display: inline-block;
+			}
 		}
-		@include breakpoint(lg){
-			padding: rem(12) rem(30);
-		}
-		@include breakpoint(xxl){
+		@include breakpoint(xxl) {
 			padding: rem(12) rem(40);
 		}
-		font-size: rem(16);
-		display: inline-block;
-		&:hover{
+		&:hover {
 			color: $navigation-link-hover;
-			.c-down{
+			.c-down {
 			  @include breakpoint(md){
 					border: solid $navigation-link-hover;
 					border-width: 0 rem(1) rem(1) 0;
@@ -110,7 +115,7 @@ $btn-blue-color:             $brand-blue !default;
 				}
 			}
 		}
-		&:active{
+		&:active {
 			background-color: scale-color($nav-color, $lightness: -25%);
 		}
 	}
@@ -118,46 +123,45 @@ $btn-blue-color:             $brand-blue !default;
 
 
 //Hover Dorpdown Submenu
-.c-navigation-menu > li:hover{
-	.c-dropdown-menu{
+.c-navigation-menu > li:hover {
+	.c-dropdown-menu {
 		display: block;
 	}
 }
 
 //Submenus
-.c-dropdown{
-	position: relative !important;
-	&-menu{
+.c-dropdown {
+	position: relative;
+	&-menu {
 		display: none;
 		list-style: none;
 		margin-left: 0;
 		position: relative;
-		@include breakpoint(md){
-			z-index: 1 !important;
+		@include breakpoint(md) {
+			z-index: 1;
 			position: absolute;
 			top: rem(48);
 		}
-		&-link{
+		&-link {
 			background-color: $gray-light !important;
-			@include breakpoint(md){
+			@include breakpoint(md) {
 				background-color: rgba($nav-color, .9) !important;
-				a{
+				a {
 					color: $navigation-link !important;
 				}
 			}
-			a{
+			a {
 				width: 100%;
 				font-size: rem(16);
 				padding: rem(15) rem(40);
 				color: $nav-color;
 				display: inline-block;
         transition: none;
-				&:hover{
+				&:hover {
 					font-size: rem(16);
 					background-color: rgba($brand-aqua, .9);
-					font-weight: bold;
 				}
-				@include breakpoint (md){
+				@include breakpoint(md) {
 					width: rem(200);
 					line-height: 1;
 				}
@@ -167,7 +171,7 @@ $btn-blue-color:             $brand-blue !default;
 }
 
 //Character Down Menu
-.c-down{
+.c-down {
 	border: solid $nav-color;
   border-width: 0 rem(1) rem(1) 0;
   position: absolute;
@@ -175,7 +179,7 @@ $btn-blue-color:             $brand-blue !default;
   top: rem(30);
   right: rem(10);
   transform: rotate(45deg);
-  @include breakpoint(md){
+  @include breakpoint(md) {
 		border: solid $navigation-link;
 		border-width: 0 rem(1) rem(1) 0;
 	  position: absolute;
