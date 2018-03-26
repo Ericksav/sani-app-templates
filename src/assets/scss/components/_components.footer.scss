@@ -1,29 +1,27 @@
-//---------Footer----------//
+///* ========================================================================
+//   #FOOTER
+//   ======================================================================== */
+$footer-background-color:         $brand-dark-blue;
 
-footer{
-	background-color: $brand-dark-blue;
-	background: linear-gradient( 180deg, $brand-dark-blue 61%, scale-color($brand-dark-blue, $lightness: -14%) 39%);
+
+footer {
+	background-color: $footer-background-color;
+	background: linear-gradient( 180deg, $footer-background-color 61%, scale-color($footer-background-color, $lightness: -14%) 39%);
 	padding: rem(32) rem(24) rem(0);
-	.c-footer{
+	.c-footer {
 		max-width: 75rem;
-		&-cookies{
-			flex: 0 0 100%;
-			width: 100%;
-			justify-content: flex-start;
+		&-cookies {
 			padding-bottom: rem(20);
-			@include breakpoint (md){
-				flex: 0 0 100%;
-				max-width: 100%;
+			@include breakpoint(md) {
 				padding: rem(20) 0;
 			}
-			&-message{
+			&-message {
 				color: $white;
 				font-size: rem(11);
-				margin-bottom: 0;
-				a{
+				&-link {
 					color: $white;
 					border-bottom: 1px dotted $white;
-					&:hover{
+					&:hover {
 						border-bottom-style: solid;
 					}
 				}
@@ -32,35 +30,17 @@ footer{
 	}
 }
 
-.c-cookie-msg{
-	color: $white;
-	font-size: rem(11);
-	margin-bottom: 0;
-	a{
-		color: $white;
-		border-bottom: 1px dotted $white;
-		&:hover{
-			border-bottom-style: solid;
-		}
-	}
-}
-
-//Orientation
-.u-cwc{
-  flex-flow: column wrap;
-}
 
 //Medium
-@include breakpoint (md){
-	footer{
-		background: linear-gradient( 90deg, $brand-dark-blue 64%, scale-color($brand-dark-blue, $lightness: -14%) 37%);
+@include breakpoint(md) {
+	footer {
+		background: linear-gradient( 90deg, $footer-background-color 64%, scale-color($footer-background-color, $lightness: -14%) 37%);
 		padding-top: rem(64);
-		// padding-bottom: rem-calc(64);
 	}
 }
 
-@include breakpoint (lg){
-	footer{
-		background: linear-gradient( 90deg, $brand-dark-blue 58%, scale-color($brand-dark-blue, $lightness: -14%) 37%);;
+@include breakpoint(lg) {
+	footer {
+		background: linear-gradient( 90deg, $footer-background-color 58%, scale-color($footer-background-color, $lightness: -14%) 37%);;
 	}
 }
