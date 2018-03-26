@@ -1,8 +1,14 @@
-//---------Search----------//
+///* ========================================================================
+//   #SEARCH
+//   ======================================================================== */
+$nav-color: 								$brand-dark-blue;
+$navigation-link:           #ddd !default;
+$navigation-link-hover:     #fff !default;
 
-.c-search{
+.c-search {
 	display: inline-block;
-	button{
+	width: 100%;
+	&-button {
 		background-color: $white;
 		color: $nav-color;
   	padding: rem(15) rem(12);
@@ -12,25 +18,24 @@
 			background-color: transparent;
 		}
 	}
-	.dropdown-pane{
-		width: 100% !important;
-		border: none !important;
-		border-radius: 0 !important;
-    display: none;
-    padding: rem(16);
+	&-dropdown-pane {
+		width: 100%;
+		background-color: $gray-light;
+		border: none;
+		border-radius: 0;
+    display: block;
+    padding: rem(10);
     z-index: 10;
-    border: rem(1) solid #cacaca;
-    border-radius: rem(3);
-    background-color: $white;
     font-size: rem(16);
 	}
-	@include breakpoint(md){
-		button{
+	@include breakpoint(md) {
+		&-button {
 			background-color: transparent;
 			position: relative;
 			color: $navigation-link;
 	  	width: 100%;
 	  	text-align: left;
+	  	padding: rem(16);
 	  	cursor: pointer;
 	  	&:hover,
 			&:focus{
@@ -38,7 +43,7 @@
 				background-color: transparent;
 			}
 		}
-		.dropdown-pane{
+		&-dropdown-pane {
 			position: absolute;
 			top: rem(50);
 			left: 0;
@@ -48,8 +53,8 @@
 	}
 }
 
-.c-search:hover{
-	.dropdown-pane{
+.c-search:hover {
+	.c-search-dropdown-pane {
 		display: block;
 	}
 }
