@@ -5,11 +5,8 @@
 $footer-background-color:         $brand-dark-blue;
 
 .c-footer-bottom {
-	flex: 0 0 100%;
-	width: 100%;
 	background-color: scale-color($footer-background-color, $lightness: 6%);
 	padding: rem(16);
-	margin: 0;
 	&-box {
 		flex: 0 0 100%;
 		width: 100%;
