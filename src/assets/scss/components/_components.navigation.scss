@@ -122,7 +122,7 @@ $btn-blue-color:             $brand-blue !default;
 }
 
 
-//Hover Dorpdown Submenu
+//Hover Dropdown Submenu
 .c-navigation-menu > li:hover {
 	.c-dropdown-menu {
 		display: block;
@@ -171,7 +171,7 @@ $btn-blue-color:             $brand-blue !default;
 }
 
 //Character Down Menu
-.c-down {
+.c-nav-link-down {
 	border: solid $nav-color;
   border-width: 0 rem(1) rem(1) 0;
   position: absolute;
