@@ -2,9 +2,10 @@
 //   #BUTTONS
 //   ======================================================================== */
 
-$btn-purple-color:           $brand-purple !default;
-$btn-light-blue-color:           $brand-light-blue !default;
+$btn-purple-color:         $brand-purple !default;
+$btn-light-blue-color:     $brand-light-blue !default;
 $btn-blue-color:           $brand-blue !default;
+$btn-pink-color:           $brand-pink !default;
 
 
 .c-button{
@@ -13,6 +14,9 @@ $btn-blue-color:           $brand-blue !default;
   }
   &__blue {
     @include button-style($white, $btn-blue-color);
+  }
+  &__pink {
+    @include button-style($white, $btn-pink-color);
   }
 }
 
@@ -25,4 +29,10 @@ $btn-blue-color:           $brand-blue !default;
 			margin-right: rem(10);
 		}
 	}
+}
+
+//Button Form Newsletter
+.c-button__pink-newsletter {
+	text-transform: uppercase;
+	width: 100%;
 }

@@ -6,6 +6,7 @@ $text-color-purple:       $brand-purple;
 $text-color-aqua:       	 $brand-aqua;
 $text-color-pink:       	 $brand-pink;
 $text-color-gray:       	 $gray-dark;
+$input-error-color:        $brand-error;
 
 
 //Colors
@@ -27,6 +28,9 @@ $text-color-gray:       	 $gray-dark;
 	}
 	&-gray{
 		color: $text-color-gray !important;
+	}
+	&-error{
+		color: $input-error-color !important;
 	}
 }
 
