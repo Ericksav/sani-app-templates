@@ -35,12 +35,15 @@ $input-error-color:        $brand-error;
 }
 
 //Text Style
-.u-text{
-	&-italic{
+.u-text {
+	&-italic {
 		font-style: italic;
 	}
-	&-bold{
+	&-bold {
 		font-weight: bold;
+	}
+	&-uppercase {
+		text-transform: uppercase;
 	}
 }
 
