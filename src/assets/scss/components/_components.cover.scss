@@ -5,6 +5,8 @@
 $cover-bg-color: 	$brand-purple;
 $cover-caption-height: rem(55);
 $cover-caption-height-medium: rem(95);
+$cover-height: 30vh;
+$cover-height-medium: 50vh;
 
 .c-cover {
 	width: 100%;
@@ -13,9 +15,9 @@ $cover-caption-height-medium: rem(95);
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: relative;
-	height: 30vh;
+	height: $cover-height;
 	@include breakpoint(md) {
-		height: 50vh;
+		height: $cover-height-medium;
 		&:before {
 	  	height: $cover-caption-height-medium;
 		}
