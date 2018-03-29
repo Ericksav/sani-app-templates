@@ -5,7 +5,6 @@
 $cover-bg-color: 	$brand-purple;
 $cover-caption-height: rem(55);
 $cover-caption-height-medium: rem(95);
-$aqua-bg-color: $brand-aqua !default;
 
 .c-cover {
 	width: 100%;
@@ -14,16 +13,10 @@ $aqua-bg-color: $brand-aqua !default;
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: relative;
-	min-height: 30vh;
+	height: 30vh;
 	@include breakpoint(md) {
-		min-height: 50vh;
+		height: 50vh;
 		&:before {
-	  	height: $cover-caption-height-medium;
-		}
-	}
-	@include breakpoint(lg) {
-		height: 40vh;
-		&:before{
 	  	height: $cover-caption-height-medium;
 		}
 	}
@@ -52,17 +45,13 @@ $aqua-bg-color: $brand-aqua !default;
 		}
   	@include breakpoint(md) {
   		height: $cover-caption-height-medium;
-	  	padding: rem(10) rem(15);
+	  	padding: rem(12) rem(15);
 			&-text {
 				font-size: rem(28);
 			}
   	}
   	@include breakpoint(lg) {
-  		height: $cover-caption-height-medium;
-  		padding: rem(26) rem(15);
-  		&-text {
-				font-size: rem(28);
-			}
+  		padding: rem(30) rem(15);
   	}
 	}
 }
