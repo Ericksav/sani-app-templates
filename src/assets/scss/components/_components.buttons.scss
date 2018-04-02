@@ -6,6 +6,7 @@ $btn-purple-color:         $brand-purple !default;
 $btn-light-blue-color:     $brand-light-blue !default;
 $btn-blue-color:           $brand-blue !default;
 $btn-pink-color:           $brand-pink !default;
+$btn-dark-blue-color:      $brand-dark-blue !default;
 
 
 .c-button{
@@ -17,6 +18,9 @@ $btn-pink-color:           $brand-pink !default;
   }
   &__pink {
     @include button-style($white, $btn-pink-color);
+  }
+  &__dark-blue {
+    @include button-style($white, $btn-dark-blue-color);
   }
 }
 
