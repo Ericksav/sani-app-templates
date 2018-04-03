@@ -1,38 +1,38 @@
-//---------Reviews----------//
-
+///* ========================================================================
+//   #REVIEWS
+//   ======================================================================== */
+$reviews-border-color:         $brand-aqua;
+$reviews-see-more:             $brand-blue;
+$reviews-see-more-hover:       $brand-dark-blue;
 
 //Review Single List
-.c-review-single{
-	border-left-width: .375rem;
+.c-review-single {
+	border-left-width: rem(7);
   border-left-style: solid;
-  border-color: $brand-aqua;
-  padding-left: rem(12);
-  margin-bottom: rem(36);
-  &-more{
-  	color: $brand-blue;
-  	&:hover{
-  		color: $brand-dark-blue;
+  border-color: $reviews-border-color;
+  &-more{ 
+  	color: $reviews-see-more;
+  	&:hover {
+  		color: $reviews-see-more-hover;
   	}
   }
 }
 
 
 //Review Rating
-.c-review-rating{
-	align-items: center;
-	margin-bottom: rem(15);
-	&-category{
+.c-review-rating {
+	&-category {
 		flex: 0 0 100%;
 		width: 100%;
-		@include breakpoint (md){
+		@include breakpoint(md) {
 			flex: 0 0 50%;
 			width: 50%;
 		}
 	}
-	.c-star-holder{
+	.c-star-holder {
 		width: 100px;
 		background: url('https://sanidentalgroup.com/static/img/icons/gray-star.png') repeat-x;
-		.c-star-rating{
+		.c-star-rating { 
 			background: url('https://sanidentalgroup.com/static/img/icons/star.png') repeat-x;
 	    height: 20px;
 	    text-indent: 100%;
@@ -44,8 +44,8 @@
 }
 
 //Review Full
-.c-review-full{
-	&-name{
+.c-review-full {
+	&-name {
 		border-left-width: rem(5);
 	  border-left-style: solid;
 	  border-color: $brand-purple;
@@ -59,8 +59,8 @@
 }
 
 //Write Review
-.c-review-form{
-	&-container{
+.c-review-form {
+	&-container {
 		flex: 0 0 100%;
 		width: 0 0 100%;
 		align-items: center;
