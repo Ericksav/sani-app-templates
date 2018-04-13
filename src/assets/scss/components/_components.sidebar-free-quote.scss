@@ -1,122 +1,65 @@
-//---------Sidebar Free Quote----------//
-$btn-free-quote-purple:           $brand-purple !default;
-$btn-free-quote-blue:             $brand-blue !default;
+///* ========================================================================
+//   #TREATMENTS LIST
+//   ======================================================================== */
+$btn-free-quote-purple:           			       $brand-purple !default;
+$btn-free-quote-blue:                          $brand-blue !default;
+$free-quote-sidebar-color:                     $gray-light;
+$free-quote-savings-container-color:           $brand-pink;
+$free-quote-savings-prices-color:              $brand-aqua;
 
 
 //Sidebar Free Quote
-.c-sidebar-free-quote{
-	padding: rem(20);
-	color: $brand-dark-blue;
-	background-color: $gray-light;
-	@include breakpoint (md){
-		padding: rem(30) rem(80);
-	}
-	@include breakpoint (lg){
-		padding: rem(40) rem(45);
-	}
-	@include breakpoint (xxl){
-		padding: rem(60) rem(80);
-	}
-	&-button{
-		flex: 0 0 100%;
-		width: 100%;
-	}
+.c-sidebar-free-quote {
+	background-color: $free-quote-sidebar-color;
 }
 
 
 //Free Quote Comparisson
-.c-free-quote-comparisson{
+.c-free-quote-comparisson {
 	flex: 0 0 50%;
 	width: 50%;
-	&-img{
+	&-img {
 		flex: 0 0 100%;
 		width: 100%;
 		text-align: center;
 	}
-	&-price{
-		text-align: center;
-		span{
-			font-size: rem(30);
-		}
+	&:first-child {
+		border-right: 1px solid #8a8a8a;
 	}
-}
-.c-free-quote-comparisson:first-child{
-	border-right: 1px solid #8a8a8a;
 }
 
 //Free Quote Savings
-.c-free-quote-savings{
-	&-text{
+.c-free-quote-savings {
+	&-container {
 		flex: 0 0 20%;
 		width: 20%;
-		background-color: $brand-pink;
-		padding: rem(50) rem(10);
+		background-color: $free-quote-savings-container-color;
 		border-radius: rem(10) 0 0 rem(10);
-		p{
+		&-text {
 			transform: rotate(270deg);
-			margin-bottom: 0;
-			text-transform: uppercase;
-			color: $white;
 			font-size: rem(20);
-			font-weight: 700;
 		}
 	}
-	&-prices{
+	&-prices {
 		flex: 0 0 80%;
 		width: 80%;
-		background-color: $brand-aqua;
-		padding: rem(20) rem(10);
+		background-color: $free-quote-savings-prices-color;
 		border-radius: 0 rem(10) rem(10) 0;
-		p{
-			margin-bottom: 0;
-			color: $white;
+		&-numbers {
 			font-size: rem(30);
-			margin-right: rem(10);
+		}
+		&-total {
+			border-right: 1px dotted #fefefe;
 		}
 	}
-}
-
-.c-free-quote-savings-prices-total{
-	border-right: 1px dotted #fefefe;
-  margin: 0 rem(10);
 }
 
 //Free Quote Button
-.c-free-quote-button{
-	&__purple{
-		flex: 0 0 45%;
-		width: 45%;
-		font-weight: 700;
-		color: $white;
-		text-align: center;
-		background-color: $btn-free-quote-purple;
-		border: 2px solid $btn-free-quote-purple;
-		border-radius: 3px;
-		padding: .85em 1em;
-		transition: background-color .25s ease-out,color .25s ease-out;
-		&:hover,
-		&:active, 
-		&:focus{
-			color: $btn-free-quote-purple;
-			background-color: transparent;
-		} 
-	}
-	&__blue{
-		flex: 0 0 45%;
-		width: 45%;
-		font-weight: 700;
-		color: $white;
-		text-align: center;
-		background-color: $btn-free-quote-blue;
-		border: 2px solid $btn-free-quote-blue;
-		border-radius: 3px;
-		padding: .85em 1em;
-		transition: background-color .25s ease-out,color .25s ease-out;
-		&:hover,
-		&:active, 
-		&:focus{
-			color: $btn-free-quote-blue;
-			background-color: transparent;
-		} 
+.c-free-quote-button-form {
+	flex: 0 0 50%;
+	width: 50%;
+	.c-button__purple,
+	.c-button__blue {
+		width: 100%;
 	}
 }

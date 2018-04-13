@@ -1,4 +1,4 @@
-<div class="c-sidebar-free-quote">
+<div class="c-sidebar-free-quote u-px2 u-py2 u-text-dark-blue">
 	<p>Add all procedures you're interested in, and send this quote to your e-mail by filling this form below:</p>
 	<form class="c-form" action="/api/contact-APIView/" method="post">
 		<input type="hidden" id="field_utm_need_help" name="field_utm_need_help" value="">
@@ -7,27 +7,31 @@
 				<div class="c-free-quote-comparisson-img">
 					<img src="https://sanidentalgroup.com/static/img/usa-flag.png" alt="">
 				</div>
-				<p class="c-free-quote-comparisson-price">US price<br>
-				<span>$0</span></p>
+				<div>
+					<p class="u-text-center u-mb0">US price</p>
+					<h3 class="u-text-dark-blue u-text-center">$0</h3>
+				</div>
 			</div>
 			<div class="o-flex o-flex--center c-free-quote-comparisson">
 				<div class="c-free-quote-comparisson-img">
 					<img src="https://sanidentalgroup.com/static/img/logo-quote.png" alt="">
 				</div>
-				<p class="c-free-quote-comparisson-price u-text-purple">Our price<br>
-				<span>$0</span></p>
+				<div>
+					<p class="u-text-center u-text-purple u-mb0">Our price</p>
+					<h3 class="u-text-purple u-text-center">$0</h3>
+				</div>
 			</div>
 		</div>
 		<div class="o-flex o-flex--center u-mb2">
-			<div class="c-free-quote-savings-text o-flex o-flex--center o-flex--middle">
-				<p>Savings</p>
+			<div class="c-free-quote-savings-container u-py3 o-flex o-flex--center o-flex--middle">
+				<p class="c-free-quote-savings-container-text u-mb0 u-text-white u-text-uppercase"><b>Savings</b></p>
 			</div>
 			<div class="c-free-quote-savings-prices o-flex o-flex--center o-flex--middle">
-				<div class="c-free-quote-savings-prices-total">
-					<p>$-,---</p>
+				<div class="c-free-quote-savings-prices-total u-mx1">
+					<p class="c-free-quote-savings-prices-numbers u-mb0 u-text-white u-mr1">$-,---</p>
 				</div>
 				<div>
-					<p>%0</p>
+					<p class="c-free-quote-savings-prices-numbers u-mb0 u-text-white u-mr1">%0</p>
 				</div>
 			</div>
 		</div>
@@ -42,9 +46,20 @@
 		<div>
 			<p>By clicking on "Submit" you are confirming that you have read, understood, and accept the <a class="u-text-pink" href="#">Terms and Conditions</a> and the <a class="u-text-pink" href="#">Privacy Policy.</a></p>
 		</div>
-		<div class="o-flex o-flex--justify c-sidebar-free-quote-button">
+		<div class="u-px1">
+			<div class="o-row o-flex o-flex--justify">
+	     <div class="c-free-quote-button-form u-px-1 u-pr1">
+	     	<button class="c-button c-button__purple u-p1" type="submit">Reset</button>
+	     </div> 
+	     <div class="c-free-quote-button-form u-px-1 u-pl1">
+	     	<button class="c-button c-button__blue u-p1" type="submit">Submit</button>
+	     </div> 
+	    </div>
+		</div>
+
+		<!-- <div class="o-flex o-flex--justify c-sidebar-free-quote-button">
 			<button class="c-button c-free-quote-button__purple" type="submit">Reset</button>
 			<button class="c-button c-free-quote-button__blue" type="submit">Submit</button>
-		</div>
+		</div> -->
 	</form>
 </div>
