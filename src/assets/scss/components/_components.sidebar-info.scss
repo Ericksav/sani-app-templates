@@ -1,45 +1,22 @@
-//---------Sidebar-Info on Appointments----------//
+///* ========================================================================
+//   #SIDEBAR INFORMATION
+//   ======================================================================== */
 
-.c-sidebar-info{
-	background-color: $gray-light;
-	width: 100%;
-	max-height: rem(1400);
-	img{
-		width: 100%;
-	}
-	&-content{
-		padding: rem(20);
-		@include breakpoint (md){
-			padding: rem(30) rem(80);
-		}
-		@include breakpoint (lg){
-			padding: rem(40) rem(45);
-			font-size: rem(18);
-		}
-		@include breakpoint (xxl){
-			padding: rem(60) rem(80);
-		}
-		&-address{
-			flex: 0 0 100%;
-			width: 100%;
-		}
-		&-tel{
-			flex: 0 0 100%;
-			width: 100%;
-			&-number{
+$side-bar-info-bg-color:         $gray-light;
+
+.c-sidebar-info {
+	background-color: $side-bar-info-bg-color;
+	max-height: rem(1100);
+	&-content {
+		&-tel {
+			&-number {
 				font-size: rem(24);
 			}
 		}
-		&-email{
-			flex: 0 0 100%;
-			width: 100%;
-			a{
-				font-size: rem(22) !important;
+		&-email {
+			&-link {
+				font-size: rem(22);
 			}
-		}
-		&-schedule{
-			flex: 0 0 100%;
-			width: 100%;
 		}
 	}
 }
