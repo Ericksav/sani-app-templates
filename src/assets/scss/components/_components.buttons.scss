@@ -7,6 +7,8 @@ $btn-light-blue-color:     $brand-light-blue !default;
 $btn-blue-color:           $brand-blue !default;
 $btn-pink-color:           $brand-pink !default;
 $btn-dark-blue-color:      $brand-dark-blue !default;
+$btn-gray-dark-color:      $gray-dark !default;
+$btn-gold-color:           $brand-gold !default;
 
 
 .c-button{
@@ -21,6 +23,15 @@ $btn-dark-blue-color:      $brand-dark-blue !default;
   }
   &__dark-blue {
     @include button-style($white, $btn-dark-blue-color);
+  }
+  &__light-blue {
+    @include button-style($white, $btn-light-blue-color);
+  }
+  &__gray-dark {
+    @include button-style($white, $btn-gray-dark-color);
+  }
+  &__gold {
+    @include button-style($white, $btn-gold-color);
   }
 }
 
@@ -39,4 +50,9 @@ $btn-dark-blue-color:      $brand-dark-blue !default;
 .c-button__pink-newsletter {
 	text-transform: uppercase;
 	width: 100%;
+}
+
+//Button Appointment Form
+.c-appointment-form-button{
+  font-size: rem(20);
 }
