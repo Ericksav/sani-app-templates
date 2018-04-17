@@ -1,42 +1,44 @@
-//---------Doctors----------//
+///* ========================================================================
+//   #DOCTORS
+//   ======================================================================== */
 
 
-//Doctors List
-.c-doctors-group{
-	&-photo{
+//Doctors
+.c-doctors-group {
+	&-photo {
 		flex: 0 0 100%;
 		width: 100%;
-		img{
+		img {
 			padding: rem(3);
 			border: rem(2) solid $gray-light;
 			border-radius: rem(3);
 		}
-		@include breakpoint (md){
+		@include breakpoint (md) {
 			flex: 0 0 20%;
 			width: 20%;
 		}
-		@include breakpoint (xxl){
+		@include breakpoint (xxl) {
 			flex: 0 0 15%;
 			width: 15%;
 		}
 	}
-	&-info{
+	&-info {
 		flex: 0 0 100%;
 		width: 100%;
-		@include breakpoint (md){
+		@include breakpoint (md) {
 			flex: 0 0 80%;
 			width: 80%;
 			padding-left: rem(20);
 		}
-		@include breakpoint (xxl){
+		@include breakpoint (xxl) {
 			flex: 0 0 85%;
 			width: 85%;
 		}
 	}
-	&-diplomas{
+	&-diplomas {
 		flex: 0 0 50%;
 		width: 50%;
-		@include breakpoint (md){
+		@include breakpoint (md) {
 			flex: 0 0 25%;
 			width: 25%;
 		}
