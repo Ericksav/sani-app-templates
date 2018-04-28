@@ -8,6 +8,11 @@ $share-border-color-hover: $gray-dark;
 .c-share {
   ul {
     list-style-type: none;
+    @include breakpoint(md) {
+      li:first-child {
+        margin-left: rem(10);
+      }
+    }
     li {
     	flex: 0 0 100%;
     	width: 100%;
@@ -23,6 +28,8 @@ $share-border-color-hover: $gray-dark;
 		    margin-left: 0;
 		    margin-bottom: rem(10);
 		    line-height: 1;
+        display: flex;
+        width: 0 0 100%;
 		    @include breakpoint(md) {
 		    	margin: 0 rem(5);
 		    }
