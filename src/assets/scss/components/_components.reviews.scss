@@ -67,3 +67,15 @@ $reviews-see-more-hover:       $brand-dark-blue;
 		}
 	}
 }
+
+//Reviews Video
+.c-review-video{
+	&-embed{
+		flex: 0 0 50%;
+		width: 50%;
+	}
+	&-info{
+		flex: 0 0 50%;
+		width: 50%;
+	}
+}
