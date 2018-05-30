@@ -71,11 +71,28 @@ $reviews-see-more-hover:       $brand-dark-blue;
 //Reviews Video
 .c-review-video{
 	&-embed{
-		flex: 0 0 50%;
-		width: 50%;
+		flex: 0 0 100%;
+		width: 100%;
+		@include breakpoint(md) {
+			flex: 0 0 50%;
+			width: 50%;
+		}
+		@include breakpoint(lg) {
+			flex: 0 0 50%;
+			width: 50%;
+		}
 	}
 	&-info{
-		flex: 0 0 50%;
-		width: 50%;
+		flex: 0 0 100%;
+		width: 100%;
+		@include breakpoint(md) {
+			flex: 0 0 50%;
+			width: 50%;
+			padding: 0 rem(20);
+		}
+		@include breakpoint(lg) {
+			flex: 0 0 50%;
+			width: 50%;
+		}
 	}
 }
