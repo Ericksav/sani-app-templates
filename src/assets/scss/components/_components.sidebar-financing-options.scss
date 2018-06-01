@@ -1,0 +1,23 @@
+///* ========================================================================
+//   #SIDEBAR FINANCING
+//   ======================================================================== */
+
+$sidebar-financing-color: $brand-purple;
+
+
+.c-sidebar-financing{
+	background-color: $sidebar-financing-color;
+	color: $white;
+}
+
+//Sidebar Container
+.c-financing-form {
+	&-container {
+		flex: 0 0 100%;
+		width: 0 0 100%;
+		@include breakpoint(md){
+			flex: 0 0 50%;
+			width: 0 0 50%;
+		}
+	}
+}
