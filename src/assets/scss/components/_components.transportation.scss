@@ -1,0 +1,18 @@
+///* ========================================================================
+//   #TRANSPORTATION
+//   ======================================================================== */
+
+.c-transportation {
+	&-table {
+		tr {
+			border: rem(3) solid $white;
+			td,th {
+				border: rem(2) solid $white;
+			}
+		}
+		&-header {
+			text-align: left;
+			background-color: $gray-light;
+		}
+	}
+}
