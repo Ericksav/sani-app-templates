@@ -5,13 +5,34 @@
 $events-menu-link:        $white;
 $events-menu-link-hover:        $brand-dark-blue;
 
-.c-sticky-menu{
-	list-style: none;
-	position: fixed;
-	bottom: auto;
-	li{
-		width: 100%;
-		&:hover,
+// .c-sticky-menu {
+// 	list-style: none;
+// 	position: fixed;
+// 	bottom: auto;
+// 	li {
+// 		width: 100%;
+// 		&:hover,
+// 		&:active {
+// 			background-color: rgba(62,70,90,.5);
+// 			a {
+// 				color: $events-menu-link;
+// 			}
+// 		}
+// 		a {
+// 			color: $events-menu-link-hover;
+// 		}
+// 	}
+// }
+
+.c-sticky-menu {
+  margin: 0;
+  list-style: none;
+  width: 100%;
+  flex: 0 0 100%;
+  li {
+  	width: 100%;
+  	flex: 0 0 100%;
+  	&:hover,
 		&:active{
 			background-color: rgba(62,70,90,.5);
 			a{
@@ -21,5 +42,5 @@ $events-menu-link-hover:        $brand-dark-blue;
 		a{
 			color: $events-menu-link-hover;
 		}
-	}
+  }
 }
