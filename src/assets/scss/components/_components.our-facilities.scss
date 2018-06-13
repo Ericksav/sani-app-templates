@@ -1,0 +1,26 @@
+///* ========================================================================
+//   #OUR FACILITIES
+//   ======================================================================== */
+
+$img-bg-color: 	rgba(30,152,167,.8);
+
+.c-facilities {
+	&-img {
+		position: relative;
+	}
+	&-caption {
+		position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: $img-bg-color;
+	}
+	&-gallery {
+		flex: 0 0 100%;
+		width: 100%;
+		@include breakpoint (md) {
+			flex: 0 0 25%;
+			width: 25%;
+		}
+	}
+}
