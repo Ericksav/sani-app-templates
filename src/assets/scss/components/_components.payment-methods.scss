@@ -1,0 +1,25 @@
+///* ========================================================================
+//   #PAYMENT METHODS
+//   ======================================================================== */
+
+
+//PAYMENT METHODS
+.c-payment-methods {
+	&-img {
+		flex: 0 0 100%;
+		width: 100%;
+		@include breakpoint (md) {
+			flex: 0 0 15%;
+			width: 15%;
+		}
+	}
+	&-text {
+		flex: 0 0 100%;
+		width: 100%;
+		@include breakpoint (md) {
+			flex: 0 0 85%;
+			width: 85%;
+			padding-left: rem(20);
+		}
+	}
+}
