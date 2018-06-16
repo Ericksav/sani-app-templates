@@ -1,0 +1,28 @@
+///* ========================================================================
+//   #POST TREATMENT CARE
+//   ======================================================================== */
+
+
+//OST TREATMENT CARE
+.c-post-treatment-care {
+	&-img {
+		flex: 0 0 100%;
+		width: 100%;
+		@include breakpoint (md) {
+			flex: 0 0 10%;
+			width: 10%;
+			img {
+				width: 100%;
+			}
+		}
+	}
+	&-text {
+		flex: 0 0 100%;
+		width: 100%;
+		@include breakpoint (md) {
+			flex: 0 0 90%;
+			width: 90%;
+			padding-left: rem(20);
+		}
+	}
+}
