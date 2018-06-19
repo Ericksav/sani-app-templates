@@ -140,7 +140,7 @@ $btn-blue-color:             $brand-blue !default;
 		@include breakpoint(md) {
 			z-index: 1;
 			position: absolute;
-			top: rem(48);
+			top: rem(50);
 		}
 		&-link {
 			background-color: $gray-light !important;
