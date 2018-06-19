@@ -7,6 +7,7 @@ $side-bar-info-bg-color:         $gray-light;
 .c-sidebar-info {
 	background-color: $side-bar-info-bg-color;
 	max-height: rem(1100);
+	width: 100%;
 	&-content {
 		&-tel {
 			&-number {
