@@ -9,6 +9,7 @@ $btn-pink-color:           $brand-pink !default;
 $btn-dark-blue-color:      $brand-dark-blue !default;
 $btn-gray-dark-color:      $gray-dark !default;
 $btn-gold-color:           $brand-gold !default;
+$btn-green-color:           $brand-green !default;
 
 
 .c-button{
@@ -32,6 +33,9 @@ $btn-gold-color:           $brand-gold !default;
   }
   &__gold {
     @include button-style($white, $btn-gold-color);
+  }
+  &__green {
+    @include button-style($white, $btn-green-color);
   }
 }
 

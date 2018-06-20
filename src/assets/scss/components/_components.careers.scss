@@ -1,0 +1,28 @@
+///* ========================================================================
+//   #CAREERS
+//   ======================================================================== */
+$btn-submit-color:       $brand-gold !default;
+
+
+.c-careers-form {
+	&-group {
+		flex: 0 0 100%;
+		width: 100%;
+		@include breakpoint (md) {
+			flex: 0 0 50%;
+			width: 50%;
+		}
+	}
+	&-language {
+		flex: 0 0 100%;
+		width: 100%;
+		@include breakpoint (md) {
+			flex: 0 0 50%;
+			width: 50%;
+		}
+		@include breakpoint (lg) {
+			flex: 0 0 33.33%;
+			width: 33.33%;
+		}
+	}
+}
