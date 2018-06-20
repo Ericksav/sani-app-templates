@@ -8,6 +8,9 @@ $side-bar-info-bg-color:         $gray-light;
 	background-color: $side-bar-info-bg-color;
 	max-height: rem(1100);
 	width: 100%;
+	img {
+		width: 100%;
+	}
 	&-content {
 		&-tel {
 			&-number {
